@@ -1,0 +1,47 @@
+<div class="withdraw position_relative">
+    <div>
+        <div class="referHead">
+            <a href="/myCenter_deposit" class="inlineBlock referH1">快捷充值</a>
+            <a href="/myCenter_deposito" class="inlineBlock referH1 rhb">网银充值</a>
+            <div id="available" class="inlineBlock title_bar_nub"></div>
+            <div class="inlineBlock title_bar_account">账户余额：</div>
+        </div>
+        <div class="withdraw_status2">
+        </div>
+        <div class="actionBar mT20">
+            <div class="inlineBlock bar_m">充值金额</div>
+            <input id="no_deposito" class="inputN" type="text" maxlength="9" autocomplete="off" placeholder="请输入充值金额" />
+        </div>
+        <div class="notes mT10 inlineBlock"> 单笔充值金额必须大于等于2元</div>
+
+        <div id="fee" class="fee inlineBlock"> </div>
+        <div class="actionBar mT10">
+            <div class="inlineBlock bar_m">交易密码</div>
+            <input id="passWord_deposito" class="inputN" autocomplete="off" type="text" onfocus="this.type='password'" maxlength="16" placeholder="请输入交易密码" />
+        </div>
+        <div>
+            <div class="notes mT10 inlineBlock" style="color:#ff0054"> 提示：默认与首次登录密码一致。</div>
+            <a class="inlineBlock forget" href="/myCenter_cardTstPwd">忘记密码？</a>
+        </div>
+        <div id="error" class="error mL280 mT20 "> </div>
+        <button id="depositClick" class="action mL280 mT60">确定</button>
+        <div class="position_relative">
+            <div id="notes_rule " class="notes_help inlineBlock ml180"> </div>
+            <div id="rule_detail" class="rule_detail div_float1_none">
+                <div class="rule_title">充值规则</div>
+                <div>
+                    <span class="rule_span">1.充值免费，单笔充值金额必须大于等于2元；</span>
+                    <span class="rule_span">2.一般情况下完成充值操作后，资金会立即到用户账户中，不排除在充值高峰期，到账时间会推迟，请以实际到账时间为准。</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wait" class="processing position_absolute position_wait ">
+        <div class="w">
+            <span class="iconwait "></span>
+            <span class="processing-content" id="processing_Content">正在进行充值,请稍等.....</span>
+        </div>
+        <div class="border"></div>
+    </div>
+</div>
+<div id="bfHtml" class="hide"></div>

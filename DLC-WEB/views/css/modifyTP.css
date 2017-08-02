@@ -1,0 +1,153 @@
+/*重置交易密码页面CSS start*/
+
+.div_none {
+    height: 60px;
+}
+
+.mf_position {
+    position: relative;
+}
+
+.modify {
+    padding-left: 247px;
+    height: 46px;
+    background: none;
+}
+
+.actionBar .modify {
+    height: 46px;
+    background: none;
+    padding-left: 0px;
+}
+
+.modifyFind {
+    height: auto !important;
+    min-height: 26px;
+    padding-left: 401px;
+}
+
+.modifyPrompt {
+    display: none;
+    height: auto !important;
+    min-height: 56px;
+}
+
+.modify .wordStyle {
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    color: #575757;
+    width: 100px;
+    text-align: right;
+}
+
+.modify input {
+    width: 292px;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 26px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.modifyFind .prompt {
+    width: 299px;
+    height: 26px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #ff0045;
+}
+
+.modifyPrompt .promptPhone {
+    width: 320px;
+    height: 54px;
+    padding-left: 130px;
+    font-size: 12px;
+    color: #8d8d8d;
+    padding-top: 5px;
+}
+
+.modifyPrompt .promptPhone span {
+    color: #398be1;
+}
+
+.modify button {
+    width: 320px;
+    height: 46px;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    background: #398be1;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.modify button:active {
+    background: #3F9DFF;
+}
+
+.mf_mPadBut {
+    padding-left: 373px;
+}
+
+.modify .closeEye {
+    position: absolute;
+    top: 16px;
+    left: 280px;
+    cursor: pointer;
+    width: 30px;
+    height: 18px;
+}
+
+.modify .e_one {
+    background: url('../images/resetPass/f16c.png');
+}
+
+.modify .e_two {
+    background: url('../images/resetPass/eye65.png');
+}
+/*重置交易密码页面CSS end*/
+
+.modify input.realname {
+    border: none;
+    background: none;
+}
+
+.modify input.m_wc {
+    width: 150px;
+}
+
+.modify input.m_gc {
+    width: 136px;
+    height: 46px;
+    line-height: 42px;
+    text-align: center;
+    border: 1px solid #398be1;
+    color: #398be1;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 0;
+    background: none;
+}
+
+.modify .send {
+    width: 136px;
+    background: none;
+    height: 46px;
+    line-height: 42px;
+    border: 1px solid #398be1;
+    border-radius: 3px;
+    color: #398be1;
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.butHeight {
+    height: 20px;
+}

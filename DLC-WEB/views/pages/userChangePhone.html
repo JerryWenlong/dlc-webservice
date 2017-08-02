@@ -1,0 +1,97 @@
+<link href="../css/inputStyle.css" rel="stylesheet" type="text/css" />
+
+<div class="userCenterRightMainTop">
+    <div class="ucrmtSty">手机修改</div>
+    <div class="ucrmtImgSty ucrmtImg3"></div>
+</div>
+
+<div class="CP_bar">
+    <div class="CP_circle CP_circleA">1</div>
+    <div class="CP_line"></div>
+    <div class="CP_circle CP_circleB">2</div>
+</div>
+<div class="CP_word">
+    <div class="CP_wordLeft">验证原手机号码</div>
+    <div class="CP_wordRight">绑定新手机号码</div>
+</div>
+
+<!--<div class="CP_img img_one"></div>-->
+
+<div class="CP_write" id="one">
+    <div class="CP_info">
+        <div class="wordStyle">原手机号码</div>
+        <div class="mf_floatL mf_marL mf_h46 mf_w296">
+            <input class="old" readonly="readonly" id="oldPhone" />
+        </div>
+    </div>
+
+    <div class="CP_none">
+        <div class="CP_error"></div>
+    </div>
+
+    <div class="CP_info">
+        <div class="wordStyle">手机验证码</div>
+        <div class="mf_floatL mf_h46 mf_marL">
+            <input class="CP_wc" type="text" id="writeCode" maxlength="6" placeholder="请输入验证码" />
+        </div>
+        <div class="mf_floatL mf_h46 mf_marL6">
+            <input class="CP_gc CP_gcOne" type="button" id="getOldCode" value="获取验证码" />
+        </div>
+    </div>
+
+    <div class="CP_none" id="CP_errorNone">
+        <div id="CP_proOne" class="CP_error"></div>
+    </div>
+
+    <div class="CP_none CP_noneTe" id="CP_infoNone">
+        <div class="CP_error CP_prompt">
+            温馨提示：验证码已发送到<span id="getOldPhone"></span>，请耐心等待，若一直未收到验证码，请联系客服电话：<span>400-820-2450</span>。
+        </div>
+    </div>
+
+    <div class="CP_butHeight"></div>
+
+    <div class="CP_info mf_padBut">
+        <button id="butOne">下一步</button>
+    </div>
+</div>
+
+
+<div class="CP_write" id="two" style="display: none;">
+    <div class="CP_info">
+        <div class="wordStyle">新手机号码</div>
+        <div class="mf_floatL mf_marL mf_h46 mf_w296">
+            <input type="text" id="newPhone" maxlength="11" placeholder="请输入新手机号码" />
+        </div>
+    </div>
+
+    <div class="CP_none">
+        <div id="CP_proTwo" class="CP_error"></div>
+    </div>
+
+    <div class="CP_info">
+        <div class="wordStyle">手机验证码</div>
+        <div class="mf_floatL mf_h46 mf_marL">
+            <input class="CP_wc" type="text" id="writeNewCode" maxlength="6" placeholder="请输入验证码" />
+        </div>
+        <div class="mf_floatL mf_h46 mf_marL6">
+            <input class="CP_gc CP_gcTwo" type="button" id="getNewCode" value="获取验证码" />
+        </div>
+    </div>
+
+    <div class="CP_none" id="CP_errorNone2">
+        <div id="CP_proThree" class="CP_error"></div>
+    </div>
+
+    <div class="CP_none CP_noneTe" id="CP_infoNone2">
+        <div class="CP_error CP_prompt">
+            温馨提示：验证码已发送到<span id="getNewPhone"></span>，请耐心等待，若一直未收到验证码，请联系客服电话：<span>400-820-2450</span>。
+        </div>
+    </div>
+
+    <div class="CP_butHeight"></div>
+
+    <div class="CP_info mf_padBut">
+        <button id="butTwo">确认修改</button>
+    </div>
+</div>

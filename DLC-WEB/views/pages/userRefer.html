@@ -1,0 +1,147 @@
+<div class="referBg">
+    <div class="referHead">
+        <div class="referH1 rhb">邀请好友</div>
+        <div class="referH1 refList hide">邀请奖励</div>
+        <div class="referH1">投资奖励</div>
+    </div>
+    <div class="rhDiv1 rhDiv">
+        <div class="isBindCard hide">
+            <div class="referHead2">
+                <div class="referH21">邀请方式</div>
+            </div>
+            <div class="referContent">
+                <div class="referCOne">
+                    <div class='referC1Top bgi_rc1 lh36px'>
+                        邀请码
+                    </div>
+                    <div class="referC1Center">
+                        <div class="referC1C1">您的专属邀请码</div>
+                        <div class="referC1C2"></div>
+                        <div class="referC1C3" id="divCode"></div>
+                    </div>
+                    <div class="referC1Bttom">请将邀请码发送给好友，邀好友注册时填写</div>
+                </div>
+                <div class="referCOne rcBorder">
+                    <div class='referC1Top bgi_rc2 lh18px'>
+                        邀请好友
+                        <br>扫描二维码
+                    </div>
+                    <div class="referC1Center">
+                        <img class="referC1Img" id="imgQrCode">
+                    </div>
+                    <div class="referC1Bttom">好友打开页面完成注册即可</div>
+                </div>
+                <div class="referCOne">
+                    <div class='referC1Top bgi_rc3 lh18px'>
+                        复制链接
+                        <br>给好友
+                    </div>
+                    <div class="referC1Center">
+                        <input type="text" value="" id="inputLink" class="referC1CIL" readonly>
+                        <input type="button" value="复制链接" class="referC1CButton" id="inputButton" data-clipboard-target="#inputLink">
+                        <div class="clickShow">111</div>
+                    </div>
+                    <div class="referC1Bttom">好友打开页面完成注册即可</div>
+                </div>
+            </div>
+            <div class="referHead2">
+                <div class="referH21">奖励流程</div>
+            </div>
+            <div class="referContent2">
+                <div class="rc2Top">
+                    <div class="rc2Top1"></div>
+                    <div class="rc2Topc">···············</div>
+                    <div class="rc2Top2"></div>
+                    <div class="rc2Topc">···············</div>
+                    <div class="rc2Top3"></div>
+                </div>
+                <div class="h30px2"></div>
+                <div class="rc2Bottom">
+                    <div class="rc2b1">通过以上三种方式邀请好友注册</div>
+                    <div class="rc2b2">邀请好友并实名认证</div>
+                    <div class="rc2b1">邀好友成功投资，获得现金奖励</div>
+                </div>
+            </div>
+        </div>
+        <div class="noBindCard hide">
+            <div class="nbcText">
+                主人，请先实名认证和绑卡，方便邀请好友和提现奖励哦！
+                <br>
+                <input type="button" value="立即绑卡" class="nbcButton" onclick="window.location.href='/myCenter_userBindBankCard'">
+            </div>
+        </div>
+        <div class="referContent3">
+            <span class="red">*</span> 奖励规则：
+            <br>
+            <span class='rc3Span'>1）</span>3月20日之前邀请成功的用户，享受好友注册之日起1年内，好友每笔投资年化金额的0.5%返现。
+            <br>
+            <span class='rc3Span'>2）</span>3月20日之后邀请成功的用户，享受好友注册后15天（含）内每笔投资收益的10%作为返现奖金，上不封顶！ （新手福利标除外） 返现奖金将于项目满标后次日立返账户，可提现。
+            <br>
+            <span class='rc3Span'>3）</span>如需帮助请联系客服 400-820-2450。
+        </div>
+    </div>
+    <div class="rhDiv2 rhDiv hide">
+        <div class="h100px pl30px">
+            <div class="rhdCountDiv1">
+                <div class="rhdcd2">邀请总数 <span class="red2" id="sumPeoSpan">0</span> 人</div>
+                <div class="rhdcd2">未实名 <span class="red2" id="noPeoSpan">0</span> 人</div>
+                <div class="rhdcd2">已实名 <span class="red2" id="isPeoSpan">0</span> 人</div>
+            </div>
+            <dic class="rhdCountDiv2">温馨提示：每邀请一位好友注册并实名，可获得100个点币奖励。</dic>
+        </div>
+        <div class="list_div H700">
+            <div class="list_title1 backgroundColorFa">
+                <ul class="pc_pl_list">
+                    <li class="pc_li_item item220"><span>注册时间</span>
+                    </li>
+                    <li class="pc_li_item item220"><span>用户名</span>
+                    </li>
+                    <li class="pc_li_item item220"><span>是否实名</span>
+                    </li>
+                    <li class="pc_li_item item220"><span>获得点币</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_title1" id="listBill_content">
+                <ul class="pc_pl_list ol_list_marL4" id="listPointShow"></ul>
+            </div>
+            <div class="page-r2 divPage">
+            </div>
+        </div>
+    </div>
+    <div class="rhDiv3 rhDiv hide">
+        <div class="nh110px pl30px">
+            <div class="rhdCountDiv1">
+                <div class="rhdcd2">总奖励 <span class="red2" id="sumMoneySpan">0.00</span> 元</div>
+                <div class="rhdcd2">待收奖励 <span class="red2" id="noMoneySpan">0.00</span> 元</div>
+                <div class="rhdcd2">已收奖励 <span class="red2" id="isMoneySpan">0.00</span> 元</div>
+            </div>
+            <dic class="rhdCountDiv2">1、3月20日之前邀请成功的用户，享受好友注册之日起1年内，好友每笔投资年化金额的0.5%返现。
+                <br>2、3月20日之后邀请成功的用户，享受好友注册后15天（含）内每笔投资收益的10%作为返现奖金，上不封顶！ （新手福利标除外） 返现奖金将于项目满标后次日立返账户，可提现。
+            </dic>
+        </div>
+        <div class="list_div H700">
+            <div class="list_title1 backgroundColorFa">
+                <ul class="pc_pl_list">
+                    <li class="pc_li_item item200"><span>投资时间</span>
+                    </li>
+                    <li class="pc_li_item item120"><span>用户名</span>
+                    </li>
+                    <li class="pc_li_item item200"><span>标的名称</span>
+                    </li>
+                    <li class="pc_li_item item120"><span>总奖励</span>
+                    </li>
+                    <li class="pc_li_item item120"><span>待收奖励</span>
+                    </li>
+                    <li class="pc_li_item item120"><span>已收奖励</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="list_title1" id="listBill_content">
+                <ul class="pc_pl_list ol_list_marL4" id="listInvestShow"></ul>
+            </div>
+            <div class="page-r3 divPage">
+            </div>
+        </div>
+    </div>
+</div>

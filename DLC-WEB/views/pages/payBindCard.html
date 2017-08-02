@@ -1,0 +1,63 @@
+<div class="pay-bind page">
+	<div class="w">
+		<div class="pay-nav nav">
+			<span>你的当前位置:</span><span class="s">我要投资></span><span class="s">投资详情页></span><span class="s">支付页</span>
+		</div>
+		<div class="pay-context">
+			<div class="bind-card-pannel">
+				<div class="pay-info"><span class="pay-info-icon"></span><span>为保障资金安全，银行卡的用户开户身份需与身份验证保持一致，仅支持绑定借记卡</span></div>
+
+				<div class="bind-card">
+					<ul>
+						<li>
+							<span class="label">发卡行</span>
+							<input type="text" class="pub_sel" id="bankName" class="" readonly="true" placeholder="请选择银行"></input>
+							<input type="hidden" id="bankId"></input>
+							<div id="bankList" class="ucUBBCBankList"></div>
+							<span class="tips" id="tips1">提示:此银行卡信息将绑定到当前账户</span>
+							<p class="tips error" style="display: none" id="bankIdError"></p>
+						</li>
+						<li>
+							<span class="label">银行卡号</span>
+							<input id="cardNo" placeholder="请输入银行卡号" maxlength="19"></input>
+							<p class="tips error" style="display: none" id="cardNoError"></p>
+						</li>
+						<li>
+							<span class="label">真实姓名</span>
+							<input id="holderName" placeholder="请输入真实姓名" maxlength="20"></input>
+							<p class="tips error" style="display: none" id="holderNameError"></p>
+						</li>
+						<li>
+							<span class="label">身份证号</span>
+							<input id="idNo" placeholder="请输入身份证号" maxlength="18"></input>
+							<span class="tips" id="tips2">提示:此姓名和身份证号将成为实名认证信息</span>
+							<p class="tips error" style="display: none" id="idNoError"></p>
+						</li>
+						<li>
+							<span class="label">手机号码</span>
+							<input id="phoneNo" placeholder="请输入银行预留手机号码" maxlength="11"></input>
+							<p class="tips error" style="display: none" id="phoneNoError"></p>
+						</li>
+						<li class="phone-otp">
+							<span class="label">手机验证码</span>
+							<input id="otpNo" placeholder="请输入验证码" maxlength="6"></input>
+							<button class="otp btn" id="otpBtn">获取验证码</button>
+							<p class="tips error" style="display: none" id="otpNoError"></p>
+						</li>
+						<li class="errorMsg">
+							<span id="showErr"></span>
+						</li>
+					</ul>
+					<button class="pay-btn btn" id="payBtn">下一步</button>
+					<ul class="pay-info-ul">
+						<li>绑卡规则：</li>
+						<li>1、绑定的银行卡开户身份需与实名信息保持一致。</li>
+						<li>2、每个账户只能绑定一张银行卡，此卡默认为该账户的唯一提现卡。</li>
+						<li>3、银行卡绑定后不可更改。</li>
+						<li>4、如需帮助请联系客服：400-820-2450。</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

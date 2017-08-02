@@ -1,0 +1,29 @@
+<% include header.html%>
+    <div class="error404Bg">
+        <div class="error404Div">
+            <div class="error404DDiv">
+                <p class="error404DDP">您访问的页面不存在或已删除</p>
+                <p><span class="red error404DDPSpan1">5秒</span> 后为您跳转至 <span class="red">首页</span>
+                </p>
+                <p>&nbsp;</p>
+                <a href="/" class="error404DDA1" style="color:#ffffff;">官网首页</a>
+                <div class="h10px"></div>
+                <a href="/aboutCompany" class="error404DDA2" style="color:#346faf;">关于点理财</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var n = 5;
+        var toIndex = function () {
+            n--;
+            if (n == 0) {
+                window.location.href = "/";
+            } else {
+                $(".error404DDPSpan1").html(n + "秒");
+                setTimeout(toIndex, 1000);
+            }
+
+        }
+        setTimeout(toIndex, 1000);
+    </script>
+    <% include footer.html%>

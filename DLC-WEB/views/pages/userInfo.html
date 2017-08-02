@@ -1,0 +1,89 @@
+<div class="userCenterRightMainTop">
+    <div class="ucrmtSty">账户信息</div>
+    <div class="ucrmtImgSty ucrmtImg6"></div>
+</div>
+<form id="userInfoForm" enctype="multipart/form-data" method="post" action="#" onsubmit="return false;">
+    <div class="rightBottom">
+        <ul class="userInfoUl">
+            <li>
+                <label class="firstLable">头像</label>
+                <a href="javascript:;" class="file">
+                    <input type="file" id="uploadPortrait" />
+                </a>
+                <div id="uppDiv"></div>
+            </li>
+            <li class="uploadLi">
+              <span class="uploadTip">注:图片格式仅限jpg、jpeg、png,单张图片大小不大于2MB,仅限一张图片</span>
+              <span id='uploadPortraitResult' class="validateError"></span>
+            </li>
+            <li class="marriageLi">
+                <label for="marriage">婚姻状态</label>
+                <input type="text" class="inputSelInput"  id="marriage_sel" class="" readonly="true" value="保密" />
+  							<input type="hidden" id="marriage" />
+  							<div id="marriageList" class="inputSelList">
+                    <div class='inputSelectListOne marSel' tag='0'>保密</div>
+                    <div class='inputSelectListOne marSel' tag='1'>已婚</div>
+                    <div class='inputSelectListOne marSel sel_last' tag='2'>未婚</div>
+  							</div>
+            </li>
+            <li>
+                <label for="gender">性别</label>
+                <input type="text" class="inputSelInput"  id="gender_sel" class="" readonly="true" value="保密" />
+  							<input type="hidden" id="gender" />
+  							<div id="genderList" class="inputSelList">
+                    <div class='inputSelectListOne genSel' tag='0'>保密</div>
+                    <div class='inputSelectListOne genSel' tag='1'>男</div>
+                    <div class='inputSelectListOne genSel sel_last' tag='2'>女</div>
+  							</div>
+            </li>
+            <li>
+                <label for="select_education">学历</label>
+                <input type="text" class="inputSelInput"  id="education_sel" class="" readonly="true" value="保密" />
+  							<input type="hidden" id="education" />
+  							<div id="educationList" class="inputSelList">
+                    <div class='inputSelectListOne eduSel' tag='1'>初中及其以下</div>
+                    <div class='inputSelectListOne eduSel' tag='2'>高中/中专/中技</div>
+                    <div class='inputSelectListOne eduSel' tag='3'>大专</div>
+                    <div class='inputSelectListOne eduSel' tag='4'>本科</div>
+                    <div class='inputSelectListOne eduSel' tag='5'>硕士</div>
+                    <div class='inputSelectListOne eduSel sel_last' tag='6'>博士及其以上</div>
+  							</div>
+            </li>
+            <li>
+                <label for="select_profession">公司性质</label>
+                <input type="text" class="inputSelInput"  id="profession_sel" class="" readonly="true" value="金融" />
+  							<input type="hidden" id="profession" />
+  							<div id="professionList" class="inputSelList">
+                    <div class='inputSelectListOne profSel' tag='1'>外资</div>
+                    <div class='inputSelectListOne profSel' tag='2'>合资</div>
+                    <div class='inputSelectListOne profSel' tag='3'>国企</div>
+                    <div class='inputSelectListOne profSel' tag='4'>事业单位</div>
+                    <div class='inputSelectListOne profSel' tag='5'>上市公司</div>
+                    <div class='inputSelectListOne profSel' tag='6'>民营单位</div>
+                    <div class='inputSelectListOne profSel' tag='7'>政府机构</div>
+                    <div class='inputSelectListOne profSel' tag='8'>非营利机构</div>
+                    <div class='inputSelectListOne profSel sel_last' tag='9'>创业公司</div>
+  							</div>
+            </li>
+            <li class="miniSel">
+                <label class="provinceLabel">城市</label>
+                <input type="text" class="inputSelInput normal_sel"  id="province_sel" class="" readonly="true" value="---请选择---" />
+  							<input type="hidden" id="province" />
+  							<div id="provinceList" class="inputSelList normal_sel provinceList">
+                </div>
+
+
+                <input type="text" class="inputSelInput normal_sel"  id="city_sel" class="" readonly="true" value="---请选择---" />
+  							<input type="hidden" id="city" />
+  							<div id="cityList" class="inputSelList normal_sel cityList">
+                </div>
+
+                <p id="province_result"></p>
+            </li>
+            <li>
+                <label for="submitBtn"></label>
+                <button id="submitBtn" class='submitBtn btn'>保存</button>
+            </li>
+        </ul>
+    </div>
+</form>

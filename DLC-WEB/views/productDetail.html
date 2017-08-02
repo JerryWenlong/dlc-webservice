@@ -1,0 +1,207 @@
+<% include header.html%>
+	<div class="prod-detail page">
+		<div class="wrap">
+			<p class="nav">
+				<span>你的当前位置：</span><a href='/' style="color:#398de1;">首页</a>><a href='/productList' style="color:#398de1;">我要投资</a>><span>投资详情页</span>
+			</p>
+			<div class="context">
+				<div class="b b1">
+					<div class="w">
+						<p class="title">
+							<span class="icon proTypeShow"></span>
+							<span class="label" id="prodName"></span>
+						</p>
+						<div id="couponTips"></div>
+						<div class="prod-info">
+							<div style="width:180px;margin-right:0px;">
+								<p><span id="expectYearReturn" style="color:#ff7800"></span></p>
+								<p class="label">预期年化收益</p>
+							</div>
+							<div>
+								<p><span id="productPeriod"></span><span class="s">天</span></p>
+								<p class="label">投资期限</p>
+							</div>
+							<div>
+								<p><span id="maxRaisedAmount"></span><span class="s">万</span></p>
+								<p class="label">项目金额</p>
+							</div>
+							<div style="margin-right: 0">
+								<p><span id="availableAmount"></span><span class="s">元</span></p>
+								<p class="label">剩余可投金额</p>
+							</div>
+						</div>
+						<div class="prod-info-1">
+							<img src="../images/product/progress-icon.png" class="progress-icon">
+							<span class="progressNo" id="progressNo"></span>
+							<div class="progress-bar-bg">
+								<span class="progress-bar" id="progressBar"></span>
+							</div>
+							<div style="display:inline-block;font-size:14px;color:#99999F;margin-top:30px;width:350px;">
+								<p><span class="send-icon"></span>发标时间：<span id="reviewedAt" class="s s1"></span></p>
+								<p style="height:16px;"></p>
+								<p><span class="repayment-icon"></span>还款方式：<span class="invest-type"></span></p>
+							</div>
+							<div class="item-foot-1" style="display:inline-block;font-size:14px;color:#99999F;margin-top:30px;">
+								<p><span class="day-icon"></span>剩余时间：<span class="time" id="dayShow" style="padding-left: 0px;">0</span><span>天</span>
+									<span class="time" id="hourShow">0</span><span>时</span>
+									<span class="time" id="minuteShow">0</span><span>分</span>
+									<span class="time" id="secondShow">0</span><span>秒</span>
+								</p>
+								<p style="height:16px;"></p>
+								<p><span class="invest-icon"></span>起息时间：T（满标日）+1天</p>
+							</div>
+						</div>
+						<div class="prod-info-2">
+							<input type="checkbox" style="display:none" id="chkContract" checked="checked" />
+							<span class="checkboxIcon checked" id="chkContractIcon"></span> 已阅读并同意
+							<a class="withholdContract" id="withholdContract" href="javascript:void(0)" target="_blank"><span style="color:#398be1">【定向委托投资管理协议】</span></a>
+							<a class="withholdContract" id="withholdContract2" href="javascript:void(0)" target="_blank"><span style="color:#398be1">【点理财平台委托代扣授权书】</span></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="b b2">
+					<div class="w">
+						<div>
+							<div class="account-info">
+								<span style="width:76px;display:inline-block;">账户余额：</span>
+								<span class="loginShow" style="width:194px;display:inline-block; color: #ff7800; font-size: 16px"> </span>
+								<button class="rechargeShow recharge-btn btn" style="display: none;">充值</button>
+								<button class="unloginShow btn" style="display: none;">登录</button>
+							</div>
+							<div class="account-info">
+								<span style="width:76px;display:inline-block;">投资余额：</span>
+								<input type="text" id="buyAmount" class="buy-amount">
+								<button class="all-invest btn" id="allInvest">全投</button>
+							</div>
+							<div class="account-info" style="height: 12px;line-height: 12px;">
+								<span style="width:76px;display:inline-block;"> </span>
+								<span style="width:194px;display:inline-block; font-size: 12px">预期收益：
+									<span id="exprctYearInterest" style="color: #ff7800;">0.00</span>元
+								</span>
+							</div>
+
+							<div class="account-info" style="margin-top: 20px;">
+								<span style="width:76px;display:inline-block;"><span class="coupon-icon"></span>优惠券：</span>
+								<input type="text" id="couponSel" class="coupon-sel" readonly="true" value="您有0张优惠券可选择"></input>
+								<input type="hidden" id="couponId"></input>
+								<div id="couponList" class="coupon-list"></div>
+							</div>
+							<p id="errorMsg" class="errorMsg" style="height:15px;color: #ff7800;"></p>
+							<div class="buy-pannel" style="margin-top: 15px;">
+								<button id="createOrderBtn" class="btn pay-timer"></button>
+							</div>
+							<div style="margin-top: 10px;text-align: center;color:#99999F;">
+								市场有风险，投资需谨慎
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle-div"></div>
+			<div class="tab-pannel">
+				<div class="top">
+					<div class="tab first" id="tab1">
+						<span>项目信息</span>
+					</div>
+					<div class="tab " id="tab2">
+						<span>认证及文件</span>
+					</div>
+					<div class="tab " id="tab3">
+						<span>安全保障</span>
+					</div>
+					<div class="tab last" id="tab4">
+						<span>投资记录</span>
+					</div>
+				</div>
+				<div class="details">
+					<div id="detail1" class="detail">
+						<p class="title prodUserInfo hide">
+							<span class="label3-left">借款人信息</span>
+						</p>
+						<div class="detail-context hide" style="height: 186px;" id="prodUserInfo">
+						</div>
+						<div style="height:30px;border-bottom:1px dashed #ddd;margin-left: 50px;margin-right: 75px;"></div>
+						<p class="title prodStrengths hide">
+							<span class="label3-left">投资亮点</span>
+						</p>
+						<div class="detail-context pl80px hide lh30px" id="prodStrengths"></div>
+					</div>
+					<div id="detail2" class="detail">
+						<p class="title prodImgs hide">
+							<span class="label3-left">认证信息</span>
+						</p>
+						<div class="detail-context pl80px nh240px hide" id="prodImgs"></div>
+
+						<!--<p class="title prodAttacheds hide">
+							<span class="icon icon9"></span>
+							<span class="label">项目附件</span>
+						</p>
+						<div class="detail-image hide" id="prodAttacheds"></div>-->
+					</div>
+					<div id="detail3" class="detail">
+						<p class="title">
+							<span class="label3-left">安全保障</span>
+							<span class="label3-right"><a target="_blank" href="/insurancePro" style="color:#60B0FC"> 查看详情>></a></span>
+						</p>
+						<div class="detail-context" style="font-size:14px;">
+							<ul>
+								<li style="margin-bottom: 10px;">
+									<span class="span-left">贷后监控管理</span>
+									<span>点建立完善的贷后监控及预警系统，在借款项目还款期间通过多种渠道定期、高频监控借款人的资金情况，及时更新借款人的真实还款能力</span>
+								</li>
+								<li style="margin-bottom: 10px;"><span class="span-left">提供逾期项目资产回购</span>
+									<span>若借款人发生逾期或还款违约，则由互保联保企业对投资用户先行代偿</span>
+								</li>
+								<li>
+									<span class="span-left">快速专业催收</span>
+									<span>专业催收团队将快速跟进追偿，以制度化、流程化、数据化的理念，通过电话、短信、邮件、登门等方式紧密追踪借款人，督促其尽快还款</span>
+								</li>
+							</ul>
+						</div>
+						<div style="height:30px;border-bottom:1px dashed #ddd;margin-left: 50px;margin-right: 75px;"></div>
+						<p class="title">
+							<span class="label3-left">点理财简介</span>
+							<span class="label3-right"><a target="_blank" href="/aboutCompany" style="color:#60B0FC"> 查看详情>></a></span>
+						</p>
+						<div class="detail-context" style="font-size:14px;">
+							点理财（dianlc.com）由上市公司智城控股（股票代码08130-HK）旗下的全资子公司——众网金融科技（上海）有限公司负责运营，注册资本1.00亿元人民币，股东为上市公司中国支付通（08325-HK）。
+						</div>
+					</div>
+					<div id="detail4" class="detail">
+						<p class="title">
+							<span class="c c1 cM">投资人</span>
+							<span class="c c2 cM">投资金额（元）</span>
+							<span class="c c3 cM">来源</span>
+							<span class="c c4 cM">投资时间</span>
+						</p>
+						<div id="tradeRecords" class="tradeRecords">
+
+						</div>
+						<div class="paging-pannel">
+							<div id="tradeRecordsPagination" class="pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle-div"></div>
+		</div>
+	</div>
+	<div class="showImgDiv" id="showImgDiv">
+		<div class="showImgDivL">
+			<div class="showImgL left_h hide"></div>
+		</div>
+		<span class="showImgDivClose" id="showImgDivClose"></span>
+		<div class="showImg2"><img id="showImg" class="showImg"></div>
+		<div class="showIndex"><span class="showIndex0"></span>： <span class="showIndex1">1</span> / <span class="showIndex2">1</span></div>
+		<div class="showImgDivR">
+			<div class="showImgR right_h hide"></div>
+		</div>
+	</div>
+	<% include footer.html%>
+		<script>
+			$(document).ready(function () {
+				var productId = "<%=productId %>";
+				new DLC.ProductDetail(productId);
+			});
+		</script>

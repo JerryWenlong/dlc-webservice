@@ -1,0 +1,634 @@
+.footerBefore {
+    background-color: #f1f1f1;
+    height: 20px;
+    clear: both;
+}
+.footer .foot-line{
+    background: #e5e5e5;
+    width: 1px;
+    height: 160px;
+    float: left;
+}
+.footer .footerLeft, .footerMiddle, .footerRight {
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+}
+
+.footer .footerLeft {
+    width: 360px;
+}
+
+.footer .footerMiddle {
+    width: 480px;
+}
+
+.footer .footerRight {
+    width: 360px;
+}
+
+.footer .footerLeft ul {
+    width: 110px;
+    float: left;
+}
+
+.footer .footerLeft ul li {
+    height: 16px;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.footer .footerLeft ul li a:hover {
+    color: #666;
+}
+
+.footer .footerLeft ul .fLOne {
+    height: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.footer .footerMiddle .code-2d {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.footer .footerMiddle .code-2d .icon {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+}
+
+.footer .footerMiddle .code-2d .iconOne {
+    background-image: url('../images/footer/app_logo.png');
+}
+
+.footer .footerMiddle .code-2d .iconTwo {
+    background-image: url('../images/footer/wechat_logo.png');
+}
+
+.footer .footerMiddle .code-2d .height24 {
+    display: block;
+    height: 24px;
+}
+
+.footer .footerMiddle .code-2d .label {
+    color: #999;
+    font-size: 14px;
+}
+
+.footer .footerRight .fROne {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #666;
+    margin-left: 55px;
+}
+
+.footer .footerRight .fRTwo {
+    font-size: 36px;
+    color: #39a6ff;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+
+.footer .footerRight .fRThree {
+    margin-left: 55px;
+}
+.footer .footerRight .fRThree .qq{
+    background: url(../images/home/qq_logo.png) no-repeat;
+    width: 130px;
+    height: 40px;
+}
+.footer .footerRight .fRFour {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #999;
+    margin-left: 55px;
+}
+.footer .fw2 {
+    height: 120px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.footer .fw2 .copyright {
+    font-size: 12px;
+    color: #999;
+    height: 40px;
+    line-height: 40px;
+}
+
+.footer .fw2 .iconList {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer .fw2 .iconList a {
+    margin-right: 35px;
+}
+
+.footer .fw2 .iconList .icon-a {
+    display: inline-block;
+    width: 79px;
+    height: 30px;
+    background: url('../images/footer/cpic22.png') no-repeat;
+    background-size: cover;
+}
+
+.footer .fw2 .iconList .icon-c {
+    display: inline-block;
+    width: 79px;
+    height: 30px;
+    background: url('../images/footer/cxwz22.png') no-repeat;
+    background-size: cover;
+}
+
+.footer .fw2 .iconList .icon-d {
+    display: inline-block;
+    width: 79px;
+    height: 30px;
+    background: url('../images/footer/wxrz22.png') no-repeat;
+    background-size: cover;
+}
+
+.footer .fw2 .iconList .icon-e {
+    display: inline-block;
+    width: 79px;
+    height: 30px;
+    background: url('../images/footer/hwjr22.png') no-repeat;
+    background-size: cover;
+}
+
+.footer .link {
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
+    color:#999;
+    font-size: 12px;
+}
+
+.footer .link .linkDiv {
+    width: 1200px;
+    margin: auto;
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer .link .linkDiv .linkA {
+    color:#999;
+    font-size: 12px;
+    margin: 0px 3px;
+}
+
+.main_header .fixed-header {
+    /*position: fixed;*/
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #f0f0f0;
+    z-index: 1000;
+}
+
+.main_header .site-nav {
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.main_header .site-nav li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.main_header .site-nav .cell-phone-pre {
+    font-size: 12px;
+    color: #666;
+}
+
+.main_header .site-nav .cell-phone {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.main_header .site-nav .logindiv {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 14px;
+    line-height: 40px;
+}
+.main_header .site-nav .up {
+    background: url("../images/home/btn_list.png") no-repeat;
+    background-position: -428px 0px;
+    height: 5px;
+    width: 10px;
+    margin-left: 5px;
+    line-height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.main_header .site-nav .down {
+    background: url("../images/home/btn_list.png") no-repeat;
+    background-position: -412px 0px;
+    height: 5px;
+    width: 10px;
+    line-height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.main_header .site-nav .logindiv:hover {
+    color: #39a6ff;
+}
+
+.main_header .site-nav .register {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #39a6ff;
+    height: 14px;
+    line-height: 40px;
+}
+
+.main_header .site-nav .login-user-pannel {
+    /*display: table;*/
+    width: 110px;
+    height: 160px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    /* right: 15px; */
+    /* left: -15px; */
+    margin-left: -15px;
+    z-index: 9999;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+.main_header .site-nav .login-user-pannel li {
+    display: block;
+}
+
+.main_header .site-nav .login-user-pannel .login-user-option {
+    font-size: 12px;
+    line-height: 35px;
+    color: #666;
+}
+
+.main_header .site-nav .login-user-pannel .login-user-option:hover {
+    color: #39a6ff;
+}
+
+.main_header .site-nav .tipName {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #6EBCFB;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main_header .site-nav .tipOut {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main_header .site-nav .icon-weibo {
+    background: url("../images/home/btn_list.png") no-repeat;
+    background-position: -190px -2px;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.main_header .site-nav .icon-weibo:hover {
+    background: url("../images/home/btn_list.png") no-repeat;
+    background-position: -260px -2px;
+}
+
+.main_header .icon-weixin {
+    background: url("../images/home/btn_list.png") no-repeat;
+    background-position: -155px -2px;
+    height: 35px;
+    width: 35px;
+    line-height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.main_header .icon-weixin:hover {
+    background: url("../images/home/btn_list.png") no-repeat;
+    background-position: -225px -2px;
+}
+
+.main_header .nav {
+    width: 100%;
+    height: 80px;
+    /*position: fixed;*/
+    z-index: 1000;
+    background: #fff;
+    filter: alpha(opacity=95);
+    /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.95;
+    /*Firefox私有，透明度50%*/
+    opacity: 0.95;
+    /*其他，透明度50%*/
+}
+
+.main_header .nav-content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_header .nav .logo-header {
+    display: inline-block;
+    width: 310px;
+    height: 43px;
+    background-image: url(../images/home/LOGO.png);
+    cursor: pointer;
+    margin-top: 18px;
+    background-repeat: no-repeat;
+}
+
+.main_header .nav .nav-bar {
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    color: #444;
+    margin-top: 26px;
+}
+
+.main_header .nav .nav-bar li {
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 98px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.main_header .nav .nav-bar a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.link-sel {
+    color: #39a6ff !important;
+}
+
+.main_header .nav .nav-bar li:hover {
+    color: #39a6ff;
+}
+
+.main_header .nav .nav-bar li:hover a, .main_header .nav .nav-bar li.selected a {
+    color: #39a6ff;
+}
+
+.main_header .nav .nav-bar li.selected {
+    color: #39a6ff;
+}
+
+.main_header .nav .nav-bar li.unselect a {
+    color: #444;
+}
+
+.main_header .wechat-pannel {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.main_header .wechat-pannel .logo-weixin {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-image: url(../images/footer/weixin_logo.png);
+    background-size: cover;
+    cursor: pointer;
+    margin: 0 auto;
+    
+}
+
+.main_header .wechat-pannel .wx-color {
+    color: #39a6ff;
+    font-size: 12px;
+}
+
+.footer {
+    width: 100%;
+    min-width: 1200px;
+    clear: both;
+}
+
+.footer .footer-context {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .w1 {
+    height: 200px;
+    background-color: #fafafa;
+}
+
+.footer .w2 {
+    height: 74px;
+    background-color: #1b1b1b;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer .icon-list {
+    /*display: inline-block;*/
+    width: 100%;
+    height: 37px;
+}
+
+.footer .icon-list .icon-a {
+    display: inline-block;
+    width: 83px;
+    height: 37px;
+    background-image: url('../images/dlc/footer_a.png?__sprite');
+}
+
+.footer .icon-list .icon-b {
+    display: inline-block;
+    width: 76px;
+    height: 37px;
+    background-image: url('../images/dlc/footer_b.png?__sprite');
+}
+
+.footer .icon-list .icon-c {
+    display: inline-block;
+    width: 104px;
+    height: 37px;
+    background-image: url('../images/dlc/footer_c.png?__sprite');
+}
+
+.footer .icon-list .icon-d {
+    display: inline-block;
+    width: 107px;
+    height: 37px;
+    background-image: url('../images/dlc/footer_d.png?__sprite');
+}
+
+#geotrustSeal {
+    display: inline-block;
+}
+
+#geotrustSeal a {
+    display: inline-block;
+    width: 75px;
+    height: 37px;
+    background-image: url('../images/dlc/footer_h.png?__sprite');
+}
+
+#geotrustSeal img {
+    display: none;
+}
+
+.footer .b-left, .footer .b-right {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.footer .b-left .line {
+    margin-left: 20px;
+    width: 580px;
+    display: inline-block;
+}
+
+.footer .b-left .l1 {
+    margin-top: 50px;
+}
+
+.footer .b-left .l1 li {
+    display: inline-block;
+    float: left;
+    padding: 0 20px;
+    color: #939393;
+    border-right: 1px solid #939393;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.footer .b-left a:link, .footer .b-left a:visited {
+    color: #939393 !important;
+}
+
+.footer .b-left a:hover {
+    color: #d2d2d2;
+}
+
+.footer .b-left a:active {
+    color: #939393;
+}
+
+.footer .b-left .l2 {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.footer .b-left .l2 a {
+    color: #8d8d8d;
+}
+
+.footer .b-left .l2 li {
+    display: inline-block;
+    float: left;
+    margin-right: 18px;
+}
+
+.footer .b-left .l3 {
+    margin-top: 30px;
+}
+
+.footer .b-right .code-2d {
+    display: inline-block;
+    width: 130px;
+    margin-top: 50px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #939393;
+    margin-right: 130px;
+}
+
+.footer .b-right .code-2d .icon {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    background-image: url('../images/dlc/2dDownloadCode.png');
+    background-size: cover;
+}
+
+.footer .b-right .code-2d .label {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.footer .b-right .phone-service {
+    display: inline-block;
+    float: left;
+    width: 340px;
+}
+
+.footer .b-right .phone-service p {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.footer .b-right .phone-service .icon {
+    display: inline-block;
+    width: 25px;
+    height: 34px;
+    background-image: url('../images/dlc/footer_1.png?__sprite');
+    margin-right: 28px;
+    float: left;
+}
+
+.footer .b-right .phone-service .label {
+    float: left;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.footer .b-right .phone-service .p2 span {
+    display: inline-block;
+    float: right;
+    margin-right: 118px;
+}

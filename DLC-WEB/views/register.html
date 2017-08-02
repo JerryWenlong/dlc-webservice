@@ -1,0 +1,115 @@
+<% include header.html%>
+<div class="reg-banner ac170316Div11"  style="height:500px;">
+    <div class="reg-close hidden" id="redBagClose"></div>
+    <div class="registerDiv"   style="height:500px;">
+        <div id="fillDiv"  style="height:500px;">
+            <div id="regBoderDiv" style="left: 820px;top:20px">
+                <div id="regBgOpacity"></div>
+                <form id="signupForm" action="#" onsubmit="return false;">
+                    <div id="signupDiv">
+                        <li>
+                            <div class="register_title">免费注册抽888元现金</div>
+                        </li>
+                        <div class="validateError firstError" style="margin-bottom: -2px;margin-top: 7px;">
+                            <div class="allErrors hide">
+                                <span class="allErrorsSpan"></span>
+                            </div>
+                        </div>
+                        <li class="phone">
+                            <input type="text" autocomplete="off" placeholder="请输入手机号" id='phone' name='phone' maxlength="11" />
+                        </li>
+                        <div class="validateError"></div>
+                        <li class="password">
+                            <input type="password" autocomplete="off" placeholder="请设置密码(8-16位字母和数字)" class="txtPwd" id='password' name='password' maxlength="16" />
+                            <div class="pwdEyes eyePic1" id="pwdEyes"></div>
+                        </li>
+                        <div class="validateError"></div>
+                        <li class="picVerify">
+                            <input type="text" autocomplete="off" placeholder="请输入图片验证码" id='picVerifyCode' name='picVerifyCode' />
+                            <img class="signupCodeImg" id="captchaImg" title="点击更换验证码">
+                        </li>
+                        <div class="validateError"></div>
+                        <li class="smsVerify">
+                            <input type="text" autocomplete="off" placeholder="请输入验证码" id='verifyCode' name='verifyCode' maxlength="6" />
+                            <button id='verifyCodeBtn'>获取验证码</button>
+                        </li>
+                        <div class="validateError"></div>
+                        <li class="signup">
+                            <button id='signupBtn'>立即抽奖</button>
+                        </li>
+                        <li class="checkLi" style="margin-top: 30px">
+                            <input type="checkbox" id="chkAgree" name="chkAgree" checked="checked"><strong class="strongChk">同意</strong><a target="_blank" style="color:yellow;" href="/signupAgreement">《点理财用户协议》</a>
+                        </li>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ac170316 ac170316Div3"></div>
+<div class="ac170316 ac170316Div4">
+    <a class="ac170316A" href=""><span class="ac170316Span2"></span></a>
+</div>
+<!--
+<div class="ac170316 ac170316Div5"></div>
+<div class="ac170316 ac170316Div6">
+    <a href="/productList"><span class="ac170316Span3"></span></a>
+    <a href="/productList"><span class="ac170316Span4"></span></a>
+</div>
+-->
+<div class="ac170316 ac170316Div7"></div>
+<div class="ac170316 ac170316Div8"></div>
+<div class="ac170316 ac170316Div9"></div>
+<div class="ac170316 ac170316Div10">
+    <div class="ac170316Div10Content">
+        <p class="fz28px">活动规则</p>
+        <p>1、活动时间：2017年3月20日0点 — 结束时间以公告通知为准，本活动仅针对活动期间注册的新用户（部分渠道用户不参与）；</p>
+        <p>2、恶意盗刷或者冒用他人身份信息等行为（包括但不限于手机号码、身份证、IP等信息），一经核实，点理财有权立即收回该用户所得收益；</p>
+        <p>3、点理财对本活动拥有最终解释权，如需帮助请联系客服热线 400-820-2450 或加入点理财投资QQ群 497174010 进行活动咨询。</p>
+    </div>
+</div>
+<% include footer2.html%>
+<script type="text/javascript" src="/js/dlc/register.js"></script>
+<script>
+    $(document).ready(function() {
+        new DLC.Activity170316();
+        new DLC.Register('<%=token%>', '<%=utm_source%>');
+        $(".reg-now").bind('click', function() {
+            document.getElementById('fillDiv').scrollIntoView();
+            // DLC.Util.showOverlay();
+            // DLC.Util.showAdjust2('#reg-adjust');
+            // $("#redBagClose").show();
+        });
+        $(".mszq").bind('click', function() {
+            // var link = window.location.protocol + '//' + window.location.host + '/productList';
+            window.location.href = '/productList';
+        });
+        // $('#redBagClose').click(function() {
+        //     $("#redBagClose").hide();
+        //     DLC.Util.hideAdjust('#reg-adjust');
+        //     DLC.Util.hideOverlay();
+        //     $('#reg-adjust').removeAttr("style");
+        // });
+        if (window.XMLHttpRequest) //判断浏览器是否属于SogouExtension
+        {
+            $("#pwdEyes").removeClass("pwdEyes eyePic1");
+        }
+        $.getScript("//bqq.gtimg.com/da/i.js");
+        (function(w, a, m) {
+            m = '__qq_qidian_da';
+            w[m] = a;
+            w[a] = w[a] || function() {
+                (w[a][m] = w[a][m] || []).push(arguments);
+            };
+        })(window, 'qidianDA');
+        qidianDA('create', '2852103519', 'ddb2d5a2810ce7d68a174879e340d710', {
+            mtaId: '500343297'
+        });
+        qidianDA('set', 't1', new Date());
+    });
+</script>
+<!--[if IE]>
+<script>
+  $("#pwdEyes").removeClass("pwdEyes eyePic1");
+</script>
+<![endif]-->

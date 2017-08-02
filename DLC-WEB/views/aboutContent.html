@@ -1,0 +1,15 @@
+<% include header.html%>
+<% include aboutNav.html%>
+<div class="aHgt25 aMar aColor57 aTextCenter aFS24" id="artTitle"><%-noticeTile%></div>
+<div class="aHgt25 aWdh936 aBorderBot aTextRight aFS14 aColorAA" id="showTime"></div>
+<div class="aWdh936 acticleCon" id="content"><%-noticeContent%></div>
+<div class="aHgt25 aWdh936 aColor57 aTextCenter aBorderBot aPrompt">友情提示：理财有风险，投资需谨慎！</div>
+<div class="aReturn">
+<a href="<%=previousUrl%>" style="color:#<%=previousColor%>">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<%=nextUrl%>" style="color:#<%=nextColor%>">下一页</a>
+</div>
+<% include footer.html%>
+<script>
+$(document).ready(function() {
+    window.app.initHeader(3);
+});
+</script>

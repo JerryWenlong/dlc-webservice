@@ -1,0 +1,155 @@
+<% include ../header.html%>
+    <style>
+        #signupForm :-moz-placeholder {
+            color: #ffffff !important;
+        }
+
+        #signupForm ::-moz-placeholder {
+            color: #ffffff !important;
+        }
+
+        #signupForm input:-ms-input-placeholder {
+            color: #ffffff !important;
+        }
+
+        #signupForm input::-webkit-input-placeholder {
+            color: #ffffff !important;
+        }
+    </style>
+    <div class="pubWidth ac170410Div1"></div>
+    <div class="pubWidth ac170410Div2"></div>
+    <div class="pubWidth ac170410Div3">
+        <div class="ac170410Div3Content">
+            <div class="h40px"></div>
+            <div class="ac170410D3CDiv1">投资期限≥90天&nbsp;&nbsp;&nbsp;单笔投资金额≥10万</div>
+            <div class="hlh30px"></div>
+            <div class="ac170410D3CDiv2">
+                <div class="ac170410D3CD2Div1">
+                    <div class="hlh20px"></div>
+                    <div class="ac170410D3CD2D1Div">
+                        <input type="text" autocomplete="off" placeholder="请输入手机号" id='getPhone' maxlength="11" class="ac170410D3CD2D1Input"/>                        
+                    </div>
+                    <div class="hlh20px pl55px fs12px" id="getErr"></div>
+                    <div>
+                        <a class="ac170410D3CD2D1A">马上领取</a>
+                    </div>
+                </div>
+                <div class="ac170410D3CD2Div2 hide">
+                   <div class="h10px"></div>
+                    <form id="signupForm" action="#" onsubmit="return false;">
+                        <div id="signupDiv" style="margin-left:53px;text-align: left;">
+                            <div class="validateError">
+                                <div class="allErrors hide">
+                                    <span class="allErrorsSpan"></span>
+                                </div>
+                            </div>
+                            <li class="phone">
+                                <input type="text" autocomplete="off" placeholder="请输入手机号" id='phone' name='phone' maxlength="11" />
+                            </li>
+                            <div class="h20px"></div>
+                            <li class="password">
+                                <input type="password" autocomplete="off" placeholder="请设置密码(8-16位字母和数字)" class="txtPwd" id='password' name='password' maxlength="16" />
+                            </li>
+                            <div class="h20px"></div>
+                            <li class="picVerify">
+                                <input type="text" autocomplete="off" placeholder="请输入图片验证码" id='picVerifyCode' name='picVerifyCode' />
+                                <img class="signupCodeImg" id="captchaImg" title="点击更换验证码">
+                            </li>
+                            <div class="h20px"></div>
+                            <li class="smsVerify">
+                                <input type="text" autocomplete="off" placeholder="请输入验证码" id='verifyCode' name='verifyCode' maxlength="6" />
+                                <button id='verifyCodeBtn'>获取验证码</button>
+                            </li>
+                            <div class="h20px"></div>
+                            <li class="signup">
+                                <a id='signupBtn2' class="ac170410D3CD2D1A2">马上领取</a>
+                            </li>
+
+                            <li class="checkLi" style="text-align:left;padding-left:24px;">
+                               <div class="h10px"></div>
+                                <input type="checkbox" id="chkAgree" name="chkAgree" checked="checked"><strong class="strongChk">同意</strong><a target="_blank" href="/signupAgreement" style="color:#39a6ff;">《点理财平台用户服务协议》</a>
+                            </li>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="hlh30px"></div>
+            <div class="ac170410D3CDiv3">资金交易过程由太平洋保险提供安全保障</div>
+            <div class="h60px"></div>
+        </div>
+    </div>
+    <div class="pubWidth ac170410Div4">
+        <div class="ac170410Div4Content">
+            <div class="ac170410D4CDiv1"></div>
+            <div class="h40px"></div>
+            用户单笔投资≥40万元，点理财额外<span class="ac170410D4CSpan1">送888元</span>现金，可提现。
+            <br> 投资时，可叠加使用2%加息券！
+        </div>
+    </div>
+    <div class="pubWidth ac170410Div5">
+        <div class="ac170410Div5Content">
+            <p class="fz20px lh60px">活动细则</p>
+            <p>1、所获加息券自领取之日起有效期为15天，过期未使用则自动作废；</p>
+            <p>2、活动期间，用户投资90天（含）以上期限产品成功，888元现金将于项目满标后7个工作日内发至点理财账户，可提现；</p>
+            <p>3、如需帮助请联系客服热线 400-820-2450 （工作日：9:00 - 18:00）。</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            new DLC.Activity170410();
+        });
+    </script>
+    <div class="showOkDiv hide">
+        <div class="hlh30px">
+            <div class="showOkClose"></div>
+        </div>
+        <div class="showOkDDiv1">
+            <p class="showOkDD1P1">恭喜您领取成功</p>
+            <p>1、单笔投资金额≥<span class="ac170410MinInvestAmount"></span>元可使用</p>
+            <p>2、适用于投资期限=<span class="ac170410ProdTerm"></span>天产品</p>
+            <p>3、有效期<span class="ac170410Time"></span></p>            
+        </div>
+        <div class="h10px"></div>
+        <div style="padding-left: 80px;font-size:16px">
+           <a href="/" class="showOkDD1A" style="background-color: #ffba01;color:#fff;">返回首页</a> &nbsp;&nbsp;
+            <a href="/#/userRedPacket" class="showOkDD1A" style="border: 1px solid #ffba01;;color:#ffba01;">查看优惠券</a>
+            </div>
+        <div class="hlh60px"></div>
+        <div class="showOkDDiv2">
+            <div>
+                <span class="showOkDD2Icon">推</span>
+                <a class="newIndexSMC5A2 prodName" href=""></a>                
+            </div>
+            <div class="nh20px">
+                <div class="h20px">
+<!--                <span class="showOkDD2Span2">0%</span>-->
+                </div>
+                <div class="showOkDD2BarBg" style="text-align:left;">
+                    <span class="newIndexYXPBarS" style="background-color:#39a6ff;width:0%;">
+                       <div class="bgIcon"></div>
+                    </span>
+                </div>
+            </div>
+            <div class="h45px"></div>
+            <div class="h60px" style="text-align:left;font-size:16px;">
+                <div class="newIndexSMC1 coloraaa" style="width:150px;">
+                    <div class="h45px"><span class="exp_money2 fs30px colorff7800">0.0</span> %
+                        <div class="isJX"></div>
+                    </div>
+                    <div class="h25px lh25px">预期年化收益</div>
+                </div>
+                <div class="newIndexSMC2 coloraaa" style="width:100px;border-left: 0px;">
+                    <div class="h45px"><span class="exp_day2 fs30px color666">0</span> 天</div>
+                    <div class="h25px lh25px">投资期限</div>
+                </div>
+                <div class="newIndexSMC3 coloraaa" style="width:120px;border-left: 0px;">
+                    <div class="h45px"><span class="exp_count2 fs30px color666">0</span> 万</div>
+                    <div class="h25px lh25px">项目金额</div>
+                </div>
+                <div class="newIndexSMC5" style="width:150px;padding-top:45px;">
+                    <a class="newIndexSMC5A2 newIndexSMC5ACss2 bgcd2" href="" style="color:#fff;">立即投资</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% include ../footer.html%>

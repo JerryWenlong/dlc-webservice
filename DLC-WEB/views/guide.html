@@ -1,0 +1,120 @@
+<% include header.html%>
+
+<div class="guide_logo"></div>
+<div class="guide_back_main">
+    <div class="guide_q1_border">
+        <div class="guide_questionTitle1"><strong class="guide_qs">什么是点理财？</strong></div>
+        <div class="guide_a1">
+            <span class="guide_a1span1">点理财</span><span class="guide_a1span2">是众网金融科技（上海）有限公司旗下打造的一家专业从事智慧城市和市政基础设施建设等PPP项目的互联网金融信息平台，正式上线运营于2016年7月。合作对象包括地方政府以及大型国企。公司与多家央企、国企成立合资公司，共同开发基础设施项目，并基于社会存量资产和自有开发资产，将优质基础设施资产通过资产证券化，形成可销售的金融产品。公司致力于为广大缺乏投资渠道的投资者提供一个安全、诚信、低风险、回报稳定的理财渠道，并为广大投资者带来分享智慧城市、基础设施投资运营的改革红利。</span>
+        </div>
+        <div class="guide_a1_pic">
+
+        </div>
+    </div>
+    <div class="guide_q2_border">
+        <div class="guide_questionTitle2"><strong class="guide_qs">如何在点理财完成投资？</strong></div>
+        <div class="guide_questionTitle21"><span class="guide_qs2">轻松五步，完成投资</span></div>
+        <div class="guide_progress">
+            <div class="gpl gpl1s"><span class="guide_pp_active">注册</span></div>
+            <div class="gpl gpl2h"><span class="guide_pp">实名认证</span></div>
+            <div class="gpl gpl3h"><span class="guide_pp">绑卡</span></div>
+            <div class="gpl gpl4h"><span class="guide_pp">投资</span></div>
+            <div class="gpl gpl5h"><span class="guide_pp">等待收益</span></div>
+
+            <div class="guide_progress_bar guide_progress_bar1" onselectstart="return false"></div>
+            <div class="guide_progress_bar guide_progress_bar2 hide" onselectstart="return false"></div>
+            <div class="guide_progress_bar guide_progress_bar3 hide" onselectstart="return false"></div>
+            <div class="guide_progress_bar guide_progress_bar4 hide" onselectstart="return false"></div>
+            <div class="guide_progress_bar guide_progress_bar5 hide" onselectstart="return false"></div>
+        </div>
+        <div class="guide_progress_pic">
+            <div class="guide_left_arrow_h left_arrow btn"></div>
+            <div class="guide_pic guide_pic1" flag="1"></div>
+            <div class="guide_pic guide_pic2 hide" flag="2"></div>
+            <div class="guide_pic guide_pic3 hide" flag="3"></div>
+            <div class="guide_pic guide_pic4 hide" flag="4"></div>
+            <div class="guide_pic guide_pic5 hide" flag="5"></div>
+            <div class="guide_right_arrow right_arrow btn"></div>
+        </div>
+    </div>
+
+    <div class="guide_signup_div">
+        <button id="submitBtn" class='guide_signup_btn'>立即注册</button>
+    </div>
+    </div>
+<script language="javascript">
+$(function(){
+	function slide(type){
+		this.type=type;
+	}
+
+	slide.prototype.pic=function(){
+		var flag = parseInt($(".guide_pic:visible").attr("flag"));
+		var type=this.type;
+		var newFlag = flag;
+		if (type == 'left') {
+			newFlag--;
+		} else if (type == 'right') {
+			newFlag++;
+		}
+		if (newFlag > 0 && newFlag < 6) {
+					//ico
+		$(".gpl" + flag + "s").addClass("gpl" + flag + "h").removeClass("gpl" + flag + "s");
+		$(".gpl" + newFlag + "h").addClass("gpl" + newFlag + "s").removeClass("gpl" + newFlag + "h");
+					//span
+		$(".guide_pp_active").addClass("guide_pp").removeClass("guide_pp_active");
+		$(".gpl" + newFlag + "s>span").addClass("guide_pp_active").removeClass("guide_pp");
+					//bar
+		$(".guide_progress_bar:visible").addClass("hide");
+		$(".guide_progress_bar:eq(" + (newFlag - 1) + ")").removeClass("hide");
+					//pic
+		$(".guide_pic:visible").addClass("hide");
+		$(".guide_pic:eq(" + (newFlag - 1) + ")").removeClass("hide");
+		}
+		switch (newFlag) {
+			case 1:
+			$(".left_arrow").addClass("guide_left_arrow_h").removeClass("guide_left_arrow");
+			break;
+			case 2:
+			$(".left_arrow").addClass("guide_left_arrow").removeClass("guide_left_arrow_h");
+			case 4:
+			$(".right_arrow").addClass("guide_right_arrow").removeClass("guide_right_arrow_h");
+			break;
+			case 5:
+			$(".right_arrow").addClass("guide_right_arrow_h").removeClass("guide_right_arrow");
+			break;
+			default:
+			break;
+		 }
+	}
+
+	window.scrollTo(0, 0);
+	$(".guide_logo").bind('click', function() {
+	   window.location.href = "/signup";
+	});
+	$(".guide_signup_btn").bind('click', function() {
+	   window.location.href = "/signup";
+	});
+	$(".left_arrow").bind('click', function() {
+		var changeGuidePic=new slide('left');
+		changeGuidePic.pic();
+	});
+	$(".right_arrow").bind('click', function() {
+		var changeGuidePic=new slide('right');
+		changeGuidePic.pic();
+	});
+	$(document).click(function(event) {
+	   event = event || window.event;
+	   event.stopPropagation();
+	   $('.guide_pic').attr('disabled', true);
+	});
+
+});
+</script>
+
+<% include footer.html%>
+<script>
+$(document).ready(function() {
+    window.app.initHeader(3);
+});
+</script>

@@ -1,0 +1,2895 @@
+body, div, input {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.userCenterMain {
+    width: 1200px;
+    height: 895px;
+    margin: 0px auto 0px auto;
+    background-color: #f9f9f9;
+    padding-bottom: 20px;
+}
+
+.userCenterLeftMenu {
+    width: 225px;
+    margin-right: 20px;
+    float: left;
+    display: inline;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    color: #575757;
+    background-color: #ffffff;
+}
+
+.userCenterRightMain {
+    width: 950px;
+    height: 830px;
+    float: left;
+    display: inline;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #575757;
+}
+
+.test {
+    width: 100%;
+}
+
+.userCenterMenuList {
+    width: 100%;
+    height: 96px;
+    line-height: 96px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.userCenterMenuList img {
+    width: 26px;
+    height: 26px;
+    float: right;
+}
+
+.menuChoose {
+    background-color: #398de1;
+    color: #ffffff;
+}
+
+.menuChoose div {
+    color: #ffffff;
+}
+
+.userCenterTop {
+    height: 63px;
+    line-height: 63px;
+    font-size: 14px;
+    color: #8d8d8d;
+    padding-left: 20px;
+}
+
+.userCenterMenuListIn {
+    width: 128px;
+    text-align: left;
+    margin: 0px auto;
+}
+
+.userCenterA {
+    background-image: url("../images/userCenter/a.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterA1 {
+    background-image: url("../images/userCenter/a1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterB {
+    background-image: url("../images/userCenter/b.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterB1 {
+    background-image: url("../images/userCenter/b1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterC {
+    background-image: url("../images/userCenter/c.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterC1 {
+    background-image: url("../images/userCenter/c1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterD {
+    background-image: url("../images/userCenter/d.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterD1 {
+    background-image: url("../images/userCenter/d1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterE {
+    background-image: url("../images/userCenter/e.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterE1 {
+    background-image: url("../images/userCenter/e1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterF {
+    background-image: url("../images/userCenter/f.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterG {
+    background-image: url("../images/userCenter/g.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterF1 {
+    background-image: url("../images/userCenter/f1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterG1 {
+    background-image: url("../images/userCenter/g1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterH {
+    background-image: url("../images/userCenter/i.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterH1 {
+    background-image: url("../images/userCenter/i1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterJ {
+    background-image: url("../images/userCenter/j.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.userCenterJ1 {
+    background-image: url("../images/userCenter/j1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.lastMenu {
+    border-bottom: 0px;
+}
+
+.ucmli {
+    width: 26px;
+    height: 26px;
+    float: right;
+    margin-top: 35px;
+    background-position: 100% 100%;
+}
+
+.userCenterRightMainTop {
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.ucrmtImgSty {
+    width: 36px;
+    height: 36px;
+    margin-top: 6px;
+    display: inline-block;
+    float: left;
+}
+
+.ucrmtSty {
+    float: left;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.ucrmtImg1 {
+    background-image: url("../images/userCenter/1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.ucrmtImg2 {
+    background-image: url("../images/userCenter/2.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.ucrmtImg3 {
+    background-image: url("../images/userCenter/3.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.ucrmtImg4 {
+    background-image: url("../images/userCenter/4.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.ucrmtImg5 {
+    background-image: url("../images/userCenter/5.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.ucrmtImg6 {
+    background-image: url("../images/userCenter/6.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.ucrmtImg7 {
+    background-image: url("../images/userCenter/7.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.ucrmtImg8 {
+    background-image: url("../images/userCenter/8.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.h60px {
+    height: 60px;
+}
+
+.h80px {
+    height: 80px;
+}
+
+.pl35px {
+    padding-left: 35px;
+}
+
+.h46px {
+    height: 46px;
+    line-height: 46px;
+}
+
+.pl150px {
+    padding-left: 150px;
+    height: 46px;
+}
+
+.mr30px {
+    margin-right: 30px;
+}
+
+.floatl {
+    float: left;
+}
+
+.inputUCELPPassword {
+    width: 288px;
+    height: 42px;
+    padding-left: 30px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    line-height: 44px;
+    font-size: 14px;
+}
+
+.hl26px {
+    height: 26px;
+    line-height: 26px;
+}
+
+.pl310px {
+    padding-left: 310px;
+}
+
+.inputUCELPBotton {
+    width: 320px;
+    height: 44px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    line-height: 44px;
+    font-size: 16px;
+    background-color: #398be1;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.inputUCELPBotton:active {
+    background-color: #3F9DFF;
+}
+
+.inputUCELPBotton:active {
+    background-color: #3F9DFF;
+}
+
+.ucelpShowErr {
+    color: #ff0045;
+    font-size: 12px;
+}
+
+.w352px {
+    width: 322px;
+}
+
+.ucelpEye {
+    width: 30px;
+    height: 18px;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.posr {
+    position: relative;
+}
+
+.eye {
+    background-image: url(../images/userCenter/eye.png?__sprite);
+    background-repeat: no-repeat;
+}
+
+.eye1 {
+    background-image: url(../images/userCenter/eye1.png?__sprite);
+    background-repeat: no-repeat;
+}
+
+.pl20px {
+    padding-left: 20px;
+}
+
+.h45px {
+    height: 45px;
+    line-height: 45px;
+}
+
+.w100px {
+    width: 100px;
+}
+
+.aginr {
+    text-align: right;
+}
+
+.inputUCBBCPub {
+    padding-left: 30px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.w350px {
+    width: 350px;
+}
+
+.pl280px {
+    padding-left: 280px;
+}
+
+.w186px {
+    width: 186px;
+}
+
+.mr6px {
+    margin-right: 6px;
+}
+
+.mr26px {
+    margin-right: 26px;
+}
+
+.w116px {
+    width: 116px;
+}
+
+.w136px {
+    width: 136px;
+}
+
+.w209px {
+    width: 209px;
+}
+
+.inputUCBBCCB {
+    text-align: center;
+    border-radius: 3px;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.font {
+    font-size: 13px;
+    color: #8d8d8d;
+}
+
+.hid {
+    display: none;
+}
+
+.ucelpShowTime {
+    color: #398de1;
+    font-size: 14px;
+}
+
+.isSm {
+    display: none;
+}
+
+.isBd {
+    display: none;
+}
+
+.ucUBBCXL {
+    width: 17px;
+    height: 14px;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    cursor: pointer;
+}
+
+.xlpng {
+    background-image: url(../images/userCenter/xl.png?__sprite);
+    background-repeat: no-repeat;
+}
+
+.curp {
+    cursor: pointer;
+}
+
+.ucUBBCBankList {
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    font-size: 16px;
+    position: absolute;
+    top: 46px;
+    background-color: #ffffff;
+    z-index: 1;
+    display: none;
+    height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ucUBBCBankOne {
+    border-bottom: 1px solid #d2d2d2;
+    padding-left: 30px;
+    height: 44px;
+    line-height: 44px;
+    width: 320px;
+    cursor: pointer;
+}
+
+.w320px {
+    width: 320px;
+}
+
+.bgc {
+    background-color: #d2d2d2;
+}
+
+.last {
+    border-bottom: 0px;
+}
+
+.isNoSm {
+    display: none;
+}
+
+.isNoBd {
+    display: none;
+}
+
+.my_orders {
+    font-size: 14px;
+}
+
+.my_orders .ol_action {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    height: 45px;
+    padding-top: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.my_orders .li_action {
+    display: inline-block;
+    width: 90px;
+    height: 22px;
+    text-align: center;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.my_orders .actionH {
+    background-color: #398de1;
+    color: #FFFFFF;
+}
+
+.my_orders .actionN {
+    background-color: #FFFFFF;
+    color: #575757;
+}
+
+.my_orders .ol_list {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.pc_pl_list {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.my_orders .li_item {
+    height: 55px;
+    text-align: left;
+    display: inline-block;
+    line-height: 55px;
+    vertical-align: middle;
+    color: #575757 !important;
+    width: 920px;
+}
+
+.pc_li_item {
+    height: 55px;
+    text-align: left;
+    display: inline-block;
+    line-height: 55px;
+    vertical-align: middle;
+    color: #575757 !important;
+}
+
+.my_orders .li_item2 {
+    height: 45px;
+    text-align: left;
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: middle;
+    color: #575757 !important;
+    width: 920px;
+}
+
+.pc_limit_item {
+    height: 45px;
+    text-align: left;
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: middle;
+    color: #575757 !important;
+    width: 920px;
+}
+
+.my_orders .item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.urItem {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.my_orders .list_title {
+    height: 60px;
+    border-top: 1px solid;
+    border-color: #eeeeee;
+    width: 950px;
+}
+
+.my_orders .list_title1 {
+    border-top: 1px solid;
+    border-color: #eeeeee;
+    width: 950px;
+}
+
+.my_orders .item1 {
+    width: 200px;
+}
+
+.my_orders .item2 {
+    width: 141px;
+}
+
+.my_orders .item110 {
+    width: 110px;
+}
+
+.my_orders .item3 {
+    width: 90px;
+}
+
+.my_orders .item4 {
+    width: 160px;
+}
+
+.my_orders .itemButton {
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.lineHeight1 {
+    line-height: 1;
+}
+
+.my_orders .itemButtonC1 {
+    background-color: #d2d2d2;
+}
+
+.my_orders .itemButtonC2 {
+    background-color: #398de1;
+}
+
+.my_orders .itemButtonC3 {
+    background-color: #e84f0d;
+}
+
+.my_orders .link {
+    color: #398de1;
+}
+
+.H570 {
+    height: 620px;
+}
+
+.H700 {
+    height: 700px;
+}
+
+.divPage {
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    z-index: 1000;
+}
+
+.itemPage {
+    padding: 2px 10px;
+    color: #575757;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #eeeeee;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.itemPageH {
+    padding: 2px 10px;
+    color: #ffffff;
+    background-color: #0181ff;
+    border: 1px solid;
+    border-color: #eeeeee;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.my_orders .Arrow {
+    width: 10px;
+    height: 19px;
+    margin-left: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.my_orders .ArrowD {
+    background-image: url("../images/userCenter/A3.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.my_orders .ArrowU {
+    background-image: url("../images/userCenter/A33.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.my_orders .item204 {
+    width: 204px;
+}
+
+.my_orders .item274 {
+    width: 274px;
+}
+
+.item220 {
+    width: 220px;
+}
+
+.item200 {
+    width: 200px;
+}
+
+.item120 {
+    width: 120px;
+}
+
+.my_orders .item254 {
+    width: 254px;
+}
+
+.my_orders .item92 {
+    width: 92px;
+}
+
+.ol_list_marL4 {
+    margin-left: 0px !important;
+}
+
+.ol_list_marL-10 {
+    margin-left: -10px !important;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.ml180 {
+    margin-left: 580px !important;
+}
+
+.myAccount {
+    font-size: 14px;
+}
+
+.myAccount .pic {
+    width: 142px;
+    height: 142px;
+    margin-left: 30px;
+    display: inline-block;
+    float: left;
+}
+
+.myAccount .picS {
+    width: 90px;
+    height: 90px;
+    margin-left: 60px;
+}
+
+.myAccount .acount_hint {
+    font-size: 12px;
+    color: #8d8d8d;
+}
+
+.myAccount .data {
+    display: inline-block;
+}
+
+.myAccount .cash {
+    display: inline-block;
+    float: right;
+    margin-right: 60px;
+}
+
+.myAccount .data_item {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    width: 190px;
+    height: 71px;
+    border-color: #dddddd;
+    display: inline-block;
+    position: relative;
+}
+
+.myAccount .notes_help {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/userCenter/notes.png?__sprite");
+    background-repeat: no-repeat;
+    left: 100px;
+    top: 35px;
+}
+
+.myAccount .notes {
+    position: absolute;
+    left: 120px;
+    top: 0px;
+    width: 290px;
+    background-color: #ffffff;
+    height: 25px;
+    border: 1px solid;
+    padding-top: 5px;
+    padding-left: 10px;
+    z-index: 2;
+    border-color: #ff6c00;
+}
+
+.myAccount .data_nub {
+    font-size: 20px;
+    color: #ff0054;
+    margin-left: 20px;
+}
+
+.myAccount .data_title {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #575757;
+}
+
+.myAccount .data {
+    margin-left: 44px;
+}
+
+.myAccount .deposit {
+    width: 170px;
+    height: 46px;
+    background-color: #398de1;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: #e5e5e5;
+}
+
+.myAccount .withdraw {
+    width: 170px;
+    height: 46px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: #398de1;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: #e5e5e5;
+}
+
+.myAccount .card_info {
+    display: inline-block;
+    width: 270px;
+    height: 214px;
+    border: 1px solid;
+    border-color: #e5e5e5;
+    float: left;
+    margin-left: 30px;
+}
+
+.myAccount .card_info_title {
+    height: 50px;
+    border-bottom: 1px solid;
+    border-color: #e5e5e5;
+    padding-left: 15px;
+    padding-right: 22px;
+    line-height: 50px;
+}
+
+.verticalM {
+    vertical-align: middle;
+}
+
+.myAccount .card_info_icon {
+    margin-left: 22px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.myAccount .card_info_status {
+    float: right;
+}
+
+.myAccount .title_item {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.myAccount .card_info_iconH {
+    background-image: url("../images/userCenter/1.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .card_info_iconN {
+    background-image: url("../images/userCenter/11.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .var_info_iconH {
+    background-image: url("../images/userCenter/2.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .var_info_iconN {
+    background-image: url("../images/userCenter/22.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .bindphone_info_iconH {
+    background-image: url("../images/userCenter/lockH.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .bindphone_info_iconN {
+    background-image: url("../images/userCenter/lockN.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .login_info_iconH {
+    background-image: url("../images/userCenter/4.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .trade_info_iconH {
+    background-image: url("../images/userCenter/5.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .trade_info_iconN {
+    background-image: url("../images/userCenter/55.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .account_info_iconH {
+    background-image: url("../images/userCenter/6.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .account_info_iconN {
+    background-image: url("../images/userCenter/66.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.myAccount .trade_reset_icon {
+    background-image: url("../images/userCenter/reset.png?__sprite") !important;
+    background-repeat: no-repeat;
+    left: 180px !important;
+    top: 78px !important;
+}
+
+.myAccount .card_info_content1 {
+    margin-top: 34px;
+    margin-left: 15px;
+}
+
+.myAccount .card_info_content {
+    position: relative;
+}
+
+.myAccount .card_info_content_edit {
+    margin-right: 22px;
+    margin-top: 15px;
+    float: right;
+    width: 36px;
+    height: 36px;
+    background-image: url("../images/userCenter/7.png?__sprite");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70px;
+    left: 220px
+}
+
+.myAccount .card_info_content_editNo {
+    background-image: url("../images/userCenter/77.png?__sprite") !important;
+}
+
+.myAccount .mailedit {
+    margin-top: 15px;
+    margin-left: 180px;
+    background-image: url("../images/userCenter/8.png?__sprite") !important;
+}
+
+.myAccount .mailno {
+    margin-top: 15px;
+    margin-left: 180px;
+    background-image: url("../images/userCenter/8.png?__sprite") !important;
+}
+
+.myAccount .infoAccount_line {
+    height: 142px;
+}
+
+.myAccount .data_line {
+    height: 71px;
+}
+
+.clean {
+    clear: both;
+}
+
+.myAccount .account_info {
+    margin-top: 54px;
+}
+
+.myAccount .account_info_line2 {
+    margin-top: 30px;
+}
+
+.myAccount .account_info_line1 {
+    height: 214px;
+}
+
+.myAccount .title {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid;
+    border-color: #e5e5e5;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.withdraw .title_bar {
+    padding-right: 130px;
+    line-height: 50px;
+    border-bottom: 1px solid;
+    border-color: #d2d2d2;
+}
+
+.withdraw .title_bar_action {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.withdraw .icon {
+    width: 34px;
+    height: 34px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.withdraw .iconwait {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 80px;
+    background-image: url('../images/dlc/loading.gif');
+}
+
+.withdraw .withdrawicon {
+    background-image: url("../images/userCenter/withdraw.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.withdraw .depositicon {
+    background-image: url("../images/userCenter/deposit.png?__sprite");
+    background-repeat: no-repeat;
+}
+
+.withdraw .title_bar_account {
+    float: right;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.withdraw .title_bar_nub {
+    float: right;
+    font-size: 18px;
+    color: #ff0054;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.withdraw .withdraw_status {
+    margin-left: 120px;
+    /* margin-right: 120px; */
+    width: 700px;
+    height: 140px;
+    border: 1px solid;
+    margin-top: 50px;
+    border: 1px dotted;
+    font-size: 18px;
+}
+
+.withdraw .bank_icon {
+    width: 120px;
+    height: 120px;
+    /* vertical-align: middle; */
+    margin-top: 5px;
+    margin-left: 60px;
+    float: left;
+}
+
+.withdraw .bank_info {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.withdraw .bankNo {
+    margin-top: 30px;
+    color: #ff0054;
+}
+
+.withdraw .limit {
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.withdraw .limitNo {
+    color: #ff0054;
+}
+
+.withdraw .actionBar {
+    font-size: 14px;
+    height: 46px;
+}
+
+.withdraw .mT20 {
+    margin-top: 20px !important;
+}
+
+.withdraw .mT26 {
+    margin-top: 26px !important;
+}
+
+.withdraw .mT10 {
+    margin-top: 10px !important;
+}
+
+.withdraw .bar_m {
+    margin-left: 200px;
+}
+
+.withdraw .inputN {
+    margin-left: 25px;
+    height: 42px;
+    border: 1px solid;
+    width: 290px;
+    padding-left: 26px;
+    border-radius: 3px;
+    border-color: #d2d2d2;
+    line-height: 42px;
+}
+
+.withdraw .action {
+    width: 320px;
+    height: 44px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #398be1;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.action2 {
+    width: 320px;
+    height: 44px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #398be1;
+    border: 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 44px;
+    text-align: center;
+}
+
+.action2:visited {
+    color: #ffffff;
+}
+
+.action2:link {
+    color: #ffffff;
+}
+
+.withdraw .mT60 {
+    margin-top: 36px !important;
+}
+
+.withdraw .mT20 {
+    margin-top: 20px !important;
+}
+
+.withdraw .mT40 {
+    margin-top: 40px !important;
+}
+
+.withdraw .mL280 {
+    margin-left: 285px !important;
+}
+
+.withdraw .notes {
+    font-size: 12px;
+    margin-left: 285px;
+}
+
+.withdraw .notesid {
+    font-size: 12px;
+}
+
+.withdraw .forget {
+    margin-left: 70px;
+    font-size: 12px;
+    color: #398de1;
+}
+
+.userCenterBg {
+    background-color: #f0f0f0;
+    min-height: 915px;
+}
+
+.red {
+    color: #ff0000 !important;
+}
+
+.red2 {
+    color: #ff0045;
+}
+
+.grean {
+    color: #398de1 !important;
+}
+
+.div_base {
+    position: relative;
+}
+
+.div_base1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.div_float1 {
+    position: absolute;
+    z-index: 10000;
+    width: 300px;
+    height: 460px;
+    border: 1px solid;
+    border-color: #e5e5e5;
+    background-color: #ffffff;
+    right: 100px;
+    top: 120px;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.with200 {
+    width: 160px;
+    height: 35px;
+}
+
+.with100 {
+    width: 80px;
+    height: 35px;
+}
+
+.my_orders .list_title_detail {
+    /*    height: 25px;
+    padding-top:15px;*/
+    text-align: center;
+}
+
+.my_orders .list_title_detail_item {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid;
+    border-color: #eee;
+}
+
+.my_orders .div_float1_title {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid;
+    border-color: #eee;
+    height: 35px;
+}
+
+.div_float1_display {
+    display: block;
+}
+
+.div_float1_none {
+    display: none;
+}
+
+.bgcf9 {
+    background-color: #f9f9f9;
+}
+
+.hl20px {
+    height: 20px;
+}
+
+.pt5px {
+    padding-top: 5px;
+}
+
+.ucETop {
+    height: 126px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.ucETopCell {
+    width: 316px;
+}
+
+.ucETopMain {
+    height: 60px;
+    text-align: center;
+}
+
+.ucETopMainCell {
+    width: 316px;
+    float: left;
+    height: 60px;
+}
+
+.ucemcCenter {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+.ucEToph25px {
+    height: 25px;
+    font-size: 12px;
+    color: #8d8d8d;
+    padding-left: 30px;
+}
+
+.ucetmc1 {
+    height: 40px;
+    font-size: 24px;
+    color: #ff0045;
+}
+
+.ucetmcSpan {
+    font-size: 14px;
+}
+
+.ucetmc2 {
+    height: 20px;
+    font-size: 14px;
+    color: #575757;
+}
+
+.ucETitle {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #fafafa;
+    font-size: 18px;
+    color: #575757;
+    padding-left: 30px;
+}
+
+.ucEMenu {
+    height: 50px;
+    line-height: 50px;
+    /*border-bottom: 1px solid #eeeeee;*/
+    background: #efefef;
+    font-size: 14px;
+}
+
+.ucEMenu2 {
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ucEMenu21 {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    color: #575757;
+    padding-left: 10px;
+}
+
+.ucEMenuLi1 {
+    width: 60px;
+    text-align: left;
+    float: left;
+}
+
+.ucEMenuLi11 {
+    width: 80px;
+    text-align: left;
+    float: left;
+}
+
+.ucEMenuLi2 {
+    float: left;
+    width: 92px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ucemlDivOn {
+    background-color: #fff;
+}
+
+.ucemlDivOn1 {
+    width: 120px;
+    height: 43px;
+    line-height: 43px;
+    background-color: #398de1;
+    border-radius: 3px 3px 0px 0px;
+    color: #ffffff;
+}
+
+.ucecOne {
+    height: 173px;
+    width: 918px;
+    margin-left: 16px;
+    border-bottom: 1px dashed #d2d2d2;
+}
+
+.ucecOneLeft {
+    height: 137px;
+    margin: 18px 30px 17px 14px;
+    width: 358px;
+    float: left;
+    padding-left: 60px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.ucecOneRight {
+    height: 116px;
+    margin: 28px 0px 28px 0px;
+    width: 453px;
+    float: left;
+}
+
+.uceh20px {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #575757;
+}
+
+.uceor1 {
+    width: 180px;
+    float: left;
+    height: 20px;
+}
+
+.uceor2 {
+    width: 260px;
+    float: left;
+    height: 20px;
+}
+
+.ucecolTop {
+    height: 20px;
+    line-height: 20px;
+    width: 400px;
+    margin: 3px 9px 15px 9px;
+    font-size: 12px;
+}
+
+.ucecolTopSpan {
+    float: right;
+}
+
+.ucecolMid {
+    height: 45px;
+    margin-top: -15px;
+}
+
+.ucecolBottom {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.colfff {
+    color: #ffffff;
+}
+
+.col8d2 {
+    color: #8d8d8d;
+}
+
+.biOn {
+    background-image: url(../images/userCenter/uceOn.png);
+    cursor: pointer;
+}
+
+.expOn {
+    background-image: url(../images/userCenter/expOn.png);
+    cursor: pointer;
+}
+
+.expSelected {
+    background-image: url(../images/userCenter/expSelected.png);
+    cursor: pointer;
+}
+
+.expUsed {
+    background-image: url(../images/userCenter/expUsed.png);
+    cursor: pointer;
+}
+
+.expLost {
+    background-image: url(../images/userCenter/expLost.png);
+    cursor: pointer;
+}
+
+.expOff {
+    background-image: url(../images/userCenter/expOff.png);
+    cursor: pointer;
+}
+
+.biOff {
+    background-image: url(../images/userCenter/uceOff.png);
+}
+
+.ucecolmContent {
+    padding-right: 75px;
+    background-image: url(../images/userCenter/uceIcon.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 50px;
+    line-height: 50px;
+    width: auto;
+    font-size: 56px;
+    margin: auto;
+}
+
+.ucecolm1 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    float: left;
+    width: 20px;
+    margin-top: -10px;
+}
+
+.col69ffec {
+    color: #69ffec;
+}
+
+.uceOffUse {
+    width: 150px;
+    height: 69px;
+    position: relative;
+    background-image: url(../images/userCenter/uceUse.png);
+    top: -50px;
+    left: 260px;
+}
+
+.uceOffLost {
+    width: 150px;
+    height: 69px;
+    position: relative;
+    background-image: url(../images/userCenter/uceLost.png);
+    top: -50px;
+    left: 260px;
+}
+
+.w170px {
+    width: 170px;
+}
+
+.w140px {
+    width: 140px;
+}
+
+.w200px {
+    width: 200px;
+}
+
+.withdraw .error {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #ff0045;
+}
+
+.pT20 {
+    padding-top: 20px !important;
+}
+
+.bBN {
+    border-bottom: none!important;
+}
+
+.bRN {
+    border-right: none!important;
+}
+
+.mL-20 {
+    margin-left: -20px !important;
+}
+
+.mL30 {
+    margin-left: 30px !important;
+}
+
+.mL40 {
+    margin-left: 40px !important;
+}
+
+.backgroundColorFa {
+    background-color: #fafafa !important;
+}
+
+.backgroundColorFf {
+    background-color: #ffffff !important;
+}
+
+.backgroundColorFc {
+    background-color: #fcfcfc !important;
+}
+
+.my_orders .notes_help {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/userCenter/notes.png?__sprite");
+    background-repeat: no-repeat;
+    left: 120px;
+    top: 65px;
+}
+
+.my_orders .notes {
+    position: absolute;
+    left: 140px;
+    top: 50px;
+    width: 290px;
+    background-color: #fff;
+    height: 25px;
+    border: 1px solid;
+    padding-top: 5px;
+    padding-left: 10px;
+    z-index: 2;
+    border-color: #ff6c00;
+    background-color: #ffffff;
+}
+
+.my_orders .diver {
+    width: 1px;
+    height: 60px;
+    background-color: #dddddd;
+}
+
+.my_orders .item_account {
+    width: 310px;
+    height: 106px;
+    position: relative;
+}
+
+.my_orders .nub {
+    margin-left: 54px;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #ff0045;
+}
+
+.my_orders .nubB {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ff0045;
+}
+
+.account_div {
+    border-bottom: 1px solid;
+    border-color: #dddddd;
+}
+
+.account_div .title {
+    margin-left: 54px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #575757;
+}
+
+.withdraw .fee {
+    margin-left: 190px;
+    font-size: 12px;
+    color: #398de1;
+}
+
+.promptColor {
+    color: #575757;
+}
+
+.ubbcRule {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    color: #575757;
+    width: 320px;
+    text-align: right;
+}
+
+.uccbRuleShow {
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #398be1;
+    float: right;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-right: 85px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.ucEPRuleShow {
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #398be1;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    left: 40px;
+    top: -30px;
+}
+
+.urRuleShow {
+    display: none;
+    position: relative;
+    top: -400px;
+    left: 180px;
+    width: 550px;
+}
+
+.expRuleShow {
+    display: none;
+    position: relative;
+    top: -400px;
+    left: 180px;
+    width: 550px;
+}
+
+.ucEPaging {
+    height: 35px;
+}
+
+.ucEPagingOne {
+    border: 1px solid #398be1;
+    font-size: 14px;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.ucEOn {
+    color: #575757;
+}
+
+.ucEOff {
+    color: #ffffff;
+    background-color: #d2d2d2;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.position_relative .position_absolute {
+    position: absolute!important;
+    z-index: 2;
+}
+
+.position_relative .position_wait {
+    left: 120px;
+    top: 200px;
+    display: none;
+}
+
+.position_relative .notes_help {
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/userCenter/notes_rules.png?__sprite");
+    background-repeat: no-repeat;
+    margin-left: 52px;
+}
+
+.position_relative .rule_detail {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    border: 1px solid;
+    border-color: #dddddd;
+    left: 200px;
+    top: -340px;
+    background-color: #ffffff;
+    z-index: 1001;
+}
+
+.position_relative .rule_title {
+    font-size: 16px;
+    text-align: center;
+    height: 34px;
+    padding-top: 10px;
+    color: #575757;
+    background-color: #eeeeee;
+    vertical-align: middle;
+}
+
+.position_relative .rule_span {
+    display: block;
+    font-size: 14px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.w300 {
+    width: 270px !important;
+}
+
+.w288px {
+    width: 288px;
+}
+
+.w156px {
+    width: 156px;
+}
+
+.w146px {
+    width: 146px;
+}
+
+.w179px {
+    width: 179px;
+}
+
+.urId {
+    width: 25px;
+    float: left;
+}
+
+.erId {
+    width: 25px;
+    float: left;
+}
+
+.urText {
+    width: 495px;
+    float: left;
+}
+
+.erText {
+    width: 685px;
+    float: left;
+}
+
+.erTextLast {
+    width: 685px;
+    float: left;
+    color: #444;
+}
+
+.myAccount .default {
+    background: url(/images/userCenter/default.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myAccount .defaultIE8 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/userCenter/default.png',sizingMethod='scale')";
+    background: none;
+}
+
+.ol_list .notes_help {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/userCenter/notes.png?__sprite");
+    background-repeat: no-repeat;
+    left: 40px;
+    top: 5px;
+}
+
+.ol_list .notes {
+    position: absolute;
+    line-height: 25px;
+    width: 200px;
+    background-color: #fff;
+    height: 25px;
+    border: 1px solid;
+    z-index: 2;
+    border-color: #ff6c00;
+    background-color: #fff;
+    padding: 0px;
+    padding-left: 10px;
+    left: -180px;
+    top: -20px;
+}
+
+.text_alignL {
+    text-align: left !important;
+}
+
+.width_inherit {
+    width: auto;
+}
+
+.ucecolmNoContent {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 36px;
+    color: #a9a9a9;
+}
+
+.ucEToph40px {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #8d8d8d;
+    padding-left: 30px;
+}
+
+.pl30px {
+    padding-left: 30px;
+}
+
+.leftAp0 {
+    float: left;
+    text-align: left;
+}
+
+.paddingL30 {
+    padding-left: 30px !important;
+}
+
+.paddingL0 {
+    padding-left: 0px !important;
+}
+
+.ucETopGetIncome {
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    background: #398be1;
+    border: 0;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 14px;
+    margin-top: -45px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.ucEPCTop {
+    height: 150px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.blue {
+    color: blue;
+}
+
+.h18px {
+    height: 18px;
+}
+
+.h10px {
+    height: 10px;
+}
+
+.h5px {
+    height: 5px;
+}
+
+.useContent {
+    font-size: 50px;
+    color: #ffb108;
+    width: 200px;
+    display: inline-block;
+}
+
+.useContent2 {
+    font-size: 50px;
+    color: #ffffff;
+    width: 200px;
+    display: inline-block;
+    margin-left: -20px;
+}
+
+.fs24px {
+    font-size: 24px;
+}
+
+.useContentRight {
+    width: 115px;
+}
+
+.useContenetRight {
+    display: inline-block;
+    width: 150px;
+}
+
+.ml5px {
+    margin-left: 5px;
+}
+
+.h20px2 {
+    height: 20px;
+}
+
+.ucEContent {
+    margin-bottom: 12px;
+}
+
+.active {
+    background-color: #eeeeee;
+}
+
+.mt10px {
+    margin-top: 10px;
+}
+
+.ucEPCContent {
+    height: 118px;
+    margin: 32px 0 32px 46px;
+    background: url(../images/userCenter/pointCoin.png) no-repeat;
+}
+
+.ucRPContent {
+    height: 118px;
+    margin: 32px 0 32px 46px;
+    background: url(../images/userCenter/rp1.png) no-repeat;
+}
+
+.ucEPCC1 {
+    padding-left: 110px;
+    font-size: 18px;
+    color: #575757;
+}
+
+.ucEPCC2 {
+    padding-left: 110px;
+    font-size: 18px;
+    color: #ff0045;
+}
+
+.ucEPCC21 {
+    font-size: 14px;
+}
+
+.ucEPCC3 {
+    padding-left: 5px;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+
+.pcContent {
+    line-height: 30px;
+    height: 500px;
+}
+
+.pcrWH {
+    height: 625px;
+    width: 774px;
+}
+
+.pcrRPWH {
+    height: 600px;
+    width: 774px;
+}
+
+.expRPWH {
+    height: 400px;
+    width: 774px;
+}
+
+.exprWH {
+    height: 468px;
+    width: 774px;
+}
+
+.referBg {
+    height: 1372px;
+}
+
+.referHead {
+    height: 75px;
+    line-height: 75px;
+    font-size: 18px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.referH1 {
+    height: 73px;
+    width: 260px;
+    cursor: pointer;
+    float: left;
+}
+
+.referHead2 {
+    height: 81px;
+    width: 100%;
+}
+
+.referH21 {
+    height: 62px;
+    line-height: 55px;
+    width: 335px;
+    background-image: url(../images/userCenter/referBar.png);
+    margin: 32px auto;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.referContent {
+    height: 386px;
+    width: 946px;
+    border: 2px dashed #ff6a25;
+    margin-bottom: 48px;
+}
+
+.referCOne {
+    width: 314px;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.rcBorder {
+    border-left: 2px dashed #ff6a25;
+    border-right: 2px dashed #ff6a25;
+}
+
+.referC1Top {
+    width: 102px;
+    height: 50px;
+    margin: 27px auto 46px auto;
+    padding-top: 52px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bgi_rc1 {
+    background-image: url(../images/userCenter/rc1.png);
+}
+
+.bgi_rc2 {
+    background-image: url(../images/userCenter/rc2.png);
+}
+
+.bgi_rc3 {
+    background-image: url(../images/userCenter/rc3.png);
+}
+
+.lh36px {
+    line-height: 36px;
+}
+
+.lh18px {
+    line-height: 18px;
+}
+
+.referC1Center {
+    height: 140px;
+}
+
+.referC1Img {
+    width: 180px;
+    height: 180px;
+    border: 0px;
+    padding: 0px;
+    margin: -20px auto;
+}
+
+.referC1C1 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #5f5f5f;
+}
+
+.referC1C2 {
+    height: 80px;
+}
+
+.referC1C3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #008dec;
+}
+
+.referC1Bttom {
+    margin-top: 42px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.referC1CIL {
+    height: 46px;
+    line-height: 46px;
+    width: 262px;
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    padding-left: 10px;
+}
+
+.referC1CButton {
+    height: 46px;
+    width: 272px;
+    margin: 45px auto;
+    border-radius: 3px;
+    background-color: #008dec;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nbcButton {
+    height: 46px;
+    width: 414px;
+    margin: 80px auto;
+    border-radius: 3px;
+    background-color: #008dec;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.referContent2 {
+    width: 864px;
+    border-radius: 3px;
+    height: 158px;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    margin: auto;
+    padding: 46px 0px 46px 50px;
+}
+
+.referContent3 {
+    width: 844px;
+    border-radius: 3px;
+    height: 200px;
+    line-height: 40px;
+    border: 2px dashed #008dec;
+    margin: 30px auto;
+    padding: 20px 0 20px 64px;
+    font-size: 14px;
+    color: #717171;
+}
+
+.rc3Span {
+    display: inline-block;
+    width: 30px;
+}
+
+.clickShow {
+    position: relative;
+    width: 262px;
+    height: 30px;
+    line-height: 30px;
+    margin: 45px auto;
+    color: #ff0000;
+    padding-left: 10px;
+    text-align: left;
+    top: -170px;
+    display: none;
+}
+
+.rc2Top {
+    height: 82px;
+    line-height: 82px;
+    width: 100%;
+}
+
+.rc2Bottom {
+    height: 40px;
+    line-height: 40px;
+    color: #008dec;
+    font-size: 14px;
+    text-align: center;
+}
+
+.rc2Top1 {
+    width: 140px;
+    height: 82px;
+    background: url(../images/userCenter/rc21.png) no-repeat right;
+    float: left;
+}
+
+.rc2Top2 {
+    width: 82px;
+    height: 82px;
+    background: url(../images/userCenter/rc22.png) no-repeat;
+    float: left;
+}
+
+.rc2Top3 {
+    width: 82px;
+    height: 82px;
+    background: url(../images/userCenter/rc23.png) no-repeat;
+    float: left;
+}
+
+.rc2Topc {
+    width: 178px;
+    height: 82px;
+    line-height: 82px;
+    float: left;
+    font-size: 50px;
+    color: #008dec;
+    padding: 0px 22px 0px 25px;
+}
+
+.rc2b1 {
+    width: 200px;
+    float: left;
+}
+
+.rc2b2 {
+    width: 420px;
+    float: left;
+}
+
+.noBindCard {
+    height: 330px;
+    text-align: center;
+}
+
+.nbcText {
+    font-size: 24px;
+    color: #575757;
+    padding-top: 80px;
+}
+
+.rhb {
+    border-bottom: 4px solid #008dec;
+    color: #008dec;
+}
+
+.h120px {
+    height: 120px;
+}
+
+.rhdCountDiv1 {
+    margin-top: 30px;
+    height: 40px;
+    font-size: 20px;
+    color: #575757;
+}
+
+.rhdCountDiv2 {
+    height: 65px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+
+.rhdcd {
+    width: 274px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    float: left;
+}
+
+.rhdcd2 {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    float: left;
+}
+
+.pl120px {
+    padding-left: 120px;
+}
+
+.h100px {
+    height: 100px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.redio1 {
+    margin-left: 20px;
+}
+
+.show1 {
+    display: block;
+}
+
+.show2 {
+    display: none;
+}
+
+.reBankListDiv {
+    margin: 30px 10px 0px 10px;
+    width: 930px;
+}
+
+.reBankList {
+    height: 323px;
+    width: 924px;
+    border: 3px solid #398de1;
+    border-radius: 3px;
+    background: url(../images/userCenter/bankList.png) 18px 50px no-repeat;
+}
+
+.withdraw_status2 {
+    width: 870px;
+    border: 1px solid #eeeeee;
+    margin: 30px auto;
+    padding: 10px 10px 10px 20px;
+}
+
+.wsone {
+    width: 215px;
+    display: inline-block;
+    height: 60px;
+    cursor: pointer;
+}
+
+.wsoneRadio {
+    width: 15px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.wsoneSpan {
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.wsoneABC {
+    background-image: url(../images/banks/ABC.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneBCCB {
+    background-image: url(../images/banks/BCCB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneBCOM {
+    background-image: url(../images/banks/BCOM.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneBOC {
+    background-image: url(../images/banks/BOC.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneCCB {
+    background-image: url(../images/banks/CCB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneCEB {
+    background-image: url(../images/banks/CEB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneCIB {
+    background-image: url(../images/banks/CIB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneCITIC {
+    background-image: url(../images/banks/CITIC.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneCMBC {
+    background-image: url(../images/banks/CMBC.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneGDB {
+    background-image: url(../images/banks/GDB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneICBC {
+    background-image: url(../images/banks/ICBC.png);
+    background-repeat: no-repeat;
+}
+
+.wsonePAB {
+    background-image: url(../images/banks/PAB.png);
+    background-repeat: no-repeat;
+}
+
+.wsonePSBC {
+    background-image: url(../images/banks/PSBC.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneSHB {
+    background-image: url(../images/banks/SHB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneSPDB {
+    background-image: url(../images/banks/SPDB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneHXB {
+    background-image: url(../images/banks/HXB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneCMB {
+    background-image: url(../images/banks/CMB.png);
+    background-repeat: no-repeat;
+}
+
+.wsoneBE {
+    border: 1px solid #eeeeee;
+}
+
+.wsoneBB {
+    border: 2px solid #398be1;
+    width: 178px;
+    height: 38px;
+}
+
+.rpOn {
+    background-image: url(../images/userCenter/rpOn.png);
+    cursor: pointer;
+}
+
+.rpOff {
+    background-image: url(../images/userCenter/rpOff.png);
+    cursor: pointer;
+}
+
+.rpSelected {
+    background-image: url(../images/userCenter/rpSelected.png);
+    cursor: pointer;
+}
+
+.rpUsed {
+    background-image: url(../images/userCenter/rpUsed.png);
+    cursor: pointer;
+}
+
+.rpLost {
+    background-image: url(../images/userCenter/rpLost.png);
+    cursor: pointer;
+}
+
+.w60px {
+    width: 60px;
+}
+
+.ml20px {
+    margin-left: 20px;
+}
+
+.lhei46px {
+    line-height: 46px;
+}
+
+.useC2Y {
+    font-size: 24px;
+    display: inline-block;
+    width: 20px;
+    position: relative;
+    top: -25px;
+}
+
+.ucEPCC4 {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 110px;
+}
+
+.ucEPCC4Span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.ucEPCCGG {
+    width: 130px;
+    height: 57px;
+    background-image: url(../images/bannerPages/activity161121/gg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
+    margin-right: 80px;
+    top: -80px;
+    cursor: pointer;
+}
+
+.myAccountGG {
+    width: 130px;
+    height: 57px;
+    background-image: url(../images/bannerPages/activity161121/gg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
+    margin-right: 80px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.ucecNone {
+    height: 120px;
+    width: 918px;
+}
+
+.ucecNone .no-coupon-icon {
+    width: 105px;
+    height: 72px;
+    background-size: cover;
+    background-image: url(../images/pay/no-coupon.png);
+    background-position: center;
+    margin: 60px 0px 15px 414px;
+}
+
+.ucecNone .no-coupon-desc {
+    font-size: 16px;
+    color: #999;
+    margin-left: 428px;
+}
+
+.coupon-tip {
+    margin: 48px 0px 10px 30px;
+    margin-bottom: 15px;
+    color: #4DAEFC;
+    font-size: 14px;
+}
+
+.coupon-type-tip {
+    margin-top: 8px;
+    margin-left: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.redPack .coupon-detail {
+    margin-top: 30px;
+    margin: 30px 0px 0px 18px;
+    display: inline-block;
+    width: 293px;
+    height: 128px;
+}
+
+.redPack .redPkt-act {
+    width: 293px;
+    height: 128px;
+}
+
+.redPack .noUse.mj .redPkt-act {
+    background: url(../images/pay/mj_enabled.png) no-repeat;
+    background-size: 100%;
+}
+
+.redPack .noUse.fx .redPkt-act {
+    background: url(../images/pay/fx_enabled.png) no-repeat;
+    background-size: 100%;
+}
+
+.redPack .noUse.jx .redPkt-act {
+    background: url(../images/pay/jx_enabled.png) no-repeat;
+    background-size: 100%;
+}
+.redPack .use.mj .redPkt-act {
+    background: url(../images/pay/mj_disabled.png) no-repeat;
+    background-size: 100%;
+}
+
+.redPack .use.fx .redPkt-act {
+    background: url(../images/pay/fx_disabled.png) no-repeat;
+    background-size: 100%;
+}
+
+.redPack .use.jx .redPkt-act {
+    background: url(../images/pay/jx_disabled.png) no-repeat;
+    background-size: 100%;
+}
+.redPack .exp.mj .redPkt-act {
+    background: url(../images/pay/mj_overdue.png) no-repeat;
+    background-size: 100%;
+}
+
+.redPack .exp.fx .redPkt-act {
+    background: url(../images/pay/fx_overdue.png) no-repeat;
+    background-size: 100%;
+}
+
+.redPack .exp.jx .redPkt-act {
+    background: url(../images/pay/jx_overdue.png) no-repeat;
+    background-size: 100%;
+}
+
+.cp-con-top {
+    margin-left: 120px;
+    height: 36px;
+    padding-top: 13px;
+}
+
+.cp-con-bottom {
+    font-size: 12px;
+    color: #999;
+    margin-top: 18px;
+}
+
+.cp-con-top .icon-rmb {
+    font-size: 20px;
+    /*line-height: 40px;*/
+    vertical-align: top;
+}
+
+.cp-con-top .unit {
+    font-size: 36px;
+    vertical-align: top;
+}
+
+.redPack .noUse.mj .icon-rmb, .redPack .noUse.mj .unit {
+    color: #ff2872;
+}
+
+.redPack .noUse.fx .icon-rmb, .redPack .noUse.fx .unit {
+    color: #09a0df;
+}
+
+.redPack .noUse.jx .icon-rmb, .redPack .noUse.jx .unit {
+    color: #ff4444;
+}
+
+.redPack .use .icon-rmb, .redPack .use .unit, .redPack .exp .icon-rmb, .redPack .exp .unit {
+    color: #a1a1a1;
+}
+
+.redPack .noUse .cp-con-bottom p {
+    color: #aeaeae;
+    margin: 5px 0px 5px 100px;
+    white-space: nowrap;
+}
+
+.redPack .use .cp-con-bottom p, .redPack .exp .cp-con-bottom p {
+    color: #cdcdcd;
+    margin: 5px 0px 5px 100px;
+    white-space: nowrap;
+}
+
+.interest-token-list .token-detail{
+    display: inline-block;
+    margin: 25px 25px 0px 25px;
+}
+.interest-token-list .token-act {
+    width: 358px;
+    height: 126px;
+}
+.interest-token-list .noUse .token-act{
+    background: url(../images/newPro/token_enabled.png) no-repeat;
+    background-size: 100%;
+}
+.interest-token-list .use .token-act,.interest-token-list .exp .token-act{
+    background: url(../images/newPro/token_disabled.png) no-repeat;
+    background-size: 100%;
+}
+.token-act .cp-con-top{
+    height: 40px;
+    white-space:nowrap;
+}
+.token-act .cp-con-top div{
+    display: inline-block;
+    width: 30px;
+}
+.token-act .cp-con-top .cct{
+    padding-right: 13px;
+    text-align: center;
+    font-size: 14px;
+}
+.token-act .cp-con-top .cct-p1{
+    font-weight: bold;
+    color: #666;
+}
+.token-act .cp-con-top .cct-p2{
+    color: #a1a1a1;
+    margin-top: 8px;
+}
+.noUse .token-act .cp-con-top .cct-p2{
+    color: #fe8135;
+}
+.token-act .cp-con-top .cct-one{
+    border-left: 1px solid #f2f2f2;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+}
+
+.token-act .cp-con-bottom{
+    margin-left: 120px;
+    margin-top: 15px;
+}
+.token-act .cp-con-bottom p{
+    margin-top: 4px;
+    color:#787878;
+    white-space: nowrap;
+}
+
+.interest-token-list .use .token-act .token-state{
+    position: relative;
+    float: right;
+    background: url(../images/newPro/token_use.png) no-repeat;
+    background-size: 100%;
+    width: 54px;
+    height: 54px;
+}
+.interest-token-list .exp .token-act .token-state{
+    position: relative;
+    float: right;
+    background: url(../images/newPro/token_exp.png) no-repeat;
+    background-size: 100%;
+    width: 54px;
+    height: 54px;
+}
+.interest-token-list .noUse .token-act .token-state.token-selected{
+    position: relative;
+    float: right;
+    background: url(../images/newPro/token_selected.png) no-repeat;
+    background-size: 100%;
+    width: 54px;
+    height: 54px;
+    margin-top: 75px;
+}
+.ucecNone .no-token-icon {
+    width: 95px;
+    height: 107px;
+    background-size: cover;
+    background-image: url(../images/newPro/no-token.png);
+    background-position: center;
+    margin: 60px 0px 15px 414px;
+}
+
+.ucecNone .no-token-desc {
+    font-size: 16px;
+    color: #999;
+    margin-left: 416px;
+}

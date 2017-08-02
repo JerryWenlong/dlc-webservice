@@ -1,0 +1,110 @@
+#editMailDiv #email {
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    width: 318px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #8d8d8d;
+    padding-left: 20px;
+}
+
+#editMailDiv #emailCode{
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  width: 176px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 14px;
+  color: #8d8d8d;
+  padding-left: 20px;
+}
+#editMailDiv label {
+    display: inline-block;
+    font-size: 14px;
+    color: #8d8d8d;
+    width: 100px;
+    text-align: right;
+    margin-right: 30px;
+}
+.editMailSpan {
+    display: inline-block;
+    font-size: 14px;
+    color: #8d8d8d;
+    margin-right: 30px;
+}
+.editMailLi1 {
+    margin-top: 42px;
+}
+.orgMailLi {
+    margin-bottom: 25px!important;
+}
+#editMailDiv li {
+    margin-bottom: 6px;
+}
+.editMailMain {
+    margin-left: 130px;
+}
+#editMailCode {
+    width: 178px;
+}
+#editMailCodeBtn {
+    border-radius: 3px;
+    width: 136px;
+    height: 44px;
+    line-height: 44px;
+}
+.tipEditMail {
+    font-size: 12px;
+    color: #8d8d8d;
+    margin-left: 135px;
+}
+.tipEditMail2 {
+    color: #8d8d8d;
+    font-size: 12px;
+    margin-left: 135px;
+}
+.tipEditMailLi2 {
+    height: 35px;
+}
+#editMailBtn {
+    border: 1px solid #398be1;
+    border-radius: 3px;
+    width: 320px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #398be1;
+    cursor: pointer;
+    margin-left: 135px;
+}
+.tipEditMailError, .tipEditMailError2 {
+    margin-left: 155px;
+}
+.hide {
+    display: none;
+}
+#editMailDiv .validateError {
+    text-align: left;
+    font-size: 12px;
+    color: #ff0045;
+    padding-left: 2px;
+}
+.btn_enabled{
+  text-align: center;
+	font-size: 14px;
+	border: 1px solid #398be1;
+	color: #398be1;
+	background-color: #FFF;
+	cursor: pointer;
+}
+.btn_disabled{
+  text-align: center;
+	font-size: 14px;
+	color: #8d8d8d;
+  background-color: #FFF;
+	border:1px solid #dcdcdc;
+	cursor: pointer;
+}

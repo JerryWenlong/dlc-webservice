@@ -1,0 +1,39 @@
+<% include header.html%>
+<div class="reg-banner nb5"></div>
+<div class="reg-background">
+    <div style="height:730px"></div>
+    <div style="text-align:center;">
+        <button class="reg-btn reg-now"></button>
+    </div>
+    <div style="height:653px"></div>
+    <div style="width:1200px;height:64px;margin: 0 auto;">
+        <button class="mszq" style="margin-left:59px;margin-right: 163px;"></button>
+        <button class="mszq" style="margin-right: 163px;"></button>
+        <button class="mszq"></button>
+    </div>
+    <div style="height:1850px"></div>
+    <div class="reg-rule">
+        <p style="font-size:24px;">活动规则：</p>
+        <p>1.活动时间：2017年3月1日0点——结束时间以公告通知为准，本活动仅针对活动期间注册的新用户（部分渠道用户不参与）；</p>
+        <p>2.新用户通过注册、认证、绑卡可以各获得100点币，支持抽奖三次，最高抽888元现金；</p>
+        <p>3.新注册用户充值2元以上，在体验金专享标页面点击“立即体验”即可自动享受8888元体验金3天7%的年化收益，收益可提现；</p>
+        <p>4.10%加息券已发放至新用户账户，该10%加息券仅适用于投资鑫盈精选30天产品，加息券投资金额范围100元~5000元；</p>
+        <p>5.恶意盗刷或者冒用他人身份信息等行为（包括但不限于手机号码、身份证、IP等信息），一经核实，点理财有权立即收回该用户所得收益；</p>
+        <p>6.如需帮助请联系客服热线400-820-2450或加入点理财投资QQ群 497174010进行活动咨询。</p>
+    </div>
+</div>
+<% include footer.html%>
+<script type="text/javascript" src="/js/dlc/register.js"></script>
+<script>
+    $(document).ready(function() {
+        new DLC.Register('','');
+        $(".reg-now").bind('click', function() {
+            // var link = window.location.protocol + '//' + window.location.host + '/signup';
+            window.location.href = '/signup';
+        });
+        $(".mszq").bind('click', function() {
+            // var link = window.location.protocol + '//' + window.location.host + '/productList';
+            window.location.href = '/productList';
+        });
+    });
+</script>

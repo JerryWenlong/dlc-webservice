@@ -1,0 +1,505 @@
+<% include header.html%>
+    <!-- <div id="main_header" class="header">
+    </div> -->
+    <div class="mainContentHeight"></div>
+    <div id='mainContent' class="hide">
+        <div class="newIndexBanner">
+            <span class="newIndexBannerI"></span>
+            <div class="newIndexBannerC">
+                <div class="newIndexButtonL hide"></div>
+                <div class="newIndexButtonR hide"></div>
+                <div class="newIndexBannerIII">
+                    <a id="newIndexBannerA" target="_blank" href="">
+                        <span class="newIndexBannerAspan"></span>
+                    </a>
+                    <div class="newIndexBannerUl"></div>
+                </div>
+                <div class="newIndexBannerII">
+                    <div class="newIndexBannerR">
+                        <div class="newIndexBannerRBg"></div>
+                        <div class="newIndexBannerRDiv">
+                            <div class="h50px"></div>
+                            <div class="newIndexBannerRD1">
+                                <span class="fwbold fs75px">5~12</span><span class="fs22px">%</span>
+                            </div>
+                            <div class="hlh22px colorccc hide">平均历史年化收益</div>
+                            <div class="hlh25px colorffa000 hide"><span class="fwbold">30倍</span> 活期存款收益</div>
+                            <div class="nh30px"></div>
+                            <div class="h45px">
+                                <a class="newIndexBannerRDA" href="/signup" style="color:#fff;">注册领红包</a>
+                            </div>
+                            <div class="hlh40px fs12px colorccc"><span class="newIndexBannerRDShowLogin">已有账号？立即登录</span>
+                            </div>
+                            <div class="hlh38px fs12px colorccc">资金交易过程由太平洋保险提供安全保障</div>
+                        </div>
+                        <div class="newIndexBannerRLogin hide">
+                            <div class="nh30px"></div>
+                            <div class="tacenter hlh30px fs26px colorffa000">登录点理财</div>
+                            <div class="hlh30px colorffa000 fs12px mt5px" id="loginShowError"></div>
+                            <div class="h45px">
+                                <input type="text" id="userName" autocomplete="off" class="newIndexInput" placeholder="请输入用户名/手机号" maxlength="11">
+                            </div>
+                            <div class="h10px"></div>
+                            <div class="h45px">
+                                <input type="password" id="loginPassword" class="newIndexInput" placeholder="请输入密码" maxlength="16">
+                            </div>
+                            <div class="nh20px"></div>
+                            <div class="h45px">
+                                <a id="loginBtn" class="newIndexBannerRDA" href="javascript:void(0)" style="color:#fff;">登 录</a>
+                            </div>
+                            <div class="hlh42px colorccc fs12px">
+                                <!-- <span class="saveUser saveUserOn"></span> 记住用户名-->
+                                <a href="/myCenter_resetPassword"><span class="newIndexBannerRLoginA">忘记密码？</span></a>
+                            </div>
+                            <div class="hlh38px fs12px tacenter colorccc">资金交易过程由太平洋保险提供安全保障</div>
+                        </div>
+                        <div class="newIndexBannerRAccount hide">
+                            <div class="h40px"></div>
+                            <div class="h80px">
+                                <div class="newIndexBannerRAImg"></div>
+                                <div class="newIndexBannerRAUser">
+                                    <div class="nh20px"></div>
+                                    <div class="hlh20px colorccc">您好：</div>
+                                    <div class="hlh20px colorccc fs20px newIndexUserName"></div>
+                                    <div class="nh20px"></div>
+                                </div>
+                            </div>
+                            <div class="h25px"></div>
+                            <div class="hlh20px colorccc">可用余额（元）
+                                <a class="newIndexBannerRADeposit" href="/myCenter_deposit" style="color:#ffa000;">去充值</a>
+                            </div>
+                            <script>
+                                function eyeClick(obj){
+                                    if($(obj).hasClass("newIndexAccountEyeY")){
+                                        $(obj).removeClass("newIndexAccountEyeY");
+                                        $(".newIndexAccountN").show();
+                                        $(".newIndexAccount").hide();
+                                    } else {
+                                        $(obj).addClass("newIndexAccountEyeY");
+                                        $(".newIndexAccountN").hide();
+                                        $(".newIndexAccount").show();
+                                    }
+                                }
+                            </script>
+                            <div class="hlh50px colorffa000 fs40px"><span class="newIndexAccountN">******</span>
+                            <span class="newIndexAccount hide">0.00</span>
+                            <span class="newIndexAccountEyeN" onclick="eyeClick(this)"></span></div>
+                            <div class="h40px"></div>
+                            <div class="h45px">
+                                <a class="newIndexBannerRDA" href="/myCenter_account" style="color:#fff;">进入我的账户</a>
+                            </div>
+                            <div class="h2px"></div>
+                            <div class="hlh38px fs12px tacenter colorccc">资金交易过程由太平洋保险提供安全保障</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newIndexDivGG">
+            <div class="newIndexDivGGI">
+                <span class="newIndexDivGGISpan1"></span>
+                <span class="colorf39800 newIndexDivGGISpan2">最新公告：</span>
+                <span id="newIndexDivGGSpan" class="newIndexDivGGSpan">
+                    <ul id="newIndexDivGGSpanUl1">
+                        <% noticeData[0].forEach(function(list,index){ %>
+                          <li>
+                           <a target="_blank" href="/noticeContent/<%=list.bulletinId%>">
+                            <span class="color666 newIndexDivGGSULSpan1">
+                                <%=list.title%>
+                            </span>
+                </a>
+                <span class="color999 pl20px newIndexDivGGSULSpan2">
+                                <%=list.publishAt.substring(0,10)%>
+                            </span>
+                </li>
+                <% }) %>
+                    </ul>
+                    <ul id="newIndexDivGGSpanUl2">
+                    </ul>
+                    </span>
+                    <script type="text/javascript">
+                        try {
+                            var $$ = function (id) {
+                                return document.getElementById(id);
+                            }
+                            $$('newIndexDivGGSpanUl2').innerHTML = $$('newIndexDivGGSpanUl1').innerHTML;
+                            var waitTime = 3000;
+
+                            function roll() {
+                                if (typeof ($$("newIndexDivGGSpan")) != "undefined" && $$("newIndexDivGGSpan") != null) {
+                                    $$("newIndexDivGGSpan").scrollTop++;
+                                    if ($$('newIndexDivGGSpanUl1').offsetHeight - newIndexDivGGSpan.scrollTop > 0) {
+                                        if (newIndexDivGGSpan.scrollTop % newIndexDivGGSpan.offsetHeight != 0) {
+                                            return (setTimeout(roll, 20)); //20毫秒即递归一次
+                                        } else {
+                                            return (setTimeout(roll, waitTime)); //等待2秒才递归调用
+                                        }
+                                    } else {
+                                        setTimeout("$$('newIndexDivGGSpan').scrollTop=0;roll()", waitTime);
+                                    }
+                                }
+                            }
+                            setTimeout(roll, waitTime);
+                        } catch (e) {}
+                    </script>
+                    <a target="_blank" href="/aboutNotice?type=0&pageSize=10&page=1">
+                        <span class="color666 newIndexDivGGISpan2 newIndexDivGGISMore">
+                    更多 >
+                </span>
+                    </a>
+                    <span class="newIndexDivGGISpanR color666">点理财提醒您：市场有风险，投资需谨慎！</span>
+            </div>
+        </div>
+        <div class="newContent">
+            <div class="h15px"></div>
+            <div class="newIndexDivReports">
+                <a target="_blank" href="/aboutMAdvantage">
+                    <div class="newIndexDRM">
+                        <div class="newIndexDRMImg1"></div>上市公司
+                    </div>
+                </a>
+                <a target="_blank" href="/aboutMAdvantage">
+                    <div class="newIndexDRM">
+                        <div class="newIndexDRMImg2"></div>专注市政
+                    </div>
+                </a>
+                <a target="_blank" href="/aboutMAdvantage">
+                    <div class="newIndexDRM">
+                        <div class="newIndexDRMImg3"></div>严格风控
+                    </div>
+                </a>
+                <a target="_blank" href="/aboutMAdvantage">
+                    <div class="newIndexDRM mr55px">
+                        <div class="newIndexDRMImg4"></div>安全保障
+                    </div>
+                </a>
+                <div class="newIndexDRR">
+                    <span class="newIndexDRRImg1"></span> 累计注册用户
+                    <br>
+                    <span class="newIndexDRRS newIndexDRRUser">0</span> 人
+                </div>
+                <div class="newIndexDRR">
+                    <span class="newIndexDRRImg2"></span> 累计成交金额
+                    <br>
+                    <span class="newIndexDRRS newIndexDRRInvest">0</span> 元
+                </div>
+                <div class="newIndexDRR">
+                    <span class="newIndexDRRImg3"></span> 为用户赚取收益
+                    <br>
+                    <span class="newIndexDRRS newIndexDRRComm">0</span> 元
+                </div>
+            </div>
+            <div class="h15px bb1pxsf0"></div>
+            <div class="nh30px"></div>
+            <div class="newIndexSprog">
+                <a class=""  style="color:#fff;">
+                    <div class="newIndexSL">
+                        <div class="nh30px"></div>
+                        <div class="nh30px lh30px fs22px fwbold">新手专区</div>
+                        <div class="h40px lh20px">每位新注册
+                            <br>用户可享受一次</div>
+                    </div>
+                </a>
+                <div class="newIndexSM">
+                    <div class="nh30px"></div>
+                    <div class="hlh60px">
+                        <a class=""  style="color:#fff;"><span class="newIndexSMHead">新手福利标</span></a>
+                    </div>
+                    <div class="nh30px"></div>
+                    <div class="h60px">
+                        <div class="newIndexSMC1 coloraaa">
+                            <div class="h35px lh35px">
+                                <span class="exp_money fs30px colorff7800">0.0</span> %
+								<span class="fs24px colorff7800 expectYearReturn2">+0.0</span>%
+                            </div>
+                            <div class="h25px lh25px hide">平均历史年化收益</div>
+                        </div>
+                        <div class="newIndexSMC2 coloraaa">
+                            <div class="h35px lh35px"><span class="exp_day fs30px color666">0</span> 天</div>
+                            <div class="h25px lh25px">投资期限</div>
+                        </div>
+                        <div class="newIndexSMC3 coloraaa">
+                            <div class="h35px lh35px"><span class="exp_count fs30px color666">0</span> 万</div>
+                            <div class="h25px lh25px">项目金额</div>
+                        </div>
+                        <div class="newIndexSMC4"></div>
+                        <div class="newIndexSMC5">
+                            <a class="newIndexSMC5ACss" disabled style="color:#fff;">敬请期待</a>
+                        </div>
+                    </div>
+                </div>
+                <a target="_blank" href="/activity161121">
+                    <div class="newIndexSR"></div>
+                </a>
+            </div>
+            <div class="nh20px"></div>
+            <div class="newIndexYX">
+                <div class="newIndexYXL">
+                    <a href="/productList">
+                        <div class="newIndexYXL1">
+                            <div class="nh30px"></div>
+                            <div class="nh30px lh30px fs22px fwbold">鑫盈精选</div>
+                            <div class="h40px lh20px">优质资产
+                                <br>低风险稳定收益</div>
+                        </div>
+                    </a>
+                    <div class="newIndexYXL2">
+                        <div class="h155px"></div>
+                        <div class="h35px tacenter">
+                            <a href="/productList"><span class="newIndexYXLA">查看更多</span></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="list_content_product">
+                    <script id="listProducts" type="text/html">
+                        {{include 'list_product'}}
+                    </script>
+                    <script id="list_product" type="text/html">
+                        {{each list as value i}}
+                        <div class="newIndexYXProject">
+                            {{if value.coupons.length > 0}}
+                            <div class="newIndexYXPQ"></div>
+                            {{/if}}
+                            <div class="newIndexYXPDiv">
+                                <a href="/product_{{value.id}}">
+                                    <div class="newIndexYXPTitle">
+                                        <div class="newIndexYXPTChild">{{value.name}}</div>
+                                    </div>
+                                </a>
+                                <div class="nh20px">
+                                  {{if value.invest1IncReturn > 0}}
+                                    <div class="colorff7800" style="margin-left:115px;font-size:12px;margin-top:6px;border:1px solid #ff7800;border-radius:3px;text-align: center;width:78px;">已加息{{value.invest1IncReturn}}%</div>
+                                  {{/if}}                                   
+                                </div>
+                                <div class="tacenter hlh40px">
+                                    <span class="colorff7800 fs36px">{{value.expectYearReturn}}{{if value.invest2YearReturn != "0.0"}}~{{value.invest2YearReturn}}{{/if}}</span><span class="coloraaa">%</span>                                    
+                                </div>
+                                <div class="hlh22px tacenter coloraaa"></div>
+<!--                                <div class="hlh22px tacenter coloraaa">平均历史年化收益</div>-->
+                                <div class="h12px"></div>
+                                <div class="h16px w190px">
+                                    <div class="newIndexYXPBar">
+                                        <span class="newIndexYXPBarS" style="width:{{value.quotaProgress*138/100}}px;"></span>
+                                    </div>
+                                    <div class="newIndexYXPPer">{{value.quotaProgress+"%"}}</div>
+                                </div>
+                                <div class="h15px"></div>
+                                <div class="h40px">
+                                    <div class="newIndexYXPCL">
+                                        <div class="hlh24px"><span class="fs20px fw300">{{value.prodPeriod}}</span> 天</div>
+                                        <div class="hlh16px">投资期限</div>
+                                    </div>
+                                    <div class="newIndexYXPCR">
+                                        <div class="hlh24px"><span class="fs20px fw300">{{value.maxRaisedAmount}}</span> 万</div>
+                                        <div class="hlh16px">项目金额</div>
+                                    </div>
+                                </div>
+                                <div class="nh20px"></div>
+                                <div class="h40px">
+                                    {{if value.prodStatus == 1}}
+                                    <a class="newIndexYXPAYes" href="/product_{{value.id}}" style="color:#fff;">立即投资</a> {{else}}
+                                    <a class="newIndexYXPANo" style="color:#fff;">{{value.showText}}</a> {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </script>
+                </div>
+            </div>
+<!--
+
+            <div class="nh20px"></div>
+            <div class="newIndexYX" id="jjsx">
+                <div class="newIndexYXL newIndexUpL">
+                    <a href="/productList">
+                        <div class="newIndexYXL1">
+                            <div class="nh30px"></div>
+                            <div class="nh30px lh30px fs22px fwbold">节节升息</div>
+                            <div class="h40px lh20px">投资送升息令牌
+                                <br>助您收益涨涨涨</div>
+                        </div>
+                    </a>
+                    <div class="newIndexYXL2 newIndexUpL2">
+                        <div class="h155px"></div>
+                        <div class="h35px tacenter">
+                            <a href="/productList"><span class="newIndexYXLA">查看更多</span></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="list_content_product_up">
+                    <script id="listProductsUp" type="text/html">
+                        {{include 'list_product_up'}}
+                    </script>
+                    <script id="list_product_up" type="text/html">
+                        {{each list as value i}}
+                        <div class="newIndexYXProject">
+                            <div class="newIndexYXPDiv">
+                                <a href="/product_{{value.id}}">
+                                    <div class="newIndexYXPTitle">
+                                        <div class="newIndexYXPTChild">{{value.name}}</div>
+                                    </div>
+                                </a>
+                                <div class="nh20px"></div>
+                                <div class="tacenter hlh40px">
+                                    <span class="colorff7800 fs36px">{{value.expectYearReturn}}{{if value.invest2YearReturn != "0.0"}}~{{value.invest2YearReturn}}{{/if}}</span> <span class="coloraaa">%</span>
+                                </div>
+                                <div class="hlh22px tacenter coloraaa">平均历史年化收益</div>
+                                <div class="h12px"></div>
+                                <div class="h16px w190px">
+                                    <div class="newIndexYFXPBar">
+                                        <span class="newIndexYXPBarS" style="width:{{value.quotaProgress*138/100}}px;"></span>
+                                    </div>
+                                    <div class="newIndexYXPPer">{{value.quotaProgress+"%"}}</div>
+                                </div>
+                                <div class="h15px"></div>
+                                <div class="h40px">
+                                    <div class="newIndexYXPCL">
+                                        <div class="hlh24px"><span class="fs20px fw300">{{value.prodPeriod}}</span> 天</div>
+                                        <div class="hlh16px">投资期限</div>
+                                    </div>
+                                    <div class="newIndexYXPCR">
+                                        <div class="hlh24px"><span class="fs20px fw300">{{value.maxRaisedAmount}}</span> 万</div>
+                                        <div class="hlh16px">项目金额</div>
+                                    </div>
+                                </div>
+                                <div class="nh20px"></div>
+                                <div class="h40px">
+                                    {{if value.prodStatus == 1}}
+                                    <a class="newIndexYXPAYes" href="/product_{{value.id}}" style="color:#fff;">立即投资</a> {{else}}
+                                    <a class="newIndexYXPANo" style="color:#fff;">{{value.showText}}</a> {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </script>
+                </div>
+            </div>
+-->
+
+            <div class="nh20px"></div>
+            <div class="newIndexNews">
+                <div class="newIndexNL">
+                    <div class="newIndexNMenus">
+                        <span class="newIndexNLMSpan1 newIndexNLMSYes mr15px">公司动态</span>
+                        <span class="colorf0f0f0">|</span>
+                        <span class="newIndexNLMSpan2 ml15px">行业新闻</span>
+                        <a class="newIndexNMA" target="_blank" href="/aboutNotice?type=2&pageSize=10&page=1"><span class="newIndexNMASpan">更多 ></span></a>
+                    </div>
+                    <div class="nh20px"></div>
+                    <div class="newIndexNContent newIndexNCom">
+                        <div class="newIndexNCDiv">
+                            <div class="newIndexNCDImg">
+                                <a target="_blank" href="/noticeContent/<%=noticeData[2][0]['bulletinId']%>">
+                                    <img src="<%=noticeData[2][0]['thumbnailUrl']%>" width="200" height="110">
+                                </a>
+                            </div>
+                            <div class="newIndexNCDText">
+                                <div class="newIndexNCDTHead">
+                                    <a target="_blank" href="/noticeContent/<%=noticeData[2][0]['bulletinId']%>">
+                                        <span class="newIndexNCDTHTitle"><%=noticeData[2][0]['title']%></span>
+                                    </a>
+                                    <span class="newIndexNCDTHTime"><%=noticeData[2][0]['publishAt'].substring(0,10)%></span>
+                                </div>
+                                <div class="newIndexNCDTSummary">
+                                    <%=noticeData[2][0][ 'summery']%>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nh20px"></div>
+                        <div class="newIndexNCDiv">
+                            <div class="newIndexNCDImg">
+                                <a target="_blank" href="/noticeContent/<%=noticeData[2][1]['bulletinId']%>">
+                                    <img src="<%=noticeData[2][1]['thumbnailUrl']%>" width="200" height="110">
+                                </a>
+                            </div>
+                            <div class="newIndexNCDText">
+                                <div class="newIndexNCDTHead">
+                                    <a target="_blank" href="/noticeContent/<%=noticeData[2][1]['bulletinId']%>">
+                                        <span class="newIndexNCDTHTitle"><%=noticeData[2][1]['title']%></span>
+                                    </a>
+                                    <span class="newIndexNCDTHTime"><%=noticeData[2][1]['publishAt'].substring(0,10)%></span>
+                                </div>
+                                <div class="newIndexNCDTSummary">
+                                    <%=noticeData[2][1][ 'summery']%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newIndexNContent newIndexNTrade hide">
+                        <ul class="newIndexNTUl">
+                            <% noticeData[1].forEach(function(list,index){ %>
+                                <li>
+                                    <span class="color666">
+                                    <a class="newIndexDivGGISContent" target="_blank" href="/noticeContent/<%=list.bulletinId%>" style="width:580px;"><%=list.title%></a>
+                                </span>
+                                    <span class="color999 pl20px floatright fs14px">
+                                    <%=list.publishAt.substring(0,10)%>
+                                </span>
+                                </li>
+                                <% }) %>
+                        </ul>
+                    </div>
+                </div>
+                <div class="newIndexNR">
+                    <div class="newIndexNMenus">
+                        <span class="newIndexNMSpan">公司视频</span>
+                    </div>
+                    <div class="nh20px"></div>
+                    <div class="newIndexNRVideo newIndexImgXs"></div>
+                </div>
+            </div>
+            <div class="nh20px"></div>
+            <div class="newIndexPartner">
+                <div class="newIndexNMenus">
+                    <span class="newIndexNMSpan">合作伙伴</span>
+                </div>
+                <div class="h10px"></div>
+                <div>
+                    <div class="newIndexPDiv newIndexPDiv1"></div>
+                    <div class="newIndexPDiv newIndexPDiv10"></div>
+                    <div class="newIndexPDiv newIndexPDiv3"></div>
+                    <div class="newIndexPDiv newIndexPDiv4"></div>
+                    <div class="newIndexPDiv newIndexPDiv5" style="margin-right:0px;"></div>
+                    <!-- <div class="newIndexPDiv newIndexPDiv6"></div>
+                    <div class="newIndexPDiv newIndexPDiv7"></div>
+                    <div class="newIndexPDiv newIndexPDiv8"></div>
+                    <div class="newIndexPDiv newIndexPDiv9"></div>
+                    <div class="newIndexPDiv newIndexPDiv10" style="margin-right:0px;"></div> -->
+                </div>
+            </div>
+            <!-- <div style="height:10px"></div> -->
+        </div>
+        <div class="right_bar">
+            <div id="caldiv" class="div_right">
+                <a target="_blank" href="/investCalcu" alt="点理财计算器">
+                    <div class="cal"></div>
+                </a>
+            </div>
+            <div id="onlinediv" class="div_right">
+                <a target="_blank" href="http://p.qiao.baidu.com//im/index?siteid=9880656&ucid=22222929" alt="在线客服">
+                    <div class="online"></div>
+                </a>
+            </div>
+            <div id="qqdiv" class="div_right">
+                <a target="_blank" href="http://q.url.cn/s/JV6tDJm" alt="QQ客服">
+                    <div class="qq"></div>
+                </a>
+            </div>
+            <div id="teldiv" class="div_right">
+                <div class="tel"></div>
+            </div>
+            <div id="homediv" class="div_right">
+                <span class="hometop inlineBlock"></span>
+            </div>
+        </div>
+    </div>
+        <% include footer.html%>
+            <script>
+                $(document).ready(function() {
+                    $("#mainContent").show();
+                    $(".mainContentHeight").hide();
+                    new DLC.Home();
+                });
+            </script>

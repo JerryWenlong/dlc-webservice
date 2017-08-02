@@ -1,0 +1,76 @@
+<% include header.html%>
+<% if (token=='reIjEf' || token=='2UjeYv') {%>
+  <div id="signupMiddleDiv" class="signupMiddleDiv nb1">
+<% }else if (token=='qqaaI3'||token=='iuMNRj') {%>
+  <div id="signupMiddleDiv" class="signupMiddleDiv nb3">
+<% }else {%>
+  <div id="signupMiddleDiv" class="signupMiddleDiv nb2" style="height:500px;">
+<% }%>
+
+    <div id="fillDiv" style="height:500px;">
+        <div id="boderDiv" style="top:10px;height:478px;">
+            <div id="bgOpacity" style="height:478px;"></div>
+            <form id="signupForm" action="#" onsubmit="return false;">
+                <div id="signupDiv">
+                    <li style="text-align:center;margin-left:0px;">
+                        <strong class="strongTitle" style="top:17px;">注册点理财</strong>
+                    </li>
+                    <div class="validateError firstError">
+                      <div class="allErrors hide">
+                        <span class="allErrorsSpan"></span>
+                      </div>
+                    </div>
+                    <li class="phone">
+                        <input type="text" autocomplete="off" placeholder="请输入手机号" id='phone' name='phone' maxlength="11" />
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="password">
+                        <input type="password" autocomplete="off" placeholder="请设置密码(8-16位字母和数字)" class="txtPwd" id='password' name='password' maxlength="16" />
+                        <div class="pwdEyes eyePic1" id="pwdEyes"></div>
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="picVerify">
+                        <input type="text" autocomplete="off" placeholder="请输入图片验证码" id='picVerifyCode' name='picVerifyCode' />
+                        <img class="signupCodeImg" id="captchaImg" title="点击更换验证码">
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="smsVerify">
+                        <input type="text" autocomplete="off" placeholder="请输入验证码" id='verifyCode' name='verifyCode' maxlength="6" />
+                        <button id='verifyCodeBtn'>获取验证码</button>
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="invite">
+                        <div id="inviteBefore">
+                          <img class="invite-icon" src="../images/signup/yaoqin-icon.png" />
+                          <span class="invite-span">填写邀请人手机号码(选填)</span>
+                        </div>
+                        <input type="text" style="display:none" autocomplete="off" placeholder="填写邀请人手机号码" id='inviteAfter' class='inviteAfter' name='inviteAfter' maxlength="11" />
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="signup">
+                        <button id='signupBtn'>免费注册</button>
+                    </li>
+
+                    <li class="checkLi" style="margin-top: 6px;">
+                        <input type="checkbox" id="chkAgree" name="chkAgree" checked="checked"><strong class="strongChk">同意</strong><a target="_blank" href="/signupAgreement">《点理财平台用户服务协议》</a>
+                    </li>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<% include footer.html%>
+<script>
+    $(document).ready(function() {
+        new DLC.Signup('<%=token%>','<%=utm_source%>');
+        if(window.XMLHttpRequest)//判断浏览器是否属于SogouExtension
+        {
+            $("#pwdEyes").removeClass("pwdEyes eyePic1");
+        }
+    });
+</script>
+<!--[if IE]>
+<script>
+    $("#pwdEyes").removeClass("pwdEyes eyePic1");
+</script>
+<![endif]-->

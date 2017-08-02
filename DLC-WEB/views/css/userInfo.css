@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.userInfoUl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.userInfoUl li {
+    position: relative;
+    margin-top: 18px;
+}
+.userInfoUl label {
+    font-size: 14px;
+    color: #575757;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 44px;
+    line-height: 44px;
+    text-align: right;
+    padding-right: 30px;
+}
+.miniSel label {
+    height: 22px;
+    line-height: 10px;
+}
+#uppDiv {
+    position: absolute;
+    background: #fff url("/images/userInfo/2.png") no-repeat;
+    width: 126px;
+    height: 126px;
+    line-height: 126px;
+    display: inline-block;
+    margin-left: -128px;
+}
+.file {
+    background: #fff url("/images/userInfo/2.png") no-repeat;
+    width: 126px;
+    height: 126px;
+    line-height: 126px;
+    display: inline-block;
+    margin-left: 80px;
+}
+.file input {
+    right: 0;
+    top: 0;
+    opacity: 0;
+    width: 126px;
+    height: 126px;
+    line-height: 126px;
+}
+#portraitImg {
+    width: 126px;
+    height: 126px;
+    line-height: 126px;
+    display: inline-block;
+    margin-left: 18px;
+    vertical-align: middle;
+}
+.imgPre {
+    display: inline-block;
+    width: 126px;
+    height: 126px;
+    margin-left: 18px;
+    font-size: 12px;
+    color: #8d8d8d;
+    vertical-align: middle;
+    line-height: 20px;
+    padding-top: 26px;
+}
+.uploadLi .uploadTip {
+    padding-left: 6px;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+.uploadLi .validateError {
+    padding-left: 6px;
+    font-size: 12px;
+    color: #ff0045;
+}
+.uploadLi {
+    margin: 0!important;
+    padding-left: 140px!important;
+    height: 12px;
+    line-height: 12px;
+}
+.marriageLi {
+    margin-top: 10px!important;
+}
+.rightBottom {
+    padding-left: 10%;
+}
+.submitBtn {
+    border: 0;
+    background-color: #398be1;
+    border-radius: 3px;
+    width: 320px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+.inputSelInput {
+    display: inline-block;
+    width: 318px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #8d8d8d;
+    position: relative;
+    outline: none;
+    border: 1px solid #d2d2d2;
+    background: url("../images/userInfo/1.png") no-repeat 95%;
+    margin-left: 10px;
+    text-align: center;
+}
+.inputSelList {
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    position: absolute;
+    top: 45px;
+    background-color: #ffffff;
+    z-index: 1;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 144px;
+    height: 135px;
+}
+#educationList {
+    height: 274px;
+}
+#professionList {
+    height: 274px;
+}
+.inputSelectListOne {
+    border-bottom: 1px solid #d2d2d2;
+    height: 44px;
+    line-height: 44px;
+    width: 320px;
+    cursor: pointer;
+    text-align: center;
+}
+.normal_sel {
+    width: 152px!important;
+    height: 42px;
+    line-height: 42px;
+}
+.cityList {
+    margin-left: 314px!important;
+    height: 280px;
+}
+.provinceList {
+    height: 280px;
+}
+.sel_last {
+    border-bottom: 0px!important;
+}
+.tradePasswordDiv {
+    border: 1px solid #8d8d8d;
+    background-color: #fff;
+    width: 600px;
+    height: 283px;
+    z-index: 999;
+}
+.tradePasswordDiv li {
+    width: 600px;
+    height: 30px;
+    line-height: 30px;
+}
+.tradePasswordDiv .firstLi {
+    /*border-bottom: 1px solid #8d8d8d;*/
+    text-align: center;
+    background-color: #eee;
+    font-size: 18px;
+    color: #353535;
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+.tradePasswordDiv .secondLi {
+    height: 40px;
+    line-height: 40px;
+    margin: 32px 0px 14px 96px;
+}
+.tradePasswordDiv .lastLi {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.tradePasswordDiv .secondLi .tradePassword {
+    border: 1px solid #dedede;
+    padding-left: 26px;
+    width: 386px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    color: #9d9d9d;
+}
+.tradePasswordDiv .tradeSpan {
+    padding-left: 96px;
+    font-size: 12px;
+    color: #9d9d9d;
+}
+.tradePasswordDiv .forgotPassword {
+    padding-left: 168px;
+    font-size: 12px;
+    color: #398be1;
+}
+.tradePasswordDiv .confirmBtn {
+    width: 136px;
+    height: 46px;
+    border-radius: 3px;
+    color: #FFF;
+    background-color: #398de1;
+    font-size: 18px;
+    margin-right: 80px;
+}
+.tradePasswordDiv .cancelBtn {
+    width: 136px;
+    height: 46px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    color: #9d9d9d;
+    background-color: #eee;
+    font-size: 18px;
+}
+.tradePasswordDiv .tipTradePasswordError {
+    color: red;
+    padding-left: 96px;
+}

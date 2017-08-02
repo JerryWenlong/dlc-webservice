@@ -1,0 +1,88 @@
+<% include ../header.html%>
+    <div class="a161129">
+        <div class="a161129Login">
+            <div class="loginPanMain a161129LPan">
+                <div class="loginPanCell1"></div>
+                <div class="loginPanCellTop"><span class="loginPanTxt color575757">登录后查看</span>
+                </div>
+                <div class="h30px"></div>
+                <div class="loginPanCell pl55px h30px2 mt10px">
+                    <div class="loginShowError hide" id="loginShowError">
+                    </div>
+                </div>
+                <div class="loginPanCell pl55px">
+                    <input type="text" id="userName" autocomplete="off" class="loginPanUserName loginPanUserName2 color575757" placeholder="请输入用户名/手机号" maxlength="11">
+                </div>
+                <div class="loginPanCell3" id="loginPanUserNamePoint"></div>
+                <div class="loginPanCell pl55px">
+                    <input type="password" id="loginPassword" class="loginPanPassword loginPanPassword2 color575757" placeholder="请输入密码" maxlength="16">
+                    <div class="loginEye logEye" id="loginEye"></div>
+                </div>
+                <div class="loginPanCell3" id="loginPanPasswordPoint"></div>
+                <div class="loginPanCell pl55px">
+                    <input type="text" id="captcha" class="loginPanCaptcha color575757" placeholder="请输入图片验证码" maxlength="4"><img class="loginCodeImg" id="captchaImg" title="点击更换图片验证码">
+                </div>
+                <div class="loginPanCell3" id="loginPanCaptchaPoint"></div>
+                <div class="loginPanCell4 mr55px color3b59dc">
+                    <a href="/myCenter_resetPassword" style="color:#3b59dc;">忘记密码？</a>
+                    <span class="loginPanCellSapn color3b59dc">|</span>
+                    <a href="/signup" style="color:#3b59dc;">立即注册</a>
+                </div>
+                <div class="loginPanCell pl55px">
+                    <input type="button" id="loginBtn" class="loginPanLoginBtn a161129LButton" value="登 录">
+                </div>
+                <div class="loginPanCell1"></div>
+                <div class="loginPanCell5">
+                </div>
+            </div>
+            <div class="a161129MyPan hide">
+                <div class="a161129MyList">
+                    <div class="a161129MLHead">
+                        <span>期数</span><span>幸运号</span><span>奖品</span>
+                    </div>
+                    <div class="a161129MLContent">
+                        <div class="a161129MLContentNo">暂无幸运号，快去投资吧~</div>
+                    </div>
+                </div>
+                每期开奖后，点理财工作人员将在3个工作日内发放现金奖励至用户绑定的银行卡账号中并电话通知中奖用户
+            </div>
+        </div>
+        <div class="h50px a161129Div2">
+            <a href="javascript:void(0)" style="color:#FFFFFF;" class="a161129DA a161129DAShowRule">开奖规则</a>
+            <a href="/productList" style="color:#FFFFFF;" class="a161129DA ml50px">投资领取幸运号</a>
+        </div>
+        <div class="h280px"></div>
+        <div class="a161129Div3Top"><a href="/moreActivity" target="_blank" class="a161129D3Span" style="color: blue;">更多开奖记录 >></a>
+        </div>
+        <div class="a161129Div3"></div>
+        <div class="a161129Div4Head"></div>
+        <div class="h100px"></div>
+        <div class="a161129Div4">
+
+        </div>
+        <div class="h160px"></div>
+        <div class="a161129Div5">
+            <h3>活动说明</h3> 1、 活动时间：2016年12月1日0点 —— 结束时间以公告通知为准
+            <br> 2、 抽奖活动每期01-20共计20个幸运号码，每个幸运号码系统随机发放，待每期20个幸运号码发放完毕后，开始抽取现金红包大奖。 部分渠道用户首次投资不赠送幸运号码；
+            <br> 3、 开奖时间：工作日15点前满额，以当日上证收盘指数开奖；非工作日、工作日15点后满额，以下个交易日上证收盘指数开奖，开奖详情以公示为准；
+            <br> 4、 现金奖励将于项目满标且中奖结果公示后<span style="color:red;"><b>7个工作日</b></span>内发放至用户点理财账户余额并电话通知中奖用户；
+            <br> 5、 关于开奖日期，幸运号码，奖项发放等具体事宜，平台将及时在网站公示，敬请及时留意；
+            <br> 6、 以上奖励属于活动奖励所得，点理财不代缴个人所得税，请获得奖励的用户自行缴纳个人所得税；
+            <br> 7、 恶意盗刷或者冒用他人身份信息等行为（包括但不限于手机号码、身份证、IP等信息），一经核实，点理财有权立即收回该用户所得收益；
+            <br> 8、 如需帮助请联系客服电话 400-820-2450 或加入点理财投资QQ群 497174010 进行活动咨询。
+        </div>
+    </div>
+
+    <div class="a161129ShowRule hide">
+        <div class="a161129ShowRuleClose"></div>
+        <div class="a161129SRImg"><img src="../images/bannerPages/activity161129/rule.png">
+        </div>
+    </div>
+    <div class="a161129ShowText hide"></div>
+
+    <script>
+        $(document).ready(function () {
+            new DLC.Activity161129();
+        });
+    </script>
+    <% include ../footer.html%>

@@ -1,0 +1,187 @@
+<% include header.html%>
+    <script type="text/javascript" src="/js/lib/echarts.min.js"></script>
+    <div class="wcBg">
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">数据总览</span>
+            </div>
+            <div class="wcDCount h155px">
+                <div class="wcDC1Div" style="width:262px">
+                    <div class="h22px wcDC1D1Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">成交总量</div>
+                </div>
+                <div class="wcDC1Div" style="width:160px">
+                    <div class="h22px wcDC1D2Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">标的总数</div>
+                </div>
+                <div class="wcDC1Div" style="width:262px">
+                    <div class="h22px wcDC1D3Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">已还本金</div>
+                </div>
+                <div class="wcDC1Div" style="width:255px">
+                    <div class="h22px wcDC1D4Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">为用户创造收益</div>
+                </div>
+                <div class="wcDC1Div" style="width:255px;border-right: 0px">
+                    <div class="h22px wcDC1D5Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">已发放收益</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">投资统计</span>
+            </div>
+            <div class="wcDCount" style="height:300px">
+                <div class="wcDC1Div" style="width:399px">
+                    <div class="h22px wcDC2D1Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">用户数量</div>
+                </div>
+                <div class="wcDC1Div" style="width:399px">
+                    <div class="h22px wcDC2D2Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">投资人数量</div>
+                </div>
+                <div class="wcDC1Div" style="width:399px;border-right: 0px">
+                    <div class="h22px wcDC2D3Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">待还金额</div>
+                </div>
+                <div class="wcDC1Div" style="width:399px">
+                    <div class="h22px wcDC2D4Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">人均投资金额</div>
+                </div>
+                <div class="wcDC1Div" style="width:399px;">
+                    <div class="h22px wcDC2D5Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">每笔平均投资金额</div>
+                </div>
+                <div class="wcDC1Div" style="width:399px;border-right: 0px">
+                    <div class="h22px wcDC2D6Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">平均满标时间</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">投资单户比例</span>
+            </div>
+            <div class="wcDCount" style="height:360px">
+                <div class="wcDCPieLeft">
+                    <div id="wcD3Div1" style="height:300px;width:499px"></div>
+                    <div class="hlh30px">最大单户投资余额占比</div>
+                </div>
+                <div class="wcDCPieRight">
+                    <div id="wcD3Div2" style="height:300px;width:499px"></div>
+                    <div class="hlh30px">最大10户投资余额占比</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">近一年成交总额</span>
+            </div>
+            <div id="wcD4Div1" class="wcDCount" style="height:300px;width:1160px;margin: auto;"></div>
+        </div>
+
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">融资统计</span>
+            </div>
+            <div class="wcDCount h155px">
+                <div class="wcDC1Div" style="width:262px">
+                    <div class="h22px wcDC5D1Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">融资人总数</div>
+                </div>
+                <div class="wcDC1Div" style="width:320px">
+                    <div class="h22px wcDC5D2Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">人均融资金额</div>
+                </div>
+                <div class="wcDC1Div" style="width:297px">
+                    <div class="h22px wcDC5D3Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">待还金额</div>
+                </div>
+                <div class="wcDC1Div" style="width:314px;border-right: 0px">
+                    <div class="h22px wcDC5D4Text wcDCDT"></div>
+                    <div class="nh20px"></div>
+                    <div class="nh20px">每笔平均融资金额</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">融资单户比例</span>
+            </div>
+            <div class="wcDCount" style="height:360px">
+                <div class="wcDCPieLeft">
+                    <div id="wcD6Div1" style="height:300px;width:499px"></div>
+                    <div class="hlh30px">最大单户融资金额占比</div>
+                </div>
+                <div class="wcDCPieRight">
+                    <div id="wcD6Div2" style="height:300px;width:499px"></div>
+                    <div class="hlh30px">最大10户融资金额占比</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">逾期总览</span>
+            </div>
+            <div class="wcDCount" style="height:360px">
+                <div class="wcDCPieLeft">
+                    <div id="wcD7Div1" style="height:300px;width:499px"></div>
+                    <div class="hlh30px">项目逾期率</div>
+                </div>
+                <div class="wcDCPieRight">
+                    <div id="wcD7Div2" style="height:300px;width:499px"></div>
+                    <div class="hlh30px">项目不良率</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nh20px"></div>
+        <div class="wcDiv">
+            <div class="wcDHead">
+                <span class="wcDHSpan">风险备付金</span>
+            </div>
+            <div class="wcDCount" style="width:938px;text-align:left;margin:auto;line-height:35px;padding-top:20px;color:#666;padding-bottom:30px;">
+                1、“风险备付金计划”是众网金融科技（上海）有限公司运营的点理财网站 <span style="color:#39a6ff;">www.dianlc.com</span> 及APP为保护平台全体理财用户的共同权益而建立的风险保障机制。除另有说明外，平台的所有理财用户经过平台身份认证后，在平台的投资行为均适用于“风险备付金计划”，理财用户无需为此支付任何费用。
+                <br> 2、“风险备付金”以担保方自有资金按照借款人借款本金的5%比例计提，并支付至点理财指定账户。当发生担保方所担保的借款人未能按期向出借人履行到期还款义务的情形时，点理财有权划扣风险备付金用于支付逾期借款、逾期利息、代偿款、违约金，以及出借人、平台方为实现债权而产生的费用。
+                <br> 3、“风险备付金计划”为理财用户提供了有效的风险保障机制，大大降低了点理财投资用户的理财风险，营造了一个安全健康的投资环境，保障了理财用户的权益。平台将每月定期披露风险备付金账户余额，真正做到阳光透明！
+                <br> 4、点理财有权根据实际业务需要对相关内容进行调整，如作修改，点理财将及时进行披露。
+                <br>
+                <div class="h10px"></div>
+                <img src='images/newIndex/xxpl.jpg' style="border: 1px solid #ddd;">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            new DLC.WebCount();
+        });
+    </script>
+    <% include footer.html%>

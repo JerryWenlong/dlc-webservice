@@ -1,0 +1,161 @@
+<% include header.html%>
+    <div class="page">
+        <div class="wrap">
+            <p class="nav-nohr">
+                <span>你的当前位置：</span><a href='/productList' style="color:#398de1;">我要投资</a><span style="color:#398de1;"> >收益计算</span>
+            </p>
+            <div class="invest-calcu">
+                <p class="p1"><span class="s1"></span><span class="s2">收益计算</span></p>
+                <hr />
+                <div class="cal-left">
+                    <p class="p2">投资设置</p>
+                    <p style="margin-top:30px;"><span class="s3">投入金额</span><input id="t1" type="text" class="input-text" maxlength="7" onkeyup="value=value.replace(/[^\d]/g,'')"><span class="s3">元</span></p>
+                    <p style="margin-top:22px;"><span class="s3">投资期限</span>
+                        <input type="text" class="input-sel" id="t2" class="" readonly="true" value="1">
+                        <span class="s3" style="margin-left: 7px;">月</span></p>
+                    <div class="sel-list1">
+                        <div class='inputSelectListOne' tag='1'>1</div>
+                        <div class='inputSelectListOne' tag='3'>3</div>
+                        <div class='inputSelectListOne' tag='6'>6</div>
+                        <div class='inputSelectListOne' tag='9'>9</div>
+                        <div class='inputSelectListOne' tag='12' style="border-bottom:none">12</div>
+                    </div>
+                    <p style="margin-top:22px;"><span class="s3">年化</span><input id="t3" type="text" class="input-text" maxlength="7" onkeyup="value=value.replace(/[^\d.]/g,'')" style="margin-left:95px"><span class="s3">%</span></p>
+                    <p style="margin-top:22px;"><span class="s3">还款方式</span>
+                        <input type="text" class="input-sel" id="t4" class="" readonly="true" value="到期一次性还本付息">
+                        <div class="sel-list2">
+                            <div class='inputSelectListOne' tag='到期一次性还本付息'>到期一次性还本付息</div>
+                            <div class='inputSelectListOne' tag='按月付息，到期还本付息' style="border-bottom:none">按月付息，到期还本付息</div>
+                        </div>
+                    </p>
+                    <p style="margin-top:42px;text-align:center"><button class="cal-btn">开始计算</button></p>
+                </div>
+                <div class="cal-middle"></div>
+                <div class="cal-right">
+                    <p class="p2">收益概述</p>
+                    <div style="margin-top:22px;display:block;width: 100%;">
+                        <div>
+                            <span class="s3">投资总额：</span><span class="s4" id="money"></span><span class="s3">元</span>
+                        </div>
+                        <div>
+                            <span class="s3" style="margin-left:50px;">年化：</span><span class="s4" id="bite"></span><span class="s3">%</span>
+                        </div>
+                    </div>
+                    <div style="margin-top:22px;display:block;width: 100%;">
+                        <div>
+                            <span class="s3">总收益：</span><span class="s4" id="invest"></span><span class="s3">元</span>
+                        </div>
+                        <div>
+                            <span class="s3" style="margin-left:50px;">本利和：</span><span class="s4" id="total"></span><span class="s3">元</span>
+                        </div>
+                    </div>
+                    <p class="p2">还款计划</p>
+                    <table style="width: 514px;margin-top:20px;" id="table">
+
+                    </table>
+                    <p style="font-size:12px;color:#999;margin-top:10px;">注：以上收益结果仅供参考，请以实际标的收益为准。</p>
+                </div>
+            </div>
+            <p style="height:30px;"></p>
+        </div>
+    </div>
+    <% include footer.html%>
+        <script>
+            $(document).ready(function() {
+                window.app.initHeader(2);
+                $(".inputSelectListOne").on("mousemove", function() {
+                    $(this).addClass("bgc");
+                });
+                $(".inputSelectListOne").on("mouseout", function() {
+                    $(this).removeClass("bgc");
+                });
+                $(".sel-list1 .inputSelectListOne").on("click", function() {
+                    $('#t2').val($(this).attr("tag"));
+                    $(this).parent().fadeOut(200);
+                });
+                $(".sel-list2 .inputSelectListOne").on("click", function() {
+                    $('#t4').val($(this).attr("tag"));
+                    $(this).parent().fadeOut(200);
+                });
+                $('#t2').on('click', function() {
+                    if ($(".sel-list1").css("display") == 'none') {
+                        $(".sel-list1").fadeIn(200);
+                    } else {
+                        $(".sel-list1").fadeOut(200);
+                    }
+                });
+                $('#t4').on('click', function() {
+                    if ($(".sel-list2").css("display") == 'none') {
+                        $(".sel-list2").fadeIn(200);
+                    } else {
+                        $(".sel-list2").fadeOut(200);
+                    }
+                });
+                $('.cal-btn').on('click', function() {
+                    if (($('#t1').val() != '') && ($('#t3').val() != '')) {
+                        $('#money').text($('#t1').val());
+                        $('#bite').text($('#t3').val());
+                        var month = parseInt($('#t2').val());
+                        var days = 365;
+                        switch (month) {
+                            case 1:
+                                days = 30;
+                                break;
+                            case 3:
+                                days = 90;
+                                break;
+                            case 6:
+                                days = 180;
+                                break;
+                            case 9:
+                                days = 270;
+                                break;
+                            case 12:
+                                days = 365;
+                                break;
+                            default:
+                                days = 0;
+                                break;
+                        }
+                        var invst = Math.round($('#t1').val() * days * $('#t3').val() / 100 / 365 * 100) / 100;
+                        $('#invest').text(invst);
+                        var total = invst + parseInt($('#t1').val());
+                        $('#total').text(total);
+
+                        var html = '<tr class="r1"><td class="d1 d11">期数</td><td class="d1 d12">本期还款金额</td><td class="d1 d13">本期还款本金</td><td class="d1 d14">本期还款利息</td><td class="d1 d15" style="border: none;">剩余还款金额</td></tr>';
+                        if ($('#t4').val() == '到期一次性还本付息') {
+                            html += '<tr class="r2">';
+                            html += '<td class="d2">1/1</td>';
+                            html += '<td class="d2">' + total + '</td>';
+                            html += '<td class="d2">' + $('#t1').val() + '</td>';
+                            html += '<td class="d2">' + invst + '</td>';
+                            html += '<td class="d2" style="border-right: 1px solid #ddd;">0.00</td>';
+                        } else {
+                            var m = $('#t2').val();
+                            var im = Math.round(invst / m * 100) / 100;
+                            var last = total;
+                            for (var i = 1; i <= m; i++) {
+                                html += '<tr class="r2">';
+                                html += '<td class="d2">' + i + '/' + m + '</td>';
+                                if (i == m) {
+                                    var lastest = im + parseInt($('#t1').val());
+                                    html += '<td class="d2">' + lastest.toFixed(2) + '</td>';
+                                    html += '<td class="d2">' + $('#t1').val() + '</td>';
+                                } else {
+                                    html += '<td class="d2">' + im.toFixed(2) + '</td>';
+                                    html += '<td class="d2">0.00</td>';
+                                }
+                                html += '<td class="d2">' + im.toFixed(2) + '</td>';
+                                last -= Math.round(im * 100) / 100;
+                                if (i == m) {
+                                    html += '<td class="d2" style="border-right: 1px solid #ddd;">0.00</td>';
+                                } else {
+                                    html += '<td class="d2" style="border-right: 1px solid #ddd;">' + last.toFixed(2) + '</td>';
+                                }
+                            }
+                        }
+                        $('#table').html(html);
+                    }
+                });
+            });
+        </script>

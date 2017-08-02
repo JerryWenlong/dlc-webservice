@@ -1,0 +1,61 @@
+.contentAgreement {
+    width: 1200px;
+    height: 3220px;
+    border-radius: 3px;
+    border-color: #fff;
+    border: 1px solid #eee;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.contentAgreement p {
+    font-size: 14px;
+    color: #8d8d8d;
+    text-indent: 30px;
+    line-height: 26px;
+}
+.ulDiv ul {
+    list-style: decimal;
+    margin: 0;
+    padding: 5px 0;
+    text-indent: 10px;
+}
+.ulDiv li {
+    list-style: decimal;
+    margin: 0;
+    padding: 5px 0;
+    text-indent: 10px;
+}
+.breadP {
+    margin: 10px -30px;
+}
+.breadTitle {
+    font-size: 12px;
+    color: #8d8d8d;
+}
+.hrP {
+    width: 100%;
+    border-bottom: 1px dashed #eee;
+    margin: 10px -30px;
+}
+.titleP {
+    align: center;
+    margin: 30px auto;
+    text-align: center;
+}
+.contentTitle {
+    font-size: 24px;
+    color: #666;
+}
+.agreementTitle {
+    font-size: 14px;
+    color: #666;
+}
+.lineTitle {
+    font-size: 16px;
+    color: #666;
+    margin: 20px -30px;
+}
+.ulDiv {
+    padding-left: 70px;
+}

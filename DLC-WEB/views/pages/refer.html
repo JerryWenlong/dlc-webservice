@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="../css/input.css" />
+
+<div id="signupMiddleDiv" class="referMiddleDiv nb2">
+    <div class="fillDiv">
+        <div class="fillLeftDiv">
+            <!-- <div class="top"><span>点理财 大礼包</span></div>
+            <div class="middle"><span>5000元</span></div>
+            <div class="bottom"><span>输入手机号立拿5000元体验金，3天到期收回，</span></div>
+            <div class="down"><span>成功投资真实项目，6.16收益立即提现！</span></div> -->
+        </div>
+        <div class="boderDiv">
+            <div class="bgOpacity"></div>
+            <form id="signupForm" action="#" onsubmit="return false;">
+                <div class="signReferDiv">
+                    <li class="title" style="text-align:center;margin-left:0px;">
+                        <span class="referTitle" id="referTitle"></span>
+                    </li>
+                    <div class="validateError firstError">
+                        <div class="allErrors hide">
+                            <span class="allErrorsSpan"></span>
+                        </div>
+                    </div>
+                    <li class="phone">
+                        <input type="text" autocomplete="off" placeholder="请输入手机号" id='phone' name='phone' maxlength="11" />
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="password">
+                        <input type="password" autocomplete="off" placeholder="请设置密码(8-16位字母和数字)" class="txtPwd" id='password' name='password' maxlength="16" />
+                        <div class="pwdEyes eyePic1" id="pwdEyes"></div>
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="picVerify">
+                        <input type="text" autocomplete="off" placeholder="请输入图片验证码" id='picVerifyCode' name='picVerifyCode' />
+                        <img class="signupCodeImg" id="captchaImg" title="点击更换验证码">
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="smsVerify">
+                        <input type="text" autocomplete="off" placeholder="请输入验证码" id='verifyCode' name='verifyCode' maxlength="6" />
+                        <button id='verifyCodeBtn'>获取验证码</button>
+                    </li>
+                    <div class="validateError"></div>
+                    <li class="signup">
+                        <button id='signupBtn'>领取红包</button>
+                    </li>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--[if IE]>
+<script>
+    $("#pwdEyes").removeClass("pwdEyes eyePic1");
+</script>
+<![endif]-->
+<script>
+if(window.XMLHttpRequest)//判断浏览器是否属于SogouExtension
+{
+    $("#pwdEyes").removeClass("pwdEyes eyePic1");
+}
+</script>

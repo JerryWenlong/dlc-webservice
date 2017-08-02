@@ -1,0 +1,80 @@
+<div class="withdraw position_relative">
+    <div>
+        <div class="title_bar">
+            <div class="inlineBlock title_bar_action">提现</div>
+            <div class="withdrawicon inlineBlock icon"></div>
+
+            <div id="available" class="inlineBlock title_bar_nub"></div>
+            <div class="inlineBlock title_bar_account">账户余额：</div>
+            <div class="clean"></div>
+        </div>
+        <div class="withdraw_status">
+            <div id="bank_icon" class="bank_icon inlineBlock"></div>
+            <div class="bank_info inlineBlock">
+                <div id="bankName" class="bankName"> </div>
+                <div>
+                    <div class="bankName inlineBlock">尾号 </div>
+                    <div id="bankNo" class="bankNo inlineBlock"> </div>
+                </div>
+
+            </div>
+            <div class="limit inlineBlock hide">
+                <div class="inlineBlock">单笔限额：</div>
+                <div class="inlineBlock">
+                    <div id="limitNo" class="limitNo inlineBlock"></div>
+                    <div id="limitBit" class=" inlineBlock">万</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actionBar mT20">
+            <div class="inlineBlock bar_m">提现金额</div>
+            <input id="no_withdraw" class="inputN" maxlength="10" autocomplete="off" type="text" placeholder="请输入提现金额" />
+        </div>
+        <div class="notes mT10 inlineBlock"> <div class="showTo2 hide">每笔收取2元提现手续费</div></div>
+        <!--    <div id="notes" class="notesid mT10 inlineBlock" ></div>-->
+        <!--    <div id="fee" class="fee inlineBlock" >手续费：2元</div>-->
+        <div class="actionBar mT10">
+            <div class="inlineBlock bar_m">交易密码</div>
+
+            <input id="passWord_withdraw" type="text" onfocus="this.type='password'" autocomplete="off" class="inputN" maxlength="16" placeholder="请输入交易密码" />
+        </div>
+        <div>
+            <div class="notes mT10 inlineBlock" style="color:#ff0054"> 提示：默认与首次登录密码一致。</div>
+            <a class="inlineBlock forget" href="/myCenter_cardTstPwd">忘记密码？</a>
+        </div>
+        <div class="actionBar mT10">
+            <div class="inlineBlock bar_m mf_floatL w60px lhei46px">验证码</div>
+            <div class="modify mf_floatL">
+                <div class="mf_floatL mf_h46 mf_marL">
+                    <input type="text" class="m_wc" id="bPCode" maxlength="6" placeholder="请输入验证码" />
+                </div>
+                <div class="mf_floatL mf_h46 mf_marL6">
+                    <input type="button" class="m_gc" id="getBPCode" value="获取验证码" tag="withdraw">
+                </div>
+            </div>
+        </div>
+        <div id="error" class="error mL280 mT20 "> </div>
+        <button id="withdrawClick" class="action mL280 mT60 ">确定</button>
+        <div class="position_relative">
+            <div class="mL280 notesid mT10 inlineBlock">已完成真实投资用户每月有3次免费提现机会。</div>
+            <div id="notes_rule " class="notes_help inlineBlock"> </div>
+            <div id="rule_detail" class="rule_detail div_float1_none">
+                <div class="rule_title">提现规则</div>
+                <div>
+                    <span class="rule_span">1.用户投资满100元，每月有3次的免费提现机会，超过3次则每笔收取2元提现手续费；</span>
+                    <span class="rule_span">2.用户投资未满100元，每笔提现收取2元手续费；</span>
+                    <span class="rule_span">3.单笔提现金额必须大于等于2元，<span class="red">提现金额上限及具体到账时间请以各自银行系统运作为准。</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wait" class="processing position_absolute position_wait ">
+        <div class="w">
+            <span class="iconwait "></span>
+            <span class="processing-content" id="processing_Content">正在进行取现,请稍等......</span>
+        </div>
+        <div class="border"></div>
+    </div>
+
+</div>

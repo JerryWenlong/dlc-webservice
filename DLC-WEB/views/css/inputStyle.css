@@ -1,0 +1,21 @@
+/*设置输入框placeholder属性的字体颜色 start*/
+input::-webkit-input-placeholder {
+    color: #8d8d8d !important;
+    /* WebKit browsers */
+}
+
+input:-moz-placeholder {
+    color: #8d8d8d !important;
+    /* Mozilla Firefox 4 to 18 */
+}
+
+input::-moz-placeholder {
+    color: #8d8d8d !important;
+    /* Mozilla Firefox 19+ */
+}
+
+input:-ms-input-placeholder {
+    color: #8d8d8d !important;
+    /* Internet Explorer 10+ */
+}
+/*设置输入框placeholder属性的字体颜色 end*/

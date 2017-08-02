@@ -1,0 +1,99 @@
+<div class="pay-bind page">
+	<div class="w">
+		<div class="pay-nav">
+			<span>您的当前位置：</span><a href='/' style="color:#398de1;">首页</a>><a href='/productList' style="color:#398de1;">我要投资</a>><span class="s">支付</span>
+		</div>
+		<div class="pay-context">
+			<div style="height:66px"></div>
+			<div class="pay-order">
+				<div class="pay-prod">
+					<span class="icon">优</span>
+					<div class="name" style="display:inline-block;overflow: hidden;text-overflow: ellipsis;width: 333px;white-space: nowrap;"></div>
+<!--
+					<span class="expected" style="margin-left:10px;">年化：</span>
+					<span class="expected" id="annualYield"></span>
+					<span class="expectedJX" id="annualYieldJX"></span>
+					<span class="expected" style="margin-left:10px;">总收益(元)：</span>
+					<span class="expected" id="anticipatedIncome"></span>
+					<span class="expectedJX" id="anticipatedIncomeJX"></span>
+-->
+					<div class="time">
+						<span style="color:#666">订单号：</span><span style="color:#666" id="orderNo"></span>
+
+						<!-- <span>倒计时:</span>
+						<span class="s" id="minuteShow">0</span><span>分</span>
+						<span class="s" id="secondShow">0</span><span>秒</span> -->
+					</div>
+				</div>
+				<div class="pannel">
+					<div class="hr-line1"></div>
+					<div class="choice-red-bag"><span class="imp-font">选择优惠券</span></div>
+					<!-- <div class="tips-red-bag" id="showUcRpRule"></div> -->
+
+					<div class="coupon-none" id="noRedBag">
+						<div class="coupon-none-icon"></div>
+						<div class="coupon-none-desc">暂无优惠券</div>
+					</div>
+
+					<div class="red-bag-list redPack">
+					</div>
+					<div class="hr-line" style="height:22px"></div>
+					<div style="height:20px"></div>
+					<div class="choice-coin"><span class="imp-font">使用点币抵用</span></div>
+					<div style="height:17px"></div>
+					<div class="use-coin pay-coin">
+						<span class="imp-font" style="text-align:center;padding-left:30px;padding-right:30px;display:inline-block;height: 60px;line-height: 60px;border-right: 1px solid #dedede;"">点币</span>
+						<input type="checkbox" class="hide" id="chkCoin" />
+						<span class="checkboxIcon" style="display:none;margin-left:30px;" id="chkCoinIcon"></span>
+						<span id="coinText" style="padding-left:20px;font-size:14px;color:#575757;display:inline-block;">无点币</span>
+					</div>
+					<div style="height:17px"></div>
+					<div class="tips-coin">
+						<div class="tips-tanhao"></div>
+						<span class="tips-coin2">温馨提示：点币与优惠券不可同时使用</span>
+					</div>
+					<div style="height:22px"></div>
+				</div>
+			</div>
+			<div style="height:42px"></div>
+			<div class="right-cal">
+				<span class="imp-font">订单金额：</span>
+				<span class="red-font">￥</span><span id="orderTotal" class="red-font">0.00</span>
+			</div>
+			<div style="height:20px"></div>
+			<div class="right-cal">
+				<span class="imp-font" id="purposeField"></span>
+				<span class="red-font" id="purposeUnit"></span><span id="coinAmount" class="red-font"></span>
+			</div>
+			<div style="height:26px"></div>
+
+			<div class="order-bal">
+				<span class="imp-font" style="padding-left:76%;">应付总额：</span>
+				<span class="red-font" style="font-size:24px">￥</span><span id="needPay" class="red-font" style="font-size:24px;width:100px;">0.00</span>
+			</div>
+			<div style="height:34px"></div>
+			<ul class="pay-btn-right">
+				<li style="padding-left:780px"><span class="imp-font">账户余额：</span></li>
+				<li><span class="red-font">￥</span></li>
+				<li style="width:100px;"><span id="totalAsset" class="red-font">0.00</span></li>
+				<li><button class="btn pay-timer order-pay">立即支付</button></li>
+			</ul>
+			<div style="height:21px"></div>
+			<div class="right-cal pay-coin">
+				<input type="checkbox" style="display:none" id="chkContract" checked="checked" />
+				<span class="checkboxIcon checked" id="chkContractIcon"></span>
+				<a style="margin-top: 22px;" class="withholdContract" id="withholdContract">已阅读并同意<span style="color:#398be1">【点理财平台委托代扣授权书】</span></a>
+			</div>
+			<div style="height:24px"></div>
+			<div class="error" style="color:red;text-align:right;padding-right:5%" id="errorMsg"></div>
+		</div>
+	</div>
+</div>
+<div id="payDiv" class="order-bal2 hide">
+	<ul class="pay-btn-right">
+		<li style="padding-left:780px"><span class="imp-font">应付总额：</span></li>
+		<li><span class="red-font">￥</span></li>
+		<li style="width:100px;text-align:center;"><span id="needPay2" class="red-font">0.00</span></li>
+		<li><button class="btn pay-timer order-pay">立即支付</button></li>
+	</ul>
+</div>

@@ -1,0 +1,20 @@
+<% include header.html%>
+    <div class="more-activity-banner">
+        <div style="height:730px"></div>
+        <div id="recordList" style="width: 950px;margin: 0 auto;">
+        </div>
+
+        <div style="height:24px"></div>
+        <div style="text-align:center">
+          <div id="recordListPagination" class="pagination"></div>
+        </div>
+    </div>
+
+    <% include footer.html%>
+
+        <script type="text/javascript" src="/js/dlc/moreActivity.js"></script>
+        <script>
+            $(document).ready(function() {
+                new DLC.MoreActivity();
+            });
+        </script>

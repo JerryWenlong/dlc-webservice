@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var a = location.search;
+        alert(a);
+        var b = location.href;
+        alert(b);
+        var c = location.form;
+        alert(c);
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        var html = decodeURIComponent(getQueryString('html'));
+        console.log(html);
+        window.document.write(html);
+    </script>
+</body>
+</html>

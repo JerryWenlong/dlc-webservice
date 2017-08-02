@@ -1,0 +1,237 @@
+<div class="prod-detail page">
+	<div class="wrap">
+		<p class="nav">
+				<span>你的当前位置：</span><a href='/' style="color:#398de1;">首页</a>><a href='/productList'  style="color:#398de1;">我要投资</a>><span>投资详情页</span>
+		</p>
+		<div class="context">
+			<div class="b b1">
+				<div class="w">
+					<p class="title">
+<!--						<span class="icon proTypeShow"></span>-->
+						<span class="label" id="prodName"></span>
+					</p>
+					<div id="couponTips"></div>
+					<div class="prod-info">
+						<div style="width:180px;margin-right:0px;">
+							<p><span id="expectYearReturn"></span></p>
+							<p class="label"></p>
+						</div>
+						<div>
+							<p><span id="productPeriod"></span><span class="s">天</span></p>
+							<p class="label">投资期限</p>
+						</div>
+						<div>
+							<p><span id="maxRaisedAmount"></span><span class="s">万</span></p>
+							<p class="label">项目金额</p>
+						</div>
+						<div style="margin-right: 0">
+							<p><span id="availableAmount"></span><span class="s">元</span></p>
+							<p class="label">剩余可投金额</p>
+						</div>
+					</div>
+					<div class="prod-info-1">
+						<span class="progressNo" id="progressNo"></span>
+						<div class="progress-bar-bg">
+							<p class="progress-bar" id="progressBar"></p>
+						</div>
+						<div style="display:inline-block;font-size:14px;color:#99999F;margin-top:52px;width:350px;">
+							<p>发标时间：<span id="reviewedAt" class="s s1"></span></p>
+							<p style="height:23px;"></p>
+							<p>还款方式：<span class="invest-type"></span></p>
+						</div>
+						<div class="item-foot-1" style="display:inline-block;font-size:14px;color:#99999F;margin-top:52px;">
+							<p>剩余时间：<span class="time" id="dayShow" style="padding-left: 0px;">0</span><span>天</span>
+								<span class="time" id="hourShow">0</span><span>时</span>
+								<span class="time" id="minuteShow">0</span><span>分</span>
+								<span class="time" id="secondShow">0</span><span>秒</span>
+							</p>
+							<p style="height:23px;"></p>
+							<p>起息时间：T（满标日）+1天</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="b b2">
+				<div class="w">
+					<div>
+						<ul class="account-info">
+							<li><span>账户余额</span><span style="font-size: 12px">(元)</span><span>：</span></li>
+							<li style="width:150px;"><span class="loginShow" style="display: none; color: #ff0045; font-size: 20px"></span></li>
+							<li><button class="rechargeShow recharge-btn btn" style="display: none;">充值</button>
+								<button class="unloginShow btn" style="display: none;">请登录</button></li>
+						</ul>
+						<div class="buy-pannel">
+							<div class="item">
+							<br><br>
+<!--
+								<p class="p1"><span class="icon icon_1"></span><span>日收益</span></p>
+								<p class="p2"><span id="expectDayInterest"></span></p>
+-->
+							</div>
+							<div class="item">
+<!--
+								<p class="p1"><span class="icon icon_2"></span><span>总收益</span></p>
+								<p class="p2"><span id="exprctYearInterest"></span></p>
+-->
+							</div>
+							<div class="amount" style="position: relative;">
+								<div id="amountBox" class="w">
+									<div class="clickBtn" id="clickBtn_left"><span class="c c1"></span></div>
+									<input type="text" id="buyAmount" placeholder="" maxlength="7"></input>
+									<div class="clickBtn" id="clickBtn_right"><span class="c c2"></span></div>
+								</div>
+								<div style="text-align:center;font-size:12px;height:30px;line-height: 30px;">市场有风险，投资需谨慎！查看<a href="/insurancePro" target="_blank" style="color:#398be1">【点理财安全保障计划】</a></div>
+								<p id="errorMsg" class="errorMsg"></p>
+							</div>
+							<div style="margin-top: 8px;">
+								<button id="createOrderBtn" class="btn pay-timer"></button>
+							</div>
+							<div style="margin-top: 11px;text-align: center;">
+								<input type="checkbox" style="display:none" id="chkContract" checked="checked" />
+								<span class="checkboxIcon checked" id="chkContractIcon"></span>
+								<a class="withholdContract" id="withholdContract" href="javascript:void(0)" target="_blank">已阅读并同意<span style="color:#398be1">【定向委托投资管理协议】</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="middle-div"></div>
+		<div class="tab-pannel">
+			<div class="top">
+				<div class="tab first" id="tab1">
+					<span>项目介绍</span>
+				</div>
+				<div class="tab " id="tab2">
+					<span>产品介绍</span>
+				</div>
+				<div class="tab last" id="tab3">
+					<span>投资记录</span>
+				</div>
+			</div>
+			<div class="details">
+				<div id="detail1" class="detail">
+
+					<p class="title prodIntroduce hide">
+						<span class="icon icon4"></span>
+						<span class="label">产品介绍</span>
+					</p>
+					<div class="detail-context pl80px hide lh30px" id="prodIntroduce"></div>
+
+					<p class="title prodUsage hide">
+						<span class="icon icon8"></span>
+						<span class="label">资金用途</span>
+					</p>
+					<div class="detail-context pl80px hide lh30px" id="prodUsage"></div>
+
+					<p class="title prodUserInfo hide">
+						<span class="icon icon1"></span>
+						<span class="label">借款人基本信息</span>
+					</p>
+					<div class="detail-context h144px hide" id="prodUserInfo">
+
+					</div>
+					<p class="title prodImgs hide">
+						<span class="icon icon2"></span>
+						<span class="label">借款档案</span>
+					</p>
+					<div class="detail-context pl80px nh240px hide" id="prodImgs"></div>
+
+					<p class="title prodAttacheds hide">
+						<span class="icon icon9"></span>
+						<span class="label">项目附件</span>
+					</p>
+					<div class="detail-image hide" id="prodAttacheds"></div>
+
+					<p class="title prodStrengths hide">
+						<span class="icon icon3"></span>
+						<span class="label">投资亮点</span>
+					</p>
+					<div class="detail-context pl80px hide lh30px" id="prodStrengths"></div>
+
+                    <!-- <div class="h50px"></div>
+                    <div class="h20px bt1pxsc"></div>
+					<p class="title">
+						<span class="icon icon7"></span>
+						<span class="label">风险告知</span>
+					</p>
+					<div class="detail-context">
+                        <div class="pl30px">
+					    市场有风险，投资需谨慎！查看<a target="_blank" href="/insurancePro" style="color:#398be1">【点理财安全保障计划】</a>
+                        </div> -->
+					</div>
+					<div class="h30px"></div>
+				</div>
+
+				<div id="detail2" class="detail">
+					<p class="title">
+						<span class="icon icon4"></span>
+						<span class="label">产品介绍</span>
+					</p>
+					<div class="detail-image">
+					1、点理财精挑细选，仅筛选优质借款人，对借款人进行严格的实地考察，并审核借款人还款意愿、借款用途、还款来源、还款能力、资信情况等，秉持客观公正的原则，严格风控，最大程度的尽力确保借款人信息的真实性，在有效规避风险的同时为投资人推荐个性化的投资项目。<br>
+					2、投资用户将资金出借给有良好实体经营、且有借款需求的企业，获得可观的年化投资收益，同时帮助缓解中小微企业、三农企业融资难问题。<br>
+					3、投资用户投资本息由互保联保企业提供本息全额担保，若借款企业发生逾期或还款违约，则由互保联保企业对投资用户先行代偿。
+					</div>
+					<div class="i1"></div>
+					<p class="title">
+						<span class="icon icon5"></span>
+						<span class="label">严格风控</span>
+					</p>
+					<div class="detail-image"></div>
+					<div class="i2"></div>
+					<p class="title">
+						<span class="icon icon6"></span>
+						<span class="label">多重保障</span>
+					</p>
+					<div class="detail-image h350px">
+                        <ul>
+                            <li class="liI liI1"></li><li class="liIC"><b>贷后监控管理</b><br>点理财及合作机构的专业风控团队建立了完善的贷后监控及预警系统，在借款项目还款期间通过多种渠道定期、高频监控借款人的资金情况，计时更新借款人的真实还款能力，监督借款人按时还款并对可能的风险及时预警</li>
+                            <li class="liI liI2" style="margin-top:5px;"></li><li class="liIC"><b>互保联保企业提供逾期项目资产回购</b><br>根据协议，由互保联保企业为投资用户提供本息全额担保，若借款人发生逾期或还款违约，则由联保企业对投资用户先行代偿</li>
+                            <li class="liI liI3"></li><li class="liIC"><b>快速专业催收</b><br>点理财及合作机构的专业催收团队将快速跟进追偿，以制度化、流程化、数据化的理念，通过电话、短信、邮件、登门等方式紧密追踪借款人，引导借款人认识到个人信用重要性，督促其尽快还款</li>
+                        </ul>
+                    </div>
+					<div class="h50px"></div>
+                    <div class="h20px bt1pxsc"></div>
+					<p class="title">
+						<span class="icon icon7"></span>
+						<span class="label">风险告知</span>
+					</p>
+					<div class="detail-context">
+                        <div class="pl30px">
+					    市场有风险，投资需谨慎！查看<a target="_blank" href="/insurancePro" style="color:#398be1">【点理财安全保障计划】</a>
+                        </div>
+					</div>
+					<div class="h30px"></div>
+				</div>
+				<div id="detail3" class="detail">
+					<p class="title">
+						<span class="c c1 cM">投资人</span>
+						<span class="c c2 cM">投资金额（元）</span>
+						<span class="c c3 cM">来源</span>
+						<span class="c c4 cM">投资时间</span>
+					</p>
+					<div id="tradeRecords" class="tradeRecords">
+
+					</div>
+					<div class="paging-pannel">
+						<div id="tradeRecordsPagination" class="pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="middle-div"></div>
+	</div>
+</div>
+<div class="showImgDiv" id="showImgDiv">
+    <div class="showImgDivL">
+        <div class="showImgL left_h hide"></div>
+    </div>
+    <span class="showImgDivClose" id="showImgDivClose"></span>
+    <div class="showImg2"><img id="showImg" class="showImg"></div>
+    <div class="showIndex"><span class="showIndex0"></span>： <span class="showIndex1">1</span> / <span class="showIndex2">1</span></div>
+    <div class="showImgDivR">
+        <div class="showImgR right_h hide"></div>
+    </div>
+</div>

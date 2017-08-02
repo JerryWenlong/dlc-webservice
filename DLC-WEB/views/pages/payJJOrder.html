@@ -1,0 +1,74 @@
+<div class="pay-bind page">
+	<div class="w">
+		<div class="pay-nav">
+			<span>您的当前位置：</span><a href='/' style="color:#398de1;">首页</a>><a href='/productList' style="color:#398de1;">我要投资</a>><span class="s">支付</span>
+		</div>
+		<div class="pay-context">
+			<div style="height:66px"></div>
+			<div class="pay-order">
+				<div class="pay-prod">
+					<span class="icon">节</span>
+					<div class="name" style="display:inline-block;overflow: hidden;text-overflow: ellipsis;width: 333px;white-space: nowrap;"></div>
+<!--
+					<span class="expected" style="margin-left:10px;">年化：</span>
+					<span class="expected" id="annualYield"></span>
+					<span class="expectedJX" id="annualYieldJX"></span>
+					<span class="expected" style="margin-left:10px;">总收益(元)：</span>
+					<span class="expected" id="anticipatedIncome"></span>
+					<span class="expectedJX" id="anticipatedIncomeJX"></span>
+-->
+					<div class="time">
+						<span style="color:#666">订单号：</span><span style="color:#666" id="orderNo"></span>
+
+						<!-- <span>倒计时:</span>
+						<span class="s" id="minuteShow">0</span><span>分</span>
+						<span class="s" id="secondShow">0</span><span>秒</span> -->
+					</div>
+				</div>
+				<div class="pannel">
+					<div class="hr-line1"></div>
+					<div class="choice-red-bag"><span class="imp-font">选择升息令牌</span></div>
+					<div class="tips-token" id="showSXRule"></div>
+
+					<div class="token-none" id="noRedBag">
+						<div class="token-none-icon"></div>
+						<div class="token-none-desc">暂无升息令牌</div>
+					</div>
+
+					<div class="red-bag-list interest-token-list">
+					</div>
+					<div style="height:20px"></div>
+				</div>
+			</div>
+			<div style="height:42px"></div>
+
+			<div class="order-bal">
+				<span class="imp-font" style="padding-left:76%;">应付总额：</span>
+				<span class="red-font" style="font-size:24px">￥</span><span id="needPay" class="red-font" style="font-size:24px;width:100px;">0.00</span>
+			</div>
+			<div style="height:34px"></div>
+			<ul class="pay-btn-right">
+				<li style="padding-left:780px"><span class="imp-font">账户余额：</span></li>
+				<li><span class="red-font">￥</span></li>
+				<li style="width:100px;"><span id="totalAsset" class="red-font">0.00</span></li>
+				<li><button class="btn pay-timer order-pay">立即支付</button></li>
+			</ul>
+			<div style="height:21px"></div>
+			<div class="right-cal pay-coin">
+				<input type="checkbox" style="display:none" id="chkContract" checked="checked" />
+				<span class="checkboxIcon checked" id="chkContractIcon"></span>
+				<a style="margin-top: 22px;" class="withholdContract" id="withholdContract">已阅读并同意<span style="color:#398be1">【点理财平台委托代扣授权书】</span></a>
+			</div>
+			<div style="height:24px"></div>
+			<div class="error" style="color:red;text-align:right;padding-right:5%" id="errorMsg"></div>
+		</div>
+	</div>
+</div>
+<div id="payDiv" class="order-bal2 hide">
+	<ul class="pay-btn-right">
+		<li style="padding-left:780px"><span class="imp-font">应付总额：</span></li>
+		<li><span class="red-font">￥</span></li>
+		<li style="width:100px;text-align:center;"><span id="needPay2" class="red-font">0.00</span></li>
+		<li><button class="btn pay-timer order-pay">立即支付</button></li>
+	</ul>
+</div>

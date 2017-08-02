@@ -1,0 +1,86 @@
+<% include header.html%>
+
+<div class="questionCenterBg">
+    <div class="questionCenterMain">
+        <div class="questionCenterTop"></div>
+        <div class="h12px"></div>
+        <div class="questionCenterLeftMenu">
+            <a class="questionCenterMenuList <%=leftNav.questionUser.menu%>" id="questionCenterA" href="questionUser">
+                    <div class="<%=leftNav.questionUser.icon%> qcMenuPoint" id="questionCenter_A"></div>
+                    <div class="qcMenuText">账户</div>
+            </a>
+            <a class="questionCenterMenuList  <%=leftNav.questionPwd.menu%>" id="questionCenterB" href="questionPwd">
+                    <div class="<%=leftNav.questionPwd.icon%> qcMenuPoint" id="questionCenter_B"></div>
+                    密码
+            </a>
+            <a class="questionCenterMenuList <%=leftNav.questionBank.menu%>" id="questionCenterC" href="questionBank">
+                    <div class="<%=leftNav.questionBank.icon%> qcMenuPoint" id="questionCenter_C"></div>
+                    银行卡
+            </a>
+            <a class="questionCenterMenuList <%=leftNav.questionRecharge.menu%>" id="questionCenterD" href="questionRecharge">
+                <div class="questionCenterMenuListIn">
+                    <div class="<%=leftNav.questionRecharge.icon%> qcMenuPoint" id="questionCenter_D"></div>
+                    充值
+                </div>
+            </a>
+            <a class="questionCenterMenuList <%=leftNav.questionCash.menu%>" id="questionCenterE" href="questionCash">
+                <div class="questionCenterMenuListIn">
+                    <div class="<%=leftNav.questionCash.icon%> qcMenuPoint" id="questionCenter_E"></div>
+                    提现
+                </div>
+            </a>
+            <a class="questionCenterMenuList <%=leftNav.questionInvest.menu%>" id="questionCenterF" href="questionInvest">
+                <div class="questionCenterMenuListIn">
+                    <div class="<%=leftNav.questionInvest.icon%> qcMenuPoint" id="questionCenter_F"></div>
+                    投资
+                </div>
+            </a>
+            <a class="quLastMenu questionCenterMenuList <%=leftNav.questionIncomeAndRedeem.menu%>" id="questionCenterG" href="questionIncomeAndRedeem">
+                <div class="questionCenterMenuListIn">
+                    <div class="<%=leftNav.questionIncomeAndRedeem.icon%> qcMenuPoint" id="questionCenter_G"></div>
+                    收益和赎回
+                </div>
+            </a>
+        </div>
+        <div id="questionCenterRightMain" class="questionCenterRightMain">
+			<% if (loadHtml=='questionUser') {%>
+
+            	<% include question/questionUser.html %>
+
+            <% }else if(loadHtml=='questionPwd'){%>
+
+            	<% include question/questionPwd.html %>
+
+            <% }else if(loadHtml=='questionBank'){%>
+
+            	<% include question/questionBank.html %>
+
+            <% }else if(loadHtml=='questionRecharge'){%>
+
+                <% include question/questionRecharge.html %>
+
+            <% }else if(loadHtml=='questionCash'){%>
+
+            	<% include question/questionCash.html %>
+
+            <% }else if(loadHtml=='questionInvest'){%>
+
+            	<% include question/questionInvest.html %>
+
+            <% }else if(loadHtml=='questionIncomeAndRedeem'){%>
+
+            	<% include question/questionIncomeAndRedeem.html %>
+
+            <%  } %>
+
+        </div>
+    </div>
+</div>
+
+
+<% include footer.html%>
+<script>
+$(document).ready(function() {
+    window.app.initHeader(3);
+});
+</script>

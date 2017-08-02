@@ -1,0 +1,33 @@
+<div class="tradePasswordDiv" style="height:180px">
+	<ul>
+		<li class="firstLi" style="background-color: #fff;"><span class="title">余额不足，请先充值</span></li>
+		<li class="lastLi" style="padding-top: 30px;">
+			<input type="button" value="立即充值" class="confirmBtn btn" id="confirmBtn">
+			<input type="button" value="取消" class="cancelBtn btn" id="cancelBtn">
+			<span id="hidPaySpan"></span>
+		</li>
+	</ul>
+</div>
+
+<script>
+	(function($) {
+		var that = this;
+		$("#confirmBtn").bind('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			if(app.account.accountInfo == null){
+				window.location.href = "/login";
+			}
+			var hasCard = app.account.accountInfo["hasCard"];
+			if (!hasCard) {
+				window.location.href = "/myCenter_userBindBankCard";
+			} else {
+				window.location.href = "/myCenter_deposit";
+			}
+		});
+		$('#cancelBtn').click(function() {
+			DLC.Util.hideAdjust('#adjust');
+			DLC.Util.hideOverlay();
+		});
+	})(jQuery);
+</script>

@@ -1,0 +1,49 @@
+<% include header.html%>
+
+<% include aboutNav.html%>
+
+<div class="aboutCommon comMarO"><span id="styleName"><%=noticeTitle%></span>
+    <div class="aboutCommonLine"></div>
+</div>
+<div class="articleList">
+    <div id="articleList">
+
+      <% noList.forEach(function(list,index){ %>
+
+		<div class="aWdh936 aListDet">
+            <div class="aWid868 aFS16 tAndT" onclick=window.location.href="noticeContent/<%=list.bulletinId %>?page=<%=pageAll.page%>">
+                <div class="fLeft"><%=list.title%></div>
+                <div class="fRight"><%=list.publishAt.replace(/T/,' ')%></div>
+            </div>
+            <div class="aWid868 aColorAA aFS14 conBrief"><%=list.summery%></div>
+        </div>
+
+      <% }) %>
+
+
+    </div>
+    <div class="paging-pannel">
+        <div id="articleListPagination" class="pagination">
+        	<% if(pageAll.page!=1){%>
+        	<a href="aboutNotice?type=<%=pageAll.type%>&pageSize=<%=pageAll.pageSize%>&page=<%=pageAll.prevPage%>"  style="width:80px;">上一页</a>
+
+            <% } %>
+
+            <% for(var i=pageAll.startPage;i<=pageAll.endPage;i++){ %>
+            	<a href="aboutNotice?type=<%=pageAll.type%>&pageSize=<%=pageAll.pageSize%>&page=<%=i%>" class="<%if(pageAll.page==i){%>current<%}%>"><%=i%></a>
+            <% } %>
+
+            <% if(pageAll.page!=pageAll.pageTotal){%>
+            <a href="aboutNotice?type=<%=pageAll.type%>&pageSize=<%=pageAll.pageSize%>&page=<%=pageAll.nextPage%>" style="width:80px;">下一页</a>
+            <% } %>
+
+        </div>
+    </div>
+</div>
+
+<% include footer.html%>
+<script>
+$(document).ready(function() {
+    window.app.initHeader(3);
+});
+</script>

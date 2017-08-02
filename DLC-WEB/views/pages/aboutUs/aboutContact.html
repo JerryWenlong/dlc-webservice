@@ -1,0 +1,176 @@
+<style>
+    .BaiDuMap .icon {
+        background: url(http://lbs.amap.com/console/public/show/marker.png) no-repeat;
+    }
+
+    .BaiDuMap .icon-cir {
+        height: 31px;
+        width: 28px;
+    }
+
+    .BaiDuMap .icon-cir-red {
+        background-position: -11px -5px;
+    }
+
+    .amap-container {
+        height: 254px;
+    }
+</style>
+<div class="auContactDiv">
+    <div class="auCDMHead w500px">
+        <div class="auCDMHIn w360px">
+            众网金融科技（上海）有限公司
+        </div>
+    </div>
+    <div class="rDescribe aMap">
+        <p class="aMapT">· 客户服务</p>
+        <p>如果您在使用过程中对功能产生疑问或出现错误提示，请与我们的客服人员联系。</p>
+        <p>客服电话：<span class="color008dec">400-820-2450</span>（工作日09:00-18:00）</p>
+        <p>在线帮助：<a target="_blank" href="http://q.url.cn/s/JV6tDJm" alt="QQ" class="auCQQ"> </a>（点击与客服进行即时在线沟通）</p>
+        <p>客服邮箱：<span class="color008dec">kefu@dianlc.com</span>
+        </p>
+    </div>
+
+    <div class="rDescribe aMap">
+        <p class="aMapT">· 商务合作</p>
+        <p>如果有广告投放合作、商务合作需求，请将合作意向进行简要描述并发送邮件至此邮箱，我们将尽快与您联系！</p>
+        <p>联系人：邓女士</p>
+        <p>合作邮箱：<span class="color008dec">deng.za@finnovate.com.cn</span>
+        </p>
+    </div>
+
+    <div class="rDescribe aMap">
+        <p class="aMapT">· 媒体合作</p>
+        <p>如果有品牌、市场活动、媒体合作需求，请将合作意向进行简要描述并发送邮件至此邮箱，我们会尽快与您联系！</p>
+        <p>联系人：田先生</p>
+        <p>合作邮箱：<span class="color008dec">tian.xy@finnovate.com.cn</span>
+        </p>
+    </div>
+
+    <div class="rDescribe aMap">
+        <p class="aMapT">· 友情链接</p>
+        <p>欢迎各大网站交换友情链接，在您把本站加入贵站友情链接后，请来信并注明链接方式并附链接代码，我们将尽快与贵站联系。</p>
+        <p>联系人：杨先生</p>
+        <p>合作邮箱：<span class="color008dec">yang.ming@finnovate.com.cn</span>
+        </p>
+    </div>
+    <div class="BaiDuMap" id="wrap">
+        <div id="mapContainer"></div>
+        <div class="afloatDiv">
+            <p class="cenUs">联系我们</p>
+            <!--
+        <p>服务时间：工作日09:00-18:00</p>
+        <p>客服邮箱：kefu@dianlc.com</p>
+-->
+            <p>公司地址：上海市长宁区福泉北路388号</p>
+            <p class="ling">东方国信商务广场A座10层</p>
+            <p>邮政编码：200335</p>
+            <p>总机电话：400-820-2450</p>
+        </div>
+    </div>
+    <script>
+        ! function () {
+            var infoWindow, map, level = 17,
+                center = {
+                    lng: 121.353973,
+                    lat: 31.229983
+                },
+                features = [{
+                    type: "Marker",
+                    name: "众网金融科技（上海）有限公司",
+                    desc: "上海市长宁区福泉北路388号东方国信商务广场A座10层",
+                    color: "red",
+                    icon: "cir",
+                    offset: {
+                        x: -9,
+                        y: -31
+                    },
+                    lnglat: {
+                        lng: 121.356156,
+                        lat: 31.229875
+                    }
+                }];
+
+            function loadFeatures() {
+                for (var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++) {
+                    data = features[i];
+                    switch (data.type) {
+                    case "Marker":
+                        feature = new AMap.Marker({
+                            map: map,
+                            position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+                            zIndex: 3,
+                            extData: data,
+                            offset: new AMap.Pixel(data.offset.x, data.offset.y),
+                            title: data.name,
+                            content: '<div class="icon icon-' + data.icon + ' icon-' + data.icon + '-' + data.color + '"></div>'
+                        });
+                        break;
+                    case "Polyline":
+                        for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polyline({
+                            map: map,
+                            path: path,
+                            extData: data,
+                            zIndex: 2,
+                            strokeWeight: data.strokeWeight,
+                            strokeColor: data.strokeColor,
+                            strokeOpacity: data.strokeOpacity
+                        });
+                        break;
+                    case "Polygon":
+                        for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polygon({
+                            map: map,
+                            path: path,
+                            extData: data,
+                            zIndex: 1,
+                            strokeWeight: data.strokeWeight,
+                            strokeColor: data.strokeColor,
+                            strokeOpacity: data.strokeOpacity,
+                            fillColor: data.fillColor,
+                            fillOpacity: data.fillOpacity
+                        });
+                        break;
+                    default:
+                        feature = null;
+                    }
+                    if (feature) {
+                        AMap.event.addListener(feature, "click", mapFeatureClick);
+                    }
+                }
+            }
+
+            function mapFeatureClick(e) {
+                if (!infoWindow) {
+                    infoWindow = new AMap.InfoWindow({
+                        autoMove: true
+                    });
+                }
+                var extData = e.target.getExtData();
+                infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+                infoWindow.open(map, e.lnglat);
+            }
+
+            map = new AMap.Map("mapContainer", {
+                center: new AMap.LngLat(center.lng, center.lat),
+                level: level
+            });
+
+            loadFeatures();
+
+            map.on('complete', function () {
+                map.plugin(["AMap.ToolBar", "AMap.OverView", "AMap.Scale"], function () {
+                    map.addControl(new AMap.ToolBar);
+                    map.addControl(new AMap.OverView);
+                    map.addControl(new AMap.Scale);
+                });
+            })
+
+        }();
+    </script>
+</div>

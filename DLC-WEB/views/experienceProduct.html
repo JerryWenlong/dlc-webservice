@@ -1,0 +1,184 @@
+<% include header.html%>
+	<div class="prod-detail page" id="mainContent">
+		<div class="wrap">
+			<p class="nav">
+				<span>你的当前位置：</span><a href='/' style="color:#398de1;">首页</a>><a href='/productList' style="color:#398de1;">我要投资</a>><span>投资详情页</span>
+			</p>
+			<div class="context" style="height:320px;">
+				<div class="b1 b">
+					<p class="title">
+						<!-- <span class="exp-icon">新</span> -->
+						<span class="icon proTypeShow">新</span>
+						<span class="label1" style="font-size: 18px;" id="prodName">新手福利标</span>
+						<span style="color:#999;font-size:12px;">（每位新用户限投一次）</span>
+					</p>
+					<div class="w">
+						<div class="prod-info">
+							<div style="margin-right:120px;">
+								<p style="color:#ff7800">
+									<span id="expectYearReturn"></span><span class="s">%</span>+<span id="expectYearReturn2"></span><span class="s">%</span>
+								</p>
+								<p class="label">预期年化收益</p>
+							</div>
+							<div style="margin-right:120px;">
+								<p><span id="productPeriod"></span><span class="s">天</span></p>
+								<p class="label">投资期限</p>
+							</div>
+							<div>
+								<p><span id="totalAmount"></span><span class="s">万</span></p>
+								<p class="label">项目金额</p>
+							</div>
+						</div>
+						<div class="prod-info-1" style="margin-top: 0px;">
+							<div style="display:inline-block;font-size:14px;color:#99999F;margin-top:30px;width:350px;">
+								<p><span class="limit-icon"></span>投资限额：2000元</p>
+								<p style="height:16px;"></p>
+								<p><span class="repayment-icon"></span>还款方式：<span class="invest-type"></span></p>
+							</div>
+							<div class="item-foot-1" style="display:inline-block;font-size:14px;color:#99999F;margin-top:30px;">
+								<p><span class="tip-icon"></span>温馨提示：市场有风险，投资需谨慎</span>
+								</p>
+								<p style="height:16px;"></p>
+								<p><span class="invest-icon"></span>起息时间：T（满标日）+1天</p>
+							</div>
+						</div>
+						<div class="prod-info-2">
+							<input type="checkbox" style="display:none" id="chkContract" checked="checked" />
+							<span class="checkboxIcon checked" id="chkContractIcon"></span> 已阅读并同意
+							<a class="withholdContract" id="withholdContract" href="javascript:void(0)" target="_blank"><span style="color:#398be1">【定向委托投资管理协议】</span></a>
+							<a class="withholdContract" id="withholdContract2" href="javascript:void(0)" target="_blank"><span style="color:#398be1">【点理财平台委托代扣授权书】</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="b b2">
+					<div class="w">
+						<div>
+							<div class="account-info">
+								<span style="width:76px;display:inline-block;">账户余额：</span>
+								<span class="loginShow" style="width:194px;display:inline-block; color: #ff7800; font-size: 16px"> </span>
+								<button class="rechargeShow recharge-btn btn" style="display: none;">充值</button>
+								<button class="unloginShow btn" style="display: none;">登录</button>
+							</div>
+							<div class="account-info">
+								<span style="width:76px;display:inline-block;">投资余额：</span>
+								<input type="text" id="buyAmount" class="buy-amount">
+								<button class="all-invest btn" id="allInvest">全投</button>
+							</div>
+							<div class="account-info" style="height: 12px;line-height: 12px;">
+								<span style="width:76px;display:inline-block;"> </span>
+								<span style="width:194px;display:inline-block; font-size: 12px">预期收益：
+									<span id="exprctYearInterest" style="color: #ff7800;">0.00</span>元
+								</span>
+							</div>
+							<p id="errorMsg" class="errorMsg" style="height:15px;margin-top: 45px;color: #ff7800;"></p>
+							<div class="buy-pannel" style="margin-top: 15px;">
+								<button id="toExperience" class="btn pay-timer blueBtn" disabled>立即投资</button>
+							</div>
+							<div style="margin-top: 10px;text-align: center;color:#99999F;">
+								市场有风险，投资需谨慎
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle-div"></div>
+			<div class="tab-pannel">
+				<div class="top">
+					<div class="tab first" id="tab1">
+						<span>新手标介绍</span>
+					</div>
+					<!-- <div class="tab " id="tab2">
+					<span>项目附件</span>
+				</div> -->
+					<!-- <div class="tab last" id="tab3">
+					<span>投资记录</span>
+				</div> -->
+				</div>
+				<div class="details">
+					<div id="detail1" class="detail">
+
+						<div style="display:inline-block;width:500px;margin-bottom: 47px;margin-left: 50px;">
+							<p class="label" style="margin-bottom:16px;margin-top: 25px;">服务介绍</p>
+							<p class="label2">新手福利标仅针对在点理财平台未注册过的新用户，且只能参加一次，它将用户的出借资金自动匹配到点理财30天产品中，预期年化收益为7.5%<span class="label3">+2.5%</span>，其中<span class="label3">2.5%</span>为新用户专享加息福利。用户投资成功，可到“我的账户”中查看投资记录以及项目详情。</p>
+						</div>
+						<div class="ex1" style="margin:48px 0px 0px 249px;display:inline-block;vertical-align: top;"></div>
+
+						<div style="border-bottom:1px solid #d8d8d8;"></div>
+
+						<div class="ex2" style="margin:0px 185px 0px 114px;display:inline-block;"></div>
+						<div style="display:inline-block;margin-bottom: 47px;">
+							<p class="label" style="margin-top:55px;margin-bottom:16px;">服务明细</p>
+							<p class="label2">1.投资期限：30天（满标次日起息）</p>
+							<p class="label2">2.预期年化收益：7.5%<span class="label3">+2.5%</span></p>
+							<p class="label2">3.投资限额：低至100元起投，每人限投2000元</p>
+							<p class="label2">4.服务协议：<a href="javascript:;" class="label4">【定向委托投资管理协议】</a></p>
+						</div>
+
+						<div style="border-bottom:1px solid #d8d8d8;"></div>
+
+						<div style="display:inline-block;margin-bottom: 47px;margin-left: 50px;">
+							<p class="label" style="margin-top:25px;margin-bottom:19px;">收益计算(收益仅供参考)</p>
+							<p class="label3" style="margin-bottom:24px;">到期收益 = 投资金额*预期年化收益/365*30</p>
+							<table style="width:540px;height:139px;text-align:center;font-size:14px;border: 1px solid #d8d8d8;">
+								<tr style="height:36px;color:#999;background-color:#f3f6fb;">
+									<th style="width:134px;border-right: 1px solid #d8d8d8;border-bottom: 1px solid #d8d8d8;">投资金额</th>
+									<th style="width:136px;border-right: 1px solid #d8d8d8;border-bottom: 1px solid #d8d8d8;">预期年化收益</th>
+									<th style="width:136px;border-right: 1px solid #d8d8d8;border-bottom: 1px solid #d8d8d8;">投资期限</th>
+									<th style="width:139px;border-bottom: 1px solid #d8d8d8;">到期收益</th>
+								</tr>
+								<tr>
+									<td style="border-right: 1px solid #d8d8d8;border-bottom: 1px solid #d8d8d8;">100元</td>
+									<td style="border-right: 1px solid #d8d8d8;" rowspan="3">7.5%<span class="label3">+2.5%</span></td>
+									<td style="border-right: 1px solid #d8d8d8;" rowspan="3">30天</td>
+									<td style="border-bottom: 1px solid #d8d8d8;">0.61<span class="label3">+0.20</span></td>
+								</tr>
+								<tr>
+									<td style="border-right: 1px solid #d8d8d8;border-bottom: 1px solid #d8d8d8;">1000元</td>
+									<td style="border-bottom: 1px solid #d8d8d8;">6.16<span class="label3">+2.05</span></td>
+								</tr>
+								<tr>
+									<td style="border-right: 1px solid #d8d8d8;">2000元</td>
+									<td>12.32<span class="label3">+4.10</span></td>
+								</tr>
+							</table>
+						</div>
+						<div class="ex3" style="display:inline-block;margin:126px 0px 0px 184px;vertical-align: top;"></div>
+
+						<div style="border-bottom:1px solid #d8d8d8;"></div>
+
+						<div class="ex4" style="margin:43px 169px 0px 114px;display:inline-block;"></div>
+						<div style="display:inline-block;margin-bottom: 47px;">
+							<p class="label" style="margin-top:55px;margin-bottom:16px;">资金安全</p>
+							<p class="label2">1.整个交易过程点理财不触碰用户资金，交易资金完全由第三方支付机构监管；</p>
+							<p class="label2">2.资金交易过程由太平洋保险提供安全保障；</p>
+							<p class="label2">3.新手福利标同样适用于<a href="/webCount" style="color:#398be1">平台风险备付金计划</a>，为投资用户提供了有效的风险保障机制。</p>
+						</div>
+
+					</div>
+					<div id="detail3" class="detail">
+						<p class="title">
+							<span class="c c1 cM">投资人</span>
+							<span class="c c2 cM">投资金额（元）</span>
+							<span class="c c3 cM">来源</span>
+							<span class="c c4 cM">投资时间</span>
+						</p>
+						<div id="tradeRecords" class="tradeRecords">
+
+						</div>
+						<div class="paging-pannel">
+							<div id="tradeRecordsPagination" class="pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle-div"></div>
+		</div>
+	</div>
+	<% include footer.html%>
+		<script type="text/javascript" src="/js/dlc/experienceProduct.js"></script>
+		<script>
+			$(document).ready(function () {
+				new DLC.ExperienceProduct('<%=pid%>');
+				window.app.initHeader(1);
+			});
+		</script>

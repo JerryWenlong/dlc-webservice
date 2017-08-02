@@ -1,0 +1,91 @@
+<div class="userCenterRightMainTop">
+    <div class="ucrmtSty">银行卡</div>
+    <div class="ucrmtImgSty ucrmtImg1"></div>
+</div>
+<div class="h45px"></div>
+<div class="pl150px">
+    <div class="h46px mr30px floatl w100px aginr">姓名</div>
+    <div class="h46px floatl w352px posr isNoSm">
+        <input type="text" id="realName" class="inputUCBBCPub w288px" placeholder="请输入您的姓名" maxlength="20">
+    </div>
+    <div class="h46px floatl w352px posr isSm" id="realNameShow"></div>
+</div>
+<div class="hl20px pl310px pt5px ucelpShowErr" id="realNameShowErr"><span class="promptColor isNoSm">提示：此姓名将作为实名认证信息</span>
+</div>
+<div class="pl150px">
+    <div class="h46px mr30px floatl w100px aginr">身份证号</div>
+    <div class="h46px floatl w352px posr isNoSm">
+        <input type="text" id="cardNum" class="inputUCBBCPub w288px" placeholder="请输入身份证号码" maxlength="18">
+    </div>
+    <div class="h46px floatl w352px posr isSm" id="cardNumShow"></div>
+</div>
+<div class="hl20px pl310px pt5px ucelpShowErr" id="cardNumShowErr"><span class="promptColor isNoSm">提示：此身份证号将作为实名认证信息</span>
+</div>
+<div class="pl150px">
+    <div class="h46px mr30px floatl w100px aginr">发卡行</div>
+    <div class="h46px floatl w352px posr isNoBd">
+        <input type="text" id="bankName" class="inputUCBBCPub w288px curp" readonly="true" placeholder="请选择银行">
+        <input type="hidden" id="bankId">
+        <div class="ucUBBCXL xlpng" id="bankNameBtn"></div>
+        <div class="w320px ucUBBCBankList" id="bankList">
+        </div>
+    </div>
+    <div class="h46px floatl w352px posr isBd" id="bankNameShow"></div>
+</div>
+<div class="hl20px pl310px pt5px ucelpShowErr" id="bankNameShowErr"></div>
+<div class="pl150px">
+    <div class="h46px mr30px floatl w100px aginr">银行卡号</div>
+    <div class="h46px floatl w352px posr isNoBd">
+        <input type="text" id="bankNum" class="inputUCBBCPub w288px" placeholder="请输入银行卡号" maxlength="19">
+    </div>
+    <div class="h46px floatl w352px posr isBd" id="bankNumShow"></div>
+</div>
+<div class="hl20px pl310px pt5px ucelpShowErr" id="bankNumShowErr"></div>
+<div class="pl150px">
+    <div class="h46px mr30px floatl w100px aginr">手机号码</div>
+    <div class="h46px floatl w352px posr isNoBd">
+        <input type="text" id="bankPhone" class="inputUCBBCPub w288px" placeholder="请输入银行预留手机号码" maxlength="11">
+    </div>
+    <div class="h46px floatl w352px posr isBd" id="bankPhoneShow"></div>
+</div>
+<div class="hl20px pl310px pt5px ucelpShowErr isNoBd" id="bankPhoneShowErr"></div>
+<div class="pl150px isNoBd">
+    <div class="h46px mr30px floatl w100px aginr">验证码</div>
+    <div class="h46px floatl w179px posr mr6px">
+        <input type="text" id="captcha" class="inputUCBBCPub w146px" placeholder="请输入验证码" maxlength="6">
+    </div>
+    <div class="h46px floatl">
+        <input type="button" id="captchaBtn" class="inputUCBBCCB w136px col8d" disabled="true" value="获取验证码">
+        <span class="ucelpShowTime" id="captchaShowTime"></span>
+    </div>
+</div>
+<div class="h60px pl280px isNoBd">
+    <div class="hl20px pl30px pt5px ucelpShowErr isNoBd" id="captchaShowErr"></div>
+    <div class="floatl w352px posr font hid" id="capSuccShow"></div>
+</div>
+<div class="pl280px isNoBd">
+    <input type="button" id="editBotton" class="inputUCELPBotton" value="立即绑定">
+    <div class="ubbcRule">
+        <span class='curp showUbbcRule'>点理财绑定银行卡规则</span>
+        <div class="uccbRuleShow showUbbcRule">？</div>
+    </div>
+</div>
+<div id="urRuleShow" class="urRuleShow">
+    <div class="urbg">
+        <div class="urbgMain">
+            <div class="urHead">绑卡规则</div>
+            <div class="urContent">
+                <ul>
+                    <li class="urId">1、</li>
+                    <li class="urText">绑定的银行卡开户身份需与实名信息保持一致</li>
+                    <li class="urId">2、</li>
+                    <li class="urText">每个账户只能绑定一张银行卡，此卡默认为该账户的唯一提现卡。</li>
+                    <li class="urId">3、</li>
+                    <li class="urText">银行卡绑定后不可更改。</li>
+                    <li class="urId">4、</li>
+                    <li class="urText">如需帮助请联系客服：400-820-2450。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

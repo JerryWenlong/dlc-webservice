@@ -1,0 +1,72 @@
+<div class="experience-prod page">
+	<div class="wrap">
+		<p class="nav">
+			<span>你的当前位置：</span><span class="s">我要投资></span><span class="s">投资详情页></span><span class="s">支付页</span>
+		</p>
+		<div class="context pay-context">
+			<div class="b3 b">
+				<p class="title">
+					<span class="icon"></span>
+					<span class="label" id="prodName"></span>
+				</p>
+			</div>
+			<div class="b2 b" style="display： none" id='couponPannel'>
+
+					<div class="pannel">
+						<div class="p2">
+							<div class="p2-left">
+								<span></span><span id="orderNo"></span>
+							</div>
+							<div class="p2-right">
+								<span>总收益：</span><span id="orderYields" class="right-span">0.00</span><span>元</span>
+							</div>
+						</div>
+						<div class="pay-list pay-list-disabled" id="pay-coupon">
+							<div class="pay-list-left">
+								<input type="checkbox" class="hide" id="chkCoupon" />
+								<span class="checkboxIcon" id="chkCouponIcon"></span>
+								<span>体验金</span>
+							</div>
+							<div class="pay-list-right" id="pay-list-right-coupon">
+								<span id="experienceAmount" class="right-span">0.00</span><span id="experienceAmountUnit">元</span>
+								<span class="arrow-disabled" id="arrow-coupon"></span>
+							</div>
+						</div>
+
+					<div class="coupon coupon1">
+						<div class="coupon-up">
+							<div class="coupon-up-left">
+								<span class="amount" id="amount">0</span>
+								<span class="amount-unit">元</span>
+							</div>
+							<div class="coupon-up-right">
+								<span class="coupon-title">体验金</span>
+								<span class="coupon-rules" id="coupon-rules">(满1000以上使用)</span>
+							</div>
+						</div>
+
+						<div class="coupon-down">
+							<ol class="coupon-down-ol">
+								<li><span>编号：</span><span id="couponCode"></span></li>
+								<li><span>有效时间：</span><span class="r" id="timeStart"></span><span class="r">~</span><span class="r" id="timeEnd"></span></li>
+								<li><span class="r">适用范围：</span><span id="couponRange">所有产品</span></li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="coupon-opt">
+						<input id="otpNo" placeholder="请输入手机验证码" class="input1" maxlength="6"></input>
+						<button class="otp btn" id="otpBtn">获取验证码</button>
+						<p class="tips" id="tips1" style="display:none">验证码已经发送到<span id="phoneNo"></span>,如需帮助请联系客服 400-820-2450</p>
+						<p class="tips error" style="display:none" id="errorMsg"></p>
+					</div>
+					<div class="coupon-pay">
+						<button class="pay btn" id="payBtn">立即体验</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="coupon-list-adjust hide" id="coupon-list-adjust">
+</div>

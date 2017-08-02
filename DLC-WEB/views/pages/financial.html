@@ -1,0 +1,121 @@
+<div class="my_orders">
+    <div class="account_div">
+        <div class="item_account inlineBlock">
+           <div>
+               <div id="invest" class="nub inlineBlock"></div>
+               <div class="nubB inlineBlock">元</div>
+           </div>
+            <div class="title">当前总投资额</div>
+        </div>
+        <div class="diver inlineBlock"></div>
+        <div class="item_account inlineBlock">
+            <div>
+                <div id="mayProfit" class="nub inlineBlock"></div>
+                <div class="nubB inlineBlock">元</div>
+            </div>
+            <div class="title">待收收益</div>
+            <div id="notes_help" class="notes_help">
+            </div>
+            <div id="notes " class="notes div_float1_none">只计算投资产品状态为还款中所产生的收益</div>
+        </div>
+        <div class="diver inlineBlock"></div>
+        <div class="item_account inlineBlock">
+            <div>
+                <div id="totalProfit" class="nub inlineBlock"></div>
+                <div class="nubB inlineBlock">元</div>
+            </div>
+            <div class="title">累计收益</div>
+        </div>
+    </div>
+    <div class="action_bar">
+        <ol class="ol_action">
+            <li class="li_action text_alignL"><span >产品状态：</span></li>
+            <li class="inlineBlock"><button id="item_action0" class="li_action actionH cursor_pointer">全部</button></li>
+            <li class="inlineBlock"><button  id="item_action1" class="li_action actionN cursor_pointer">募集中</button></li>
+            <li class="inlineBlock"><button id="item_action4" class="li_action actionN cursor_pointer">已售罄</button></li>
+            <li class="inlineBlock"><button id="item_action2" class="li_action actionN cursor_pointer">还款中</button></li>
+            <li class="inlineBlock"><button id="item_action3" class="li_action actionN cursor_pointer">已兑付</button></li>
+            <li class="inlineBlock"><button id="item_action5" class="li_action actionN cursor_pointer">已流标</button></li>
+        </ol>
+    </div>
+    <div class="div_base H570">
+        <div class="div_base1 list_div H700">
+            <div class="list_title backgroundColorFa">
+                <ul class="ol_list ol_list_marL4">
+
+                    <li class="li_item item2" style="width:201px;"><span>产品名称</span></li>
+                    <li id="0" class="li_item item92 cursor_pointer"><span>年化(%)</span><div id="Arrow0" class="Arrow ArrowD"></div></li>
+                    <li id="1" class="li_item item92 cursor_pointer"><span>购买日期</span><div id="Arrow1" class="Arrow ArrowD"></div></li>
+                    <li id="2" class="li_item item92 cursor_pointer"><span>结束日期</span><div id="Arrow2" class="Arrow ArrowD"></div></li>
+                    <li id="3" class="li_item item92 cursor_pointer" style="width:72px;"><span>期限(天)</span><div id="Arrow3" class="Arrow ArrowD"></div></li>
+                    <li class="li_item item92"><span >投资金额(元)</span></li>
+                    <li class="li_item item92" style="width:72px;"><span >产品状态</span></li>
+                    <li  id="4" class="li_item item92 cursor_pointer" style="width:82px;"><span >收益(元)</span><div id="Arrow4" class="Arrow ArrowD "></div></li>
+                    <li class="li_item item92 width_inherit" style="width:72px;"><span >投资记录</span></li>
+                </ul>
+            </div>
+            <div class="list_title " id="listFinancial_content">
+                <script id="listFinancial" type="text/html">
+                    {{include 'listF'}}
+                </script>
+                <script id="listF" type="text/html">
+                    <ul class="ol_list ol_list_marL4">
+                        {{each list as value i}}
+                        <li id={{"li"+i+1}} class="li_item">
+                            <span id={{"productName"+i}} class="item item2  cursor_pointer" style="width:201px;">{{value.productName}}</span>
+                            <span class="item item92">
+                              {{value.productRate}}
+                              {{if value.addedRate > 0}}<span class="">+{{value.addedRate}}%</span>{{/if}}
+                            </span>
+                            <span class="item item92">{{value.updatedAt.replace(/-/g,"/")}}</span>
+                            <span class="item item92">{{value.productEndAt.replace(/-/g,"/")}}</span>
+                            <span class="item item92" style="width:72px;">{{value.productPeriod}}</span>
+                            <span class="item item92 lineHeight1">{{value.sumSettled}}</span>
+                            <span class="item item92" style="width:72px;">{{value.status}}</span>
+                            <span class="item item92 red lineHeight1" style="width:82px;">{{value.expectedProfit}}</span>
+                            <span id={{"detail"+i}} class="item item92 grean cursor_pointer width_inherit"  style="width:72px;">查看</span>
+                        </li>
+
+                        {{/each}}
+                    </ul>
+                </script>
+            </div>
+        </div>
+        <div id="div_float1"  class="div_float1 detail div_float1_none">
+            <div class="div_float1_title">
+                <div class="with200 inlineBlock leftAp0 paddingL30">购买时间</div>
+                <div class="with100 inlineBlock leftAp0">金额</div>
+            </div>
+            <div>
+                <div class="list_title_detail " id="listFinancialDetail_content">
+                    <script id="listFinancialDetail" type="text/html">
+                        {{include 'listD'}}
+                    </script>
+                    <script id="listD" type="text/html">
+                        <ul class="ol_list ol_list_marL4 paddingL0">
+                            {{each list as value i}}
+                            <li class="li_item w300 list_title_detail_item leftAp0 paddingL30">
+                                <span class="item with200 leftAp0">{{value.createdAt.replace("T"," ")}}</span>
+                                <span class="item with100 red leftAp0">{{value.entrustAmount}}</span>
+                            </li>
+
+                            {{/each}}
+                        </ul>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-r divPage">
+        <!--<span class="indexpage">首页</span>
+        <span class="prevpage">上一页</span>
+        <span class="active">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>...</span>
+        <span>1000</span>
+        <span class="nextpage">下一页</span>
+        <span class="endpage">尾页</span>-->
+    </div>
+</div>

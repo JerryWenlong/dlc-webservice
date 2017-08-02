@@ -1,0 +1,254 @@
+table {
+    border: 0px;
+    border-spacing:0px;
+}
+
+.loginBanner {
+    width: auto;
+    height: 650px;
+    background-image: url("../images/signup/new-b2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 1200px;
+    text-align: center;
+}
+
+.loginInner {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.loginAndroidDown {
+    width: 185px;
+    height: 44px;
+    position: relative;
+    left: 450px;
+    top: 400px;
+    cursor: pointer;
+}
+
+.loginPan {
+    width: 325px;
+    height: 378px;
+    position: relative;
+    left: 795px;
+    top: 76px;
+    border-radius: 3px;
+    border: 1px solid #c9c9c9;
+}
+
+.loginPanBag {
+    width: 325px;
+    height: 378px;
+    background-color: #e5e5e5;
+    opacity: 0.15;
+    filter: alpha(opacity=15);
+}
+
+.loginPanMain {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 325px;
+    height: 378px;
+}
+
+.loginPanTxt {
+    font-family: "微软雅黑";
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.loginPanCell1 {
+    height: 18px;
+}
+
+.loginPanCell2 {
+    height: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.loginPanUserName {
+    width: 224px;
+    height: 38px;
+    padding-left: 50px;
+    background: url(../images/login/ia.png) 16px no-repeat;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+}
+
+.loginPanCell3 {
+    height: 18px;
+    padding-top: 5px;
+    margin-left: 42px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #ff0045;
+    text-align: left;
+}
+
+.loginPanPassword {
+    width: 224px;
+    height: 38px;
+    padding-left: 50px;
+    background: url(../images/login/ib.png) 16px no-repeat;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+}
+
+.loginPanCell4 {
+    height: 25px;
+    line-height: 20px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    float: right;
+    margin-right: 30px;
+    color: #034489;
+}
+
+.loginPanCellSapn {
+    color: #ffffff;
+}
+
+.loginPanCell4 a{
+    text-decoration: none;
+}
+
+.loginPanLoginBtn {
+    width: 274px;
+    height: 42px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.loginPanCell5 {
+    height: 26px;
+    line-height: 26px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    float: right;
+    margin-right: 30px;
+    color: #0181ff;
+}
+
+.loginPanCell5 a{
+    padding-left: 8px;
+}
+
+.loginPanCell5 img{
+    padding: 0px;
+    margin: -2px 0px;
+    border: 0px;
+}
+
+.w169px {
+    width: 169px;
+}
+
+.w185px {
+    width: 185px;
+}
+
+.h44px {
+    height: 44px;
+}
+
+.loginPanCaptcha {
+    width: 155px;
+    height: 38px;
+    padding-left: 15px;
+    background: 16px no-repeat;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.loginCodeImg {
+    width: 92px;
+    height: 38px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.loginPanCell {
+    text-align: left;
+    padding-left: 25px;
+    height: 40px;
+}
+
+.h34px {
+    height: 34px;
+}
+
+.h26px {
+    height: 26px;
+}
+
+.loginEye {
+    width: 30px;
+    height: 18px;
+    position: relative;
+    right: 30px;
+    top: -28px;
+    cursor: pointer;
+    float: right;
+}
+
+.logEye {
+    background-image: url(../images/signup/eye65.png?__sprite);
+    background-repeat: no-repeat;
+}
+
+.logEye1 {
+    background-image: url(../images/signup/f16c.png?__sprite);
+    background-repeat: no-repeat;
+}
+
+.col398be1 {
+    color: #398be1;
+    border: 1px solid #398be1;
+}
+
+.col8d {
+    color: #8d8d8d;
+    border: 1px solid #d2d2d2;
+}
+.loginPan :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff !important;
+}
+.loginPan ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff !important;
+}
+.loginPan input:-ms-input-placeholder {
+    color: #ffffff !important;
+}
+.loginPan input::-webkit-input-placeholder{
+    color: #ffffff !important;
+}

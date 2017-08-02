@@ -1,0 +1,191 @@
+<% include header.html%>
+    <div class="userCenterBg">
+        <div class="userCenterMain hide">
+            <div class="userCenterTop">您当前位置：<a href='/' style="color:#398de1;">首页</a>><span class="uCTSpan"><a href='/myCenter_account' style="color:#398de1;">我的账户</a>></span><span class="userCenterTopSpan" id="userCenterTopSpan">我的账户</span>
+            </div>
+            <div id="userCenterLeftMenu" class="userCenterLeftMenu">
+                <div class="userCenterMenuList" id="userCenterA">
+                    <div class="userCenterMenuListIn">我的账户
+                        <div class="userCenterA ucmli" id="userCenter_A"></div>
+                    </div>
+                </div>
+                <div class="userCenterMenuList" id="userCenterB">
+                    <div class="userCenterMenuListIn">我的订单
+                        <div class="userCenterB ucmli" id="userCenter_B"></div>
+                    </div>
+                </div>
+                <div class="userCenterMenuList" id="userCenterC">
+                    <div class="userCenterMenuListIn">我的理财
+                        <div class="userCenterC ucmli" id="userCenter_C"></div>
+                    </div>
+                </div>
+                <div class="userCenterMenuList" id="userCenterD">
+                    <div class="userCenterMenuListIn">资金明细
+                        <div class="userCenterD ucmli" id="userCenter_D"></div>
+                    </div>
+                </div>
+                <div class="userCenterMenuList" id="userCenterF">
+                    <div class="userCenterMenuListIn">我的点币
+                        <div class="userCenterF ucmli" id="userCenter_F"></div>
+                    </div>
+                </div>
+                <div class="userCenterMenuList" id="userCenterH">
+                    <div class="userCenterMenuListIn">我的优惠券
+                        <div class="userCenterH ucmli" id="userCenter_H"></div>
+                    </div>
+                </div>
+                <!--
+            <div class="userCenterMenuList" id="userCenterJ">
+                <div class="userCenterMenuListIn">我的升息令牌
+                    <div class="userCenterJ ucmli" id="userCenter_J"></div>
+                </div>
+            </div>
+-->
+                <!--
+            <div class="userCenterMenuList" id="userCenterE">
+                <div class="userCenterMenuListIn">我的体验金
+                    <div class="userCenterE ucmli" id="userCenter_E"></div>
+                </div>
+            </div>
+-->
+                <div class="lastMenu userCenterMenuList" id="userCenterG">
+                    <div class="userCenterMenuListIn">邀请有礼
+                        <div class="userCenterG ucmli" id="userCenter_G"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="userCenterRightMain" class="userCenterRightMain hide">
+
+            </div>
+        </div>
+    </div>
+    <% include footer.html%>
+        <script>
+            $(document).ready(function () {
+                window.app = window.app || new DLC.App();
+                if (app.currentUser.hasLogin == false) {
+                    window.location.href = '/login';
+                } else {
+                    $(".userCenterRightMain").show();
+                    $(".userCenterMain").show();
+                    var typeName = "<%=typeName %>";
+                    var newObj = null;
+                    var pageName = "";
+                    var type = "";
+                    switch (typeName) {
+                    case "userInfo":
+                        newObj = new DLC.UserInfo();
+                        pageName = "userInfo";
+                        type = "A";
+                        break;
+                    case "userChangePhone":
+                        newObj = new DLC.ChangePhone();
+                        pageName = "userChangePhone";
+                        type = "A";
+                        break;
+                    case "modifyTstPwd":
+                        newObj = new DLC.ModifyTstPwd();
+                        pageName = "modifyTstPwd";
+                        type = "A";
+                        break;
+                    case "noCardTstPwd":
+                        newObj = new DLC.NoCardTstPwd();
+                        pageName = "noCardTstPwd";
+                        type = "A";
+                        break;
+                    case "cardTstPwd":
+                        newObj = new DLC.CardTstPwd();
+                        pageName = "cardTstPwd";
+                        type = "A";
+                        break;
+                    case "editEmail":
+                        newObj = new DLC.EditEmail();
+                        pageName = "editEmail";
+                        type = "A";
+                        break;
+                    case "auth":
+                        newObj = new DLC.Auth();
+                        pageName = "auth";
+                        type = "A";
+                        break;
+                    case "editLoginPwd":
+                        newObj = new DLC.EditLoginPwd();
+                        pageName = "editLoginPwd";
+                        type = "A";
+                        break;
+                    case "userBindBankCard":
+                        newObj = new DLC.UserBindBankCard();
+                        pageName = "userBindBankCard";
+                        type = "A";
+                        break;
+                    case "experience":
+                        newObj = new DLC.Experience();
+                        pageName = "experience";
+                        type = "E";
+                        break;
+                    case "userRedPacket":
+                        newObj = new DLC.RedPacket();
+                        pageName = "redPacket";
+                        type = "H";
+                        break;
+                    case "userInterestToken":
+                        newObj = new DLC.InterestToken();
+                        pageName = "interestToken";
+                        type = "J";
+                        break;
+                    case "pointCoin":
+                        newObj = new DLC.PointCoin();
+                        pageName = "pointCoin";
+                        type = "F";
+                        break;
+                    case "userRefer":
+                        newObj = new DLC.UserRefer("");
+                        pageName = "userRefer";
+                        type = "G";
+                        break;
+                    case "orders":
+                        newObj = new DLC.Orders();
+                        pageName = "orders";
+                        type = "B";
+                        break;
+                    case "financial":
+                        newObj = new DLC.Financial();
+                        pageName = "financial";
+                        type = "C";
+                        break;
+                    case "bills":
+                        newObj = new DLC.Bills();
+                        pageName = "bills";
+                        type = "D";
+                        break;
+                    case "account":
+                        newObj = new DLC.myAccount();
+                        pageName = "myAccount";
+                        type = "A";
+                        break;
+                    case "withdraw":
+                        newObj = new DLC.withdraw();
+                        pageName = "withdraw";
+                        type = "A";
+                        break;
+                    case "deposito":
+                        newObj = new DLC.DepositO();
+                        pageName = "deposito";
+                        type = "A";
+                        break;
+                    case "deposit":
+                        newObj = new DLC.withdraw();
+                        pageName = "deposit";
+                        type = "A";
+                        break;
+                    default:
+                        newObj = new DLC.myAccount();
+                        pageName = "myAccount";
+                        type = "A";
+                        break;
+                    }
+                    var userCenterPage = new DLC.UserCenter('/pages/' + pageName + '.html', newObj);
+                    userCenterPage.init(type);
+                }
+            });
+        </script>

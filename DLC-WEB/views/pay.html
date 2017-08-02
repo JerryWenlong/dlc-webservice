@@ -1,0 +1,33 @@
+<% include header.html%>
+    <div class="mainContent">
+
+    </div>
+    <% include footer.html%>
+        <script>
+            $(document).ready(function () {
+                window.app = window.app || new DLC.App();
+                if (app.currentUser.hasLogin == false) {
+                    window.location.href = '/login';
+                } else {
+                    var orderNo = "<%=orderNo %>";
+                    app.account.getBizAccountInfo(function () {
+                        var hasCard = app.account.accountInfo.hasCard;
+                        if (hasCard) {
+                            if ($.cookie('prodType') == 2) {
+                                $('.mainContent').load('/pages/payJJOrder.html', function () {
+                                    new DLC.PayJJOrder(orderNo);
+                                })
+                            } else {
+                                $('.mainContent').load('/pages/payOrder.html', function () {
+                                    new DLC.PayOrder(orderNo);
+                                })
+                            }
+                        } else {
+                            window.location.href = '/myCenter_userBindBankCard';
+                        }
+                    }, function () {
+                        console.log('get user getBizAccountInfo error')
+                    })
+                }
+            });
+        </script>

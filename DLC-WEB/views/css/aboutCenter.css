@@ -1,0 +1,1449 @@
+.aboutUsBanner {
+    width: auto;
+    height: 190px;
+    background: url('../images/aboutCenter/auBanner.png') no-repeat center;
+}
+
+.ic0909Banner {
+    width: auto;
+    height: 200px;
+    background: url('../images/insuranceCenter/topBanner.jpg') no-repeat center;
+}
+
+.aboutUsBg {
+    background-color: #f0f0f0;
+}
+
+.aboutUsMain {
+    width: 1200px;
+    min-height: 1000px;
+    margin: 0px auto;
+    background-color: #f9f9f9;
+}
+
+.aboutUsLeftMenu {
+    width: 225px;
+    float: left;
+    display: inline;
+    border: 1px solid #dcdcdc;
+    border-right: 0px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #575757;
+    background-color: #ffffff;
+}
+
+.aboutUsLeftMenuList {
+    width: 225px;
+    height: 76px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 76px;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.aboutUsRightMain {
+    width: 1200px;
+    min-height: 950px;
+    float: left;
+    display: inline;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    font-family: "微软雅黑";
+    margin-bottom: 36px;
+}
+/*********************关于我们 公共部分**********************/
+
+.aboutCommon {
+    width: 864px;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.aboutCommon span {
+    background: #ffffff;
+    display: inline-block;
+    color: #398be1;
+    font-size: 16px;
+    width: 387px;
+    height: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.aboutCommon .aboutCommonLine {
+    background: #398be1;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    z-index: 1;
+}
+
+.rDescribe {
+    width: 864px;
+    margin: 0 auto;
+}
+
+.rDescribe p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+    text-indent: 2em;
+}
+
+.rDescribe p.col57 {
+    color: #575757;
+}
+/*********************公司介绍**********************/
+
+.comMarO {
+    margin-top: 44px;
+    margin-bottom: 52px;
+}
+
+.comMarT {
+    margin-top: 60px;
+}
+
+.aboutComPic {
+    width: 280px;
+    height: 200px;
+}
+
+.aPicOne {
+    margin: 60px 0 0 54px;
+    float: left;
+}
+
+.aPicTwo {
+    margin: 84px 0 0 150px;
+    float: left;
+}
+
+.aPicThree {
+    margin: 18px 0 0 100px;
+    float: left;
+}
+
+.aPicFour {
+    margin: 43px 0 0 150px;
+    float: left;
+}
+
+.aboutComPic .aImgCom {
+    width: 280px;
+    height: 157px;
+}
+
+.aboutComPic .aPImgOne {
+    background: url('../images/aboutCenter/m.png');
+}
+
+.aboutComPic .aPImgTwo {
+    background: url('../images/aboutCenter/n.png');
+}
+
+.aboutComPic .aPImgThree {
+    background: url('../images/aboutCenter/o.png');
+}
+
+.aboutComPic .aPImgFour {
+    background: url('../images/aboutCenter/p.png');
+}
+
+.aboutComPic .aPWord {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 103px;
+    height: 32px;
+    background: url('../images/aboutCenter/q.png');
+    font-size: 14px;
+    color: #398be1;
+    text-align: center;
+    line-height: 32px;
+}
+/*********************母公司介绍**********************/
+
+.aboutMotherTitle {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.aboutMotherTitle p {
+    font-size: 16px;
+    color: #575757;
+}
+
+.aMother {
+    margin: 30px auto;
+}
+
+.aMCom {
+    min-height: 140px;
+}
+
+.aMComMar {
+    margin-bottom: 5px;
+}
+
+.aMCom .aMImg {
+    width: 139px;
+    height: 140px;
+    float: left;
+}
+
+.aMCom .aMWord {
+    margin-left: 42px;
+    width: 683px;
+    height: 140px;
+    float: left;
+    overflow: hidden;
+}
+
+.aMCom .aMWord p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 28px;
+    text-indent: 0;
+}
+
+.aMCom .aMImgOne {
+    background: url('../images/aboutCenter/BKYL.png') no-repeat;
+}
+
+.aMCom .aMImgTwo {
+    background: url('../images/aboutCenter/REG.png') no-repeat;
+}
+
+.aMCom .aMImgThree {
+    background: url('../images/aboutCenter/CHD.png') no-repeat;
+}
+
+.aMCom .aMImgFour {
+    background: url('../images/aboutCenter/SHSY.png') no-repeat;
+}
+
+.aMCom .aMImgFive {
+    background: url('../images/aboutCenter/SHC.png') no-repeat;
+}
+
+.aMCom .aMImgSix {
+    background: url('../images/aboutCenter/SIG.png') no-repeat;
+}
+
+.aMotherTwo {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.aMSecond p {
+    font-size: 16px;
+    color: #575757;
+}
+
+.rDescribe .proList {
+    height: 18px;
+    margin: 20px;
+}
+
+.rDescribe .proList .aboutNum {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    text-align: center;
+    color: #398be1;
+    border: 1px solid #398be1;
+    float: left;
+}
+
+.rDescribe .proList .numWord {
+    height: 16px;
+    line-height: 16px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666666;
+    float: left;
+}
+/*********************股东介绍**********************/
+
+.aGDLogo {
+    height: 60px;
+    text-align: center;
+    margin: 25px 0;
+}
+/*********************媒体报道**********************/
+
+.aMedMar {
+    margin-top: 44px;
+}
+
+.rDescribe .aMedLeft {
+    width: 263px;
+    height: 187px;
+    float: left;
+}
+
+.rDescribe .media1 {
+    background: url('../images/aboutCenter/media-1.png') no-repeat;
+}
+
+.rDescribe .media2 {
+    background: url('../images/aboutCenter/media-2.png') no-repeat;
+}
+
+.rDescribe .aMedImgOne {
+    background: url('../images/aboutCenter/mOne.png') no-repeat;
+}
+
+.rDescribe .aMedImgTwo {
+    background: url('../images/aboutCenter/mTwo.png') no-repeat;
+}
+
+.rDescribe .aMedImgThree {
+    background: url('../images/aboutCenter/mThree.png') no-repeat;
+}
+
+.aMedInfo {
+    height: 187px;
+    padding: 40px 0;
+}
+
+.aMedBorder {
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.rDescribe .aMedRight {
+    margin-left: 16px;
+    width: 585px;
+    height: 187px;
+    float: left;
+    overflow: hidden;
+}
+
+.rDescribe .aMedRight .aMedRTitle {
+    height: 40px;
+    line-height: 32px;
+    font-size: 16px;
+    color: #398be1;
+    border-bottom: 1px solid #398be1;
+    margin-bottom: 16px;
+}
+
+.rDescribe .aMedRight .aMedRTime {
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.rDescribe .aMedRight .aMedRBut {
+    width: 128px;
+    height: 34px;
+    border-radius: 3px;
+    border: 1px solid #398be1;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 20px;
+}
+
+.rDescribe .aMedRight .aMedRBut a {
+    color: #398be1;
+    font-size: 14px;
+    display: block;
+}
+
+.aMap {
+    margin: 40px auto;
+}
+
+.aMap p.aMapT {
+    color: #575757;
+    font-size: 16px;
+    text-indent: 0;
+    padding-left: 27px;
+    font-weight: bold;
+}
+
+.BaiDuMap {
+    width: 973px;
+    height: 254px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.BaiDuMap .afloatDiv {
+    position: absolute;
+    width: 264px;
+    height: 254px;
+    left: 150px;
+    top: 0px;
+    background: #5a6b8a;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.BaiDuMap .afloatDiv p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.BaiDuMap .afloatDiv p.cenUs {
+    font-size: 16px;
+    margin: 35px 0 15px 10px;
+}
+
+.BaiDuMap .afloatDiv p.ling {
+    padding-left: 70px;
+}
+/*******************关于我们底部 start**********************/
+
+.aboutUsStyle {
+    background: #f0f0f0 none repeat scroll 0 0;
+    padding-bottom: 4px;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.aboutUsStyle .pannel {
+    width: 1200px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border: 1px solid #eeeeee;
+}
+
+.aboutUsStyle .first {
+    height: 50px;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.aboutUsStyle .first .block {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    width: 275px;
+    height: 50px;
+}
+
+.aboutUsStyle .first .block_left {
+    float: left;
+}
+
+.aboutUsStyle .first .block_middle {
+    float: none;
+}
+
+.aboutUsStyle .first .block_right {
+    float: right;
+}
+
+.aboutUsStyle .first .icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+
+.aboutUsStyle .first .icon_1 {
+    background-image: url("../images/aboutCenter/aFooter1.png");
+}
+
+.aboutUsStyle .first .icon_2 {
+    background-image: url("../images/aboutCenter/aFooter2.png");
+}
+
+.aboutUsStyle .first .icon_3 {
+    background-image: url("../images/aboutCenter/aFooter3.png");
+}
+
+.aboutUsStyle .first .icon_4 {
+    background-image: url("../images/aboutCenter/aFooter4.png");
+}
+
+.aboutUsStyle .first ul {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.aboutUsStyle .first ul li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.aboutUsStyle .first .title {
+    color: #666;
+    margin-bottom: 10px;
+}
+/*******************关于我们底部 end**********************/
+
+.aWid868 {
+    width: 868px;
+    margin: 0 auto;
+}
+
+.aFS16 {
+    font-size: 16px;
+}
+
+.aHgt25 {
+    height: 25px;
+}
+
+.aMar {
+    margin: 52px 0;
+}
+
+.aColor57 {
+    color: #575757;
+}
+
+.aTextCenter {
+    text-align: center;
+}
+
+.aFS24 {
+    font-size: 24px;
+}
+
+.aWdh936 {
+    width: 936px;
+    margin: 0 auto;
+}
+
+.aBorderBot {
+    border-bottom: 1px solid #ddd;
+}
+
+.aTextRight {
+    text-align: right;
+}
+
+.aFS14 {
+    font-size: 14px;
+}
+
+.aColorAA {
+    color: #aaaaaa;
+}
+
+.acticleCon {
+    min-height: 630px;
+    margin-top: 28px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.aFoot {
+    background: blue;
+    height: 50px;
+}
+
+.aPrompt {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.aReturn {
+    width: 936px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.aBlcak {
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    float: right;
+    margin-top: 28px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.aBackNor {}
+
+.aBefor {
+    color: #aaa;
+    background: url(../images/aboutCenter/back_normal.png) no-repeat 0 0;
+}
+
+.aBefor:hover {
+    color: #398be1;
+    background: url(../images/aboutCenter/back_highlight.png) no-repeat 0 0;
+}
+
+.articleList .aListDet {
+    border-bottom: 1px dashed #aaa;
+}
+
+.articleList .aListDet .tAndT {
+    cursor: pointer;
+    height: 32px;
+    margin-top: 32px;
+    color: #575757;
+}
+
+.articleList .aListDet .tAndT:hover {
+    color: #398be1;
+}
+
+.articleList .aListDet .tAndT .fLeft {
+    float: left;
+}
+
+.articleList .aListDet .tAndT .fRight {
+    float: right;
+}
+
+.articleList .aListDet .conBrief {
+    clear: both;
+    margin-bottom: 32px;
+}
+
+.articleList .paging-pannel {
+    height: 32px;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.pagination {
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+}
+.auCenterMenu {
+    min-width: 1200px;
+    max-width: 1920px;
+    height: 40px;
+    background-color: #525c6d;
+}
+
+.auCMDiv {
+    width: 1200px;
+    height: 40px;
+    margin: auto;
+    color: #ffffff;
+}
+
+.auCMOne {
+    float: left;
+    width: 110px;
+}
+
+.auCMOSpan {
+    height: 38px;
+    display: inline-block;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.auCMOLine {
+    border-bottom: 2px solid #ffffff;
+}
+
+.auCBDiv {
+    width: 550px;
+    height: 120px;
+    margin: auto;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-left: 650px;
+    text-shadow: 3px 3px 3px #aaaaaa;
+}
+
+.auCompanyDiv {
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.auCDMode {
+    width: 1200px;
+    margin: auto;
+}
+
+.auCDbgc {
+    background-color: #ffffff;
+}
+
+.auCDMHead {
+    width: 400px;
+    margin: auto;
+    height: 70px;
+    padding-top: 16px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.auCDMHIn {
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    color: #008dec;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    border-bottom: 1px solid #64acef;
+}
+
+.auCDMD11 {
+    width: 920px;
+    padding-top: 60px;
+    font-size: 18px;
+    margin: 0 auto 94px auto;
+    line-height: 25px;
+    color: #252525;
+}
+
+.suCDMDS {
+    color: #008dec;
+}
+
+.auCDMD12 {
+    width: 707px;
+    height: 327px;
+    background-image: url(../images/aboutCenter/gsjs_lct.png);
+    background-repeat: no-repeat;
+    margin: 0 auto 54px auto;
+}
+
+.auCDMD21 {
+    width: 267px;
+    height: 74px;
+    margin: 65px auto 25px auto;
+    background-image: url(../images/aboutCenter/gdbj_zft.png);
+}
+
+.auCDMD22 {
+    font-size: 18px;
+    margin: 0 auto 85px auto;
+    line-height: 25px;
+    color: #252525;
+    text-align: center;
+}
+
+.auCDMD23 {
+    width: 1200px;
+    height: 280px;
+    margin: auto;
+}
+
+.auCDMD23Child {
+    padding-top: 170px;
+    float: left;
+    width: 240px;
+    text-align: center;
+    line-height: 20px;
+    color: #252525;
+}
+
+.gdbj1 {
+    background: url(../images/aboutCenter/gdbj1.png) 56px 0px no-repeat;
+}
+
+.gdbj2 {
+    background: url(../images/aboutCenter/gdbj2.png) 56px 0px no-repeat;
+}
+
+.gdbj3 {
+    background: url(../images/aboutCenter/gdbj3.png) 56px 0px no-repeat;
+}
+
+.gdbj4 {
+    background: url(../images/aboutCenter/gdbj4.png) 56px 0px no-repeat;
+}
+
+.gdbj5 {
+    background: url(../images/aboutCenter/gdbj5.png) 56px 0px no-repeat;
+}
+
+.auCDMD31 {
+    font-size: 18px;
+    margin: 56px auto 20px auto;
+    line-height: 25px;
+    color: #252525;
+    text-align: center;
+}
+
+.auCDMD32 {
+    width: 800px;
+    height: 280px;
+    margin: auto;
+}
+
+.auCDMD33 {
+    width: 1200px;
+    height: 280px;
+    margin: auto;
+}
+
+.auCDMD3Child {
+    padding-top: 190px;
+    float: left;
+    width: 400px;
+    text-align: center;
+    line-height: 20px;
+    color: #252525;
+}
+
+.hzhb1 {
+    background: url(../images/aboutCenter/hzhb1.png) 132px 0px no-repeat;
+}
+
+.hzhb2 {
+    background: url(../images/aboutCenter/hzhb2.png) 132px 0px no-repeat;
+}
+
+.hzhb3 {
+    background: url(../images/aboutCenter/hzhb3.png) 132px 0px no-repeat;
+}
+
+.hzhb4 {
+    background: url(../images/aboutCenter/hzhb4.png) 132px 0px no-repeat;
+}
+
+.hzhb5 {
+    background: url(../images/aboutCenter/hzhb5.png) 132px 0px no-repeat;
+}
+
+.auCDMD41 {
+    width: 1200px;
+    padding-top: 77px;
+    height: 190px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.auCDMD41Child {
+    width: 229px;
+    float: left;
+    padding-left: 11px;
+    padding-top: 9px;
+}
+
+.auCDMD41CIn {
+    width: 217px;
+    height: 172px;
+    margin: auto;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.zzzz_s1 {
+    background: url(../images/aboutCenter/z_s01.png);
+}
+
+.zzzz_s2 {
+    background: url(../images/aboutCenter/z_s02.png);
+}
+
+.zzzz_s3 {
+    background: url(../images/aboutCenter/z_s03.png);
+}
+
+.zzzz_s4 {
+    background: url(../images/aboutCenter/z_s04.png);
+}
+
+.zzzz_s5 {
+    background: url(../images/aboutCenter/z_s05.png);
+}
+
+.zzzz_s6 {
+    background: url(../images/aboutCenter/z_s06.png);
+}
+
+.auMAdDiv {
+    min-width: 1200px;
+    max-width: 1920px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.auMAdDbgc {
+    background-color: #ffffff;
+}
+
+.auMAdContent {
+    height: 300px;
+    width: 1100px;
+    margin: auto;
+}
+
+.auMAdCLong {
+    width: 600px;
+    float: left;
+    height: 280px;
+    margin-top: 30px;
+}
+
+.auMAdCHead {
+    height: 70px;
+    line-height: 70px;
+    color: #0072bf;
+    font-size: 30px;
+}
+
+.auMAdCP {
+    line-height: 25px;
+    font-size: 18px;
+    color: #676767;
+}
+
+.auMAdCShort {
+    width: 500px;
+    float: left;
+}
+
+.auMadCImg1 {
+    background-image: url(../images/aboutCenter/ptys1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 290px;
+    width: 500px;
+}
+
+.auMadCImg2 {
+    background-image: url(../images/aboutCenter/ptys2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 354px;
+    width: 385px;
+}
+
+.auMadCImg3 {
+    background-image: url(../images/aboutCenter/ptys3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 300px;
+}
+
+.auMadCImg4 {
+    background-image: url(../images/aboutCenter/ptys4.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 357px;
+    height: 354px;
+}
+
+.h350px {
+    height: 350px;
+}
+
+.icbgc {
+    background-color: #fbfbfb;
+}
+
+.w1100px {
+    width: 1100px;
+}
+
+.pt20px {
+    padding-top: 20px;
+}
+
+.font16px {
+    font-size: 16px;
+}
+
+.font15px {
+    font-size: 15px;
+}
+
+.color666 {
+    color: #666;
+}
+
+.pt60px {
+    padding-top: 60px;
+}
+
+.pb30px {
+    padding-bottom: 30px;
+}
+
+.colorec6941 {
+    color: #ec6941;
+}
+
+.taCenter {
+    text-align: center;
+}
+
+.font18px {
+    font-size: 18px;
+}
+
+.pb60px {
+    padding-bottom: 60px;
+}
+
+.inCPro1 {
+    width: 1075px;
+    height: 302px;
+    background-image: url(../images/insuranceCenter/p11.png);
+    margin: 0 auto 54px auto;
+}
+
+.inCMoney1 {
+    width: 920px;
+    height: 254px;
+    background-image: url(../images/insuranceCenter/m1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 60px auto 60px auto;
+    line-height: 70px;
+}
+
+.inCPro3 {
+    width: 800px;
+    height: 500px;
+    background-image: url(../images/insuranceCenter/p3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.inCPText {
+    font-size: 16px;
+    color: #666;
+    line-height: 30px;
+    position: relative;
+    width: 320px;
+}
+
+.inCPT1 {
+    top: 13px;
+    left: 70px;
+}
+
+.inCPT2 {
+    top: 53px;
+    left: 70px;
+}
+
+.inCPT3 {
+    top: 93px;
+    left: 70px;
+}
+
+.inCPT4 {
+    top: 143px;
+    left: 70px;
+}
+
+.inCPT5 {
+    top: -133px;
+    left: 810px;
+}
+
+.inCPT6 {
+    top: -93px;
+    left: 810px;
+}
+
+.inCPT7 {
+    top: -53px;
+    left: 810px;
+}
+
+.inCPT8 {
+    top: 23px;
+    left: 810px;
+}
+
+.icCPTSpan {
+    width: 80px;
+    display: inline-block;
+}
+
+.inCP3Span {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+}
+
+.inCP3SDW1 {
+    top: -35px;
+    left: 320px;
+}
+
+.inCP3SDW2 {
+    top: 15px;
+    left: 325px;
+}
+
+.inCP3SDW3 {
+    top: 135px;
+    left: 200px;
+}
+
+.inCP3SDW4 {
+    top: 210px;
+    left: 640px;
+}
+
+.inCP3SDW5 {
+    top: 335px;
+    left: 360px;
+}
+
+.inCP3SDW6 {
+    top: 385px;
+    left: -200px;
+}
+
+.inCP3SDW7 {
+    top: 275px;
+    left: 110px;
+}
+
+.inCP3SDW8 {
+    top: 160px;
+    left: -150px;
+}
+
+.inCP3SDW9 {
+    top: 45px;
+    left: -430px;
+}
+
+.inCP3SDW10 {
+    top: -70px;
+    left: 80px;
+}
+
+.inCM1Span {
+    font-weight: bold;
+    color: #6391da;
+}
+
+.inCMoney2 {
+    width: 600px;
+    height: 500px;
+    background-image: url(../images/insuranceCenter/m2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.inCMoney3 {
+    width: 600px;
+    height: 500px;
+    background-image: url(../images/insuranceCenter/m32.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.inCM2Text {
+    width: 250px;
+}
+
+.inCM2THead {
+    height: 50px;
+    line-height: 50px;
+    color: #008dec;
+    font-size: 18px;
+}
+
+.marginauto {
+    margin: auto;
+}
+
+.posRel {
+    position: relative;
+    float: left;
+}
+
+.inCM2TXY2 {
+    top: 40px;
+    left: -130px;
+}
+
+.inCM2TXY3 {
+    top: 40px;
+    left: 250px;
+}
+
+.inCM2TXY4 {
+    top: 40px;
+    left: -130px;
+}
+
+.inCM2TXY5 {
+    top: 40px;
+    left: 270px;
+}
+
+.inCM2Div {
+    height: 250px;
+}
+
+.inCM2TXY1 {
+    left: 50px;
+}
+
+.pl100px {
+    padding-left: 100px;
+}
+
+.inCM3TXY2 {
+    top: 110px;
+    left: -220px;
+}
+
+.inCM3TXY3 {
+    top: 120px;
+    left: 330px;
+}
+
+.inCM3TXY4 {
+    top: 80px;
+    left: -220px;
+}
+
+.inCM3TXY5 {
+    top: 80px;
+    left: 330px;
+}
+
+.color008dec {
+    color: #008dec;
+}
+
+.auContactDiv {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.w360px {
+    width: 360px;
+}
+
+.w500px {
+    width: 500px;
+}
+
+.auCQQ {
+    width: 104px;
+    height: 24px;
+    background-image: url(../images/aboutCenter/qq.png);
+    display: inline-block;
+    margin-bottom: -7px;
+}
+
+.showImg {
+    max-height: 500px;
+    max-width: 800px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    vertical-align:middle;
+}
+
+.showImg2 {
+    height: 500px;
+    width: 800px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px 0px -4px 0px;
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+    background-color: #fff;
+}
+
+.showIndex {
+    height: 30px;
+    line-height: 30px;
+    width: 800px;
+    background-color: #39a6ff;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.showImgDiv {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    /*border:10px solid  rgba(200,200,200,0.5);*/
+    /*border-radius: 3px;*/
+}
+
+.showImgDivClose {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0px;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+    background-color: #000000;
+    text-align: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    z-index: 3;
+    display: inline-block;
+}
+
+.auCDMD4LR {
+    height: 37px;
+    width: 100px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.auCDMD4L {
+    float: left;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.auCDMD4R {
+    float: right;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.right_n {
+    background-image: url(../images/aboutCenter/right_n.png);
+}
+
+.right_h {
+    background-image: url(../images/aboutCenter/right_h.png);
+}
+
+.left_n {
+    background-image: url(../images/aboutCenter/left_n.png);
+}
+
+.left_h {
+    background-image: url(../images/aboutCenter/left_h.png);
+}
+
+.auCDMD41ZList {
+    position: relative;
+    width: 2400px;
+}
+
+.showImgL {
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+    top: 50%;
+    height: 37px;
+    width: 37px;
+    cursor: pointer;
+}
+
+.showImgR {
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    top: 50%;
+    height: 37px;
+    width: 37px;
+    cursor: pointer;
+}
+
+.showImgDivL {
+    height: 98%;
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.showImgDivR {
+    height: 98%;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    top: 0px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+.error404Bg {
+    min-width: 1200px;
+    max-width: 1920px;
+    height: 456px;
+    margin: auto;
+    background-image: url(../images/404/bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.error404Div {
+    width: 1200px;
+    margin: auto;
+    height: 456px;
+}
+
+.error404DDiv {
+    padding-left: 650px;
+    width: 500px;
+    padding-top: 160px;
+}
+
+.error404DDP {
+    color: #575757;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.error404DDA1 {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    background-image: url(../images/404/1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.error404DDA2 {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    color: #346faf;
+    line-height: 40px;
+    text-align: center;
+    background-image: url(../images/404/2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}

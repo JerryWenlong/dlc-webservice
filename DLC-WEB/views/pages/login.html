@@ -1,0 +1,65 @@
+<link type="text/css" rel="stylesheet" href="../css/input.css"></link>
+<div class="loginBanner">
+    <div class="loginInner">
+        <!--
+        <div class="loginAndroidDown">
+            <a href="https://www.dianlc.com/G1/M00/00/2F/ChEJF1d_aq2Aceo0ASsBqc16FTo266.apk" target="_blank">
+                <div class="w185px h44px"></div>
+            </a>
+        </div>
+-->
+        <div class="loginPan">
+            <div class="loginPanBag"></div>
+            <div class="loginPanMain">
+                <div class="loginPanCell1"></div>
+                <div class="loginPanCellTop"><span class="loginPanTxt">登录点理财</span>
+                </div>
+                <div class="loginPanCell h30px2 mt10px">
+                    <div class="loginShowError hide" id="loginShowError">
+                    </div>
+                </div>
+                <div class="loginPanCell">
+                    <input type="text" id="userName" autocomplete="off" class="loginPanUserName" placeholder="请输入用户名/手机号" maxlength="11">
+                </div>
+                <div class="loginPanCell3" id="loginPanUserNamePoint"></div>
+                <div class="loginPanCell">
+                    <input type="password" id="loginPassword" class="loginPanPassword" placeholder="请输入密码" maxlength="16">
+                    <div class="loginEye logEye" id="loginEye"></div>
+                </div>
+                <div class="loginPanCell3" id="loginPanPasswordPoint"></div>
+                <div class="loginPanCell">
+                    <input type="text" id="captcha" class="loginPanCaptcha" placeholder="请输入图片验证码" maxlength="4"><img class="loginCodeImg" id="captchaImg" title="点击更换图片验证码">
+                </div>
+                <div class="loginPanCell3" id="loginPanCaptchaPoint"></div>
+                <div class="loginPanCell4">
+                    <a href="/myCenter_resetPassword">忘记密码？</a>
+                    <span class="loginPanCellSapn">|</span>
+                    <a href="/signup">立即注册</a>
+                </div>
+                <div class="loginPanCell">
+                    <input type="button" id="loginBtn" class="loginPanLoginBtn" value="登 录">
+                </div>
+                <div class="loginPanCell1"></div>
+                <div class="loginPanCell5">
+                    <!--
+                   <span>使用合作方账户登录</span>
+                    <a href="http://www.baidu.com"><img src="../images/login/id.png"></a>
+                    <a href="http://www.baidu.com"><img src="../images/login/ie.png"></a>
+                    <a href="http://www.baidu.com"><img src="../images/login/ig.png"></a>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[if IE]>
+<script>
+    $("#loginEye").removeClass("loginEye logEye");
+</script>
+<![endif]-->
+<script>
+if(window.XMLHttpRequest)//判断浏览器是否属于SogouExtension
+{
+    $("#loginEye").removeClass("loginEye logEye");
+}
+</script>

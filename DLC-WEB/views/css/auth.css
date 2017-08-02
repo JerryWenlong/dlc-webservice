@@ -1,0 +1,62 @@
+#authRightBottom label {
+    font-size: 14px;
+    color: #8d8d8d;
+}
+#authRightBottom input {
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    width: 298px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #8d8d8d;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+#authRightBottom {
+    padding-left: 10%;
+}
+#realNameDiv {
+    padding-top: 60px;
+}
+#verifyDiv {
+    padding-left: 90px;
+    padding-top: 30px;
+}
+#verifyBtn {
+    border: 1px solid #398be1;
+    background-color: #398be1;
+    border-radius: 3px;
+    width: 320px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.tipRealNameError {
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 109px;
+}
+.tipCardNumError {
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 109px;
+}
+.authTip {
+    margin: 10px 0px 0;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+.authTip2 {
+    margin: 5px 0px;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+#authRightBottom .validateError {
+    text-align: left;
+    font-size: 12px;
+    color: #ff0045;
+    padding-left: 2px;
+}

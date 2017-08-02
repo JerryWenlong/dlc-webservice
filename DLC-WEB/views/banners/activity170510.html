@@ -1,0 +1,76 @@
+<% include ../header.html%>
+    <div class="ac170510Bg">
+        <div class="ac170510Div1"></div>
+        <div class="ac170510Div2">
+            <div class="ac170510D2Div1">鑫盈精选是什么？</div>
+            <div class="ac170510D2Div2">鑫盈精选主要由点月盈、点季鑫产品组成，是点理财优质资产项目，通过十重风控体系，为用户提供更安全的保障。投资用户投资本息由互保联保企业提供本息全额担保，若借款企业发生逾期或还款违约，则由互保联保企业对投资用户先行代偿。</div>
+        </div>
+        <div class="ac170510Div3">
+            <div class="ac170510D3Div1"></div>
+            <div class="ac170510D3Div2">
+                <div class="ac170510D3DDiv"><span class="fs18px">大品牌</span>
+                    <br>上市背景 智城控股全资子公司</div>
+            </div>
+            <div class="ac170510D3Div3">
+                <div class="ac170510D3DDiv"><span class="fs18px">严风控</span>
+                    <br>十重风控 投资更安全</div>
+            </div>
+            <div class="ac170510D3Div4">
+                <div class="ac170510D3DDiv2"><span class="fs18px">高收益</span>
+                    <br>收益丰厚期限短</div>
+            </div>
+            <div class="ac170510D3Div5">
+                <div class="ac170510D3DDiv2"><span class="fs18px">低门槛</span>
+                    <br>100起投 用零钱投资好任性</div>
+            </div>
+            <div class="h60px"></div>
+            <div class="h50px ac170510D3Div6">测算如下：</div>
+            <div class="nh30px"></div>
+            <div class="ac170510D3Div7" style="background-color: #ff6050;color:#fff;">
+                <div class="ac170510D3D7Div">投资期限</div>
+                <div class="ac170510D3D7Div">鑫盈精选</div>
+                <div class="ac170510D3D7Div">投资金额</div>
+                <div class="ac170510D3D7Div">收益</div>
+            </div>
+            <div class="ac170510D3Div7">
+                <div class="ac170510D3D7Div">30天</div>
+                <div class="ac170510D3D7Div">点月盈</div>
+                <div class="ac170510D3D7Div">5万</div>
+                <div class="ac170510D3D7Div">308.22元</div>
+            </div>
+            <div class="ac170510D3Div7" style="background-color: #fff571;">
+                <div class="ac170510D3D7Div">30天</div>
+                <div class="ac170510D3D7Div">点月盈</div>
+                <div class="ac170510D3D7Div">10万</div>
+                <div class="ac170510D3D7Div">616.44元</div>
+            </div>
+            <div class="ac170510D3Div7">
+                <div class="ac170510D3D7Div">90天</div>
+                <div class="ac170510D3D7Div">点季鑫</div>
+                <div class="ac170510D3D7Div">5万</div>
+                <div class="ac170510D3D7Div">1232.88元</div>
+            </div>
+            <div class="ac170510D3Div7" style="background-color: #fff571;">
+                <div class="ac170510D3D7Div">90天</div>
+                <div class="ac170510D3D7Div">点季鑫</div>
+                <div class="ac170510D3D7Div">10万</div>
+                <div class="ac170510D3D7Div">2465.75元</div>
+            </div>
+        </div>
+        <div class="ac170510Div4">
+            <div class="h50px"></div>
+            <div class="fs36px colorfff">心动了有木有？</div>
+            <div class="h30px"></div>
+            <div><a href="/signup" class="ac170510D4A" style="color: #cd430e;">点击立即加入</a>
+            </div>
+        </div>
+    </div>
+    <% include ../footer.html%>
+        <script>
+            window.onload = function () {
+                window.app.initHeader(1);
+                if (window.app.currentUser.hasLogin) {
+                    $(".ac170510D4A").attr("href","/#/productList");
+                }
+            }
+        </script>

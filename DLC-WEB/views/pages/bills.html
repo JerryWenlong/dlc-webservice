@@ -1,0 +1,58 @@
+<div class="my_orders">
+
+    <div class="action_bar ">
+        <ol class="ol_action">
+            <li class="li_action text_alignL"><span >交易状态：</span></li>
+            <li class="inlineBlock"><button id="item_action0" class="li_action actionH cursor_pointer">全部</button></li>
+            <li class="inlineBlock"><button id="item_action1" class="li_action actionN cursor_pointer">本息</button></li>
+            <li class="inlineBlock"><button id="item_action2" class="li_action actionN cursor_pointer">购买</button></li>
+            <li class="inlineBlock"><button id="item_action3" class="li_action actionN cursor_pointer">充值</button></li>
+            <li class="inlineBlock"><button id="item_action4" class="li_action actionN cursor_pointer">提现</button></li>
+            <li class="inlineBlock"><button id="item_action5" class="li_action actionN cursor_pointer">奖励</button></li>
+            <li class="inlineBlock"><button id="item_action6" class="li_action actionN cursor_pointer">收益</button></li>
+            <li class="inlineBlock"><button id="item_action7" class="li_action actionN cursor_pointer">红包</button></li>
+        </ol>
+    </div>
+    <div class="list_div H700">
+        <div class="list_title backgroundColorFa">
+            <ul class="ol_list ">
+                <li id="timeID" class="li_item item204 cursor_pointer"><span  >操作时间</span><div id="ArrowN" class="Arrow ArrowD"></div></li>
+                <li class="li_item item204 "><span >类型</span></li>
+                <li class="li_item item204"><span >金额(元)</span></li>
+                <li class="li_item item274 "><span >备注</span></li>
+            </ul>
+        </div>
+        <div class="list_title " id="listBill_content">
+            <script id="listBill" type="text/html">
+                {{include 'listb'}}
+            </script>
+            <script id="listb" type="text/html">
+                <ul class="ol_list ol_list_marL4">
+                    {{each list as value i}}
+                    <li id={{"li"+i+1}} class="li_item">
+                        <span class="item item204">{{value.createdAt}}</span>
+                        <span class="item item204">{{value.tradeType}}</span>
+                        <span class="item item204 red lineHeight1">{{value.amount}}</span>
+                        <span class="item item274 ">{{value.tradeRemark}}</span>
+
+                    </li>
+
+                    {{/each}}
+                </ul>
+            </script>
+
+
+        </div>
+    </div>
+    <div class="page-r divPage">
+        <!--<span class="indexpage">首页</span>
+        <span class="prevpage">上一页</span>
+        <span class="active">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>...</span>
+        <span>1000</span>
+        <span class="nextpage">下一页</span>
+        <span class="endpage">尾页</span>-->
+    </div>
+</div>

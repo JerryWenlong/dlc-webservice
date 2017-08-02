@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="baidu-site-verification" content="9Arstl7gG0" />
+    <meta name="description" content="点理财是一家专业从事智慧城市和市政基础设施建设等PPP项目的互联网金融信息平台，于2016年正式上线运营，是上市公司智城控股（股票代码 08130-HK）旗下互联网金融信息平台，股东包括中国支付通（08325-HK)和国投瑞银基金。 智城控股与大型央企和国企强强联合，合作伙伴包含北控、华电、中铁等。" />
+    <meta name="keywords" content="<%=keywords%>" />
+    <title><% if (typeof(showTitle) == 'undefined') { %>点理财-上市公司全资控股平台，专注市政PPP项目<% } else { %><%=showTitle%><% } %></title>
+    <link rel="shortcut icon" href="images/dlc/favicon.ico" />
+    <link rel="bookmark" href="images/dlc/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/css/dlc.css" />
+    <link rel="stylesheet" type="text/css" href="/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pay.css" />
+    <link rel="stylesheet" type="text/css" href="/css/product.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bank.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pagination.css" />
+    <link rel="stylesheet" type="text/css" href="/css/productList.css" />
+    <!-- Snake import css start-->
+    <link type="text/css" rel="stylesheet" href="css/login.css" />
+    <link type="text/css" rel="stylesheet" href="css/userCenter.css" />
+    <link type="text/css" rel="stylesheet" href="css/questionCenter.css" />
+    <link type="text/css" rel="stylesheet" href="css/contract.css" />
+    <link type="text/css" rel="stylesheet" href="css/bannerPage.css" />
+    <link type="text/css" rel="stylesheet" href="css/insurance.css" />
+    <link type="text/css" rel="stylesheet" href="css/newIndex.css" />
+    <!--    <link type="text/css" rel="stylesheet" href="css/keyword.css" />-->
+    <!---peijk import css start-->
+    <link type="text/css" rel="stylesheet" href="/css/signup.css" />
+    <link type="text/css" rel="stylesheet" href="/css/signupAgreement.css" />
+    <link type="text/css" rel="stylesheet" href="/css/auth.css" />
+    <link type="text/css" rel="stylesheet" href="/css/userInfo.css" />
+    <link type="text/css" rel="stylesheet" href="/css/editEmail.css" />
+    <link type="text/css" rel="stylesheet" href="/css/guide.css" />
+    <!-- maf import css start -->
+    <link type="text/css" rel="stylesheet" href="/css/changePhone.css" />
+    <link type="text/css" rel="stylesheet" href="/css/modifyTP.css" />
+    <link type="text/css" rel="stylesheet" href="/css/resetPassword.css" />
+    <link type="text/css" rel="stylesheet" href="css/aboutCenter.css" />
+    <!--maf import css end-->
+    <!-- import js library -->
+    <script src="https://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b"></script>
+    <script type="text/javascript" src="/js/lib/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.validate-1.13.1.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.animateNumber.min.js"></script>
+    <script type="text/javascript" src="/js/lib/placeholder.js"></script>
+    <script type="text/javascript" src="/js/lib/signals.js"></script>
+    <script type="text/javascript" src="/js/lib/crossroads.js"></script>
+    <script type="text/javascript" src="/js/lib/hasher.js"></script>
+    <script type="text/javascript" src="/js/lib/bcrypt.js"></script>
+    <script type="text/javascript" src="/js/lib/md5.js"></script>
+    <script type="text/javascript" src="/js/lib/clipboard.js"></script>
+    <script type="text/javascript" src="/js/lib/newclipboard.js"></script>
+    <!-- <script type="text/javascript" src="/js/lib/smarticon.js"></script> -->
+    <script type="text/javascript" src="/js/lib/template.js"></script>
+    <!-- import base model -->
+    <script type="text/javascript" src="/js/base/base.js"></script>
+    <script type="text/javascript" src="/js/base/config.js"></script>
+    <script type="text/javascript" src="/js/base/util.js"></script>
+    <script type="text/javascript" src="/js/base/paging.js"></script>
+    <!-- import model -->
+    <script type="text/javascript" src="/js/model/dlc.js"></script>
+    <script type="text/javascript" src="/js/model/dict.js"></script>
+    <script type="text/javascript" src="/js/model/user.js"></script>
+    <script type="text/javascript" src="/js/model/account.js"></script>
+    <script type="text/javascript" src="/js/model/trade.js"></script>
+    <script type="text/javascript" src="/js/model/product.js"></script>
+    <script type="text/javascript" src="/js/model/timer.js"></script>
+    <script type="text/javascript" src="/js/model/pagination.js"></script>
+    <script type="text/javascript" src="/js/model/bulletin.js"></script>
+    <script type="text/javascript" src="/js/dlc/myOrders.js"></script>
+    <script type="text/javascript" src="/js/dlc/financial.js"></script>
+
+    <script type="text/javascript" src="/js/dlc/myBills.js"></script>
+    <script type="text/javascript" src="/js/dlc/home.js"></script>
+    <script type="text/javascript" src="/js/dlc/payOrder.js"></script>
+    <script type="text/javascript" src="/js/dlc/payJJOrder.js"></script>
+    <script type="text/javascript" src="/js/dlc/interestToken.js"></script>
+    <script type="text/javascript" src="/js/dlc/payBind.js"></script>
+    <script type="text/javascript" src="/js/dlc/payUnbind.js"></script>
+    <script type="text/javascript" src="/js/dlc/payBindCard.js"></script>
+    <script type="text/javascript" src="/js/dlc/payBindCardAuthed.js"></script>
+    <script type="text/javascript" src="/js/dlc/experienceProduct.js"></script>
+
+    <script type="text/javascript" src="/js/dlc/productDetail.js"></script>
+    <script type="text/javascript" src="/js/dlc/myAccount.js"></script>
+    <script type="text/javascript" src="/js/dlc/withdraw.js"></script>
+    <script type="text/javascript" src="/js/dlc/deposito.js"></script>
+    <script type="text/javascript" src="/js/dlc/productList.js"></script>
+    <!---peijk import file start-->
+    <script type="text/javascript" src="/js/dlc/signup.js"></script>
+    <script type="text/javascript" src="/js/dlc/signupOld.js"></script>
+    <script type="text/javascript" src="/js/dlc/signupSuccess.js"></script>
+    <script type="text/javascript" src="/js/dlc/signupAgreement.js"></script>
+    <script type="text/javascript" src="/js/dlc/refer.js"></script>
+    <script type="text/javascript" src="/js/dlc/referOld.js"></script>
+    <script type="text/javascript" src="/js/dlc/auth.js"></script>
+    <script type="text/javascript" src="/js/dlc/userInfo.js"></script>
+    <script type="text/javascript" src="/js/dlc/editEmail.js"></script>
+    <script type="text/javascript" src="/js/dlc/guide.js"></script>
+    <script type="text/javascript" src="/js/dlc/payExperience.js"></script>
+    <!---peijk import file end-->
+
+    <!-- maf import file start -->
+    <script type="text/javascript" src="/js/dlc/resetPassword.js"></script>
+    <script type="text/javascript" src="/js/dlc/changePhone.js"></script>
+    <script type="text/javascript" src="/js/dlc/modifyTP.js"></script>
+    <script type="text/javascript" src="/js/dlc/noCardTP.js"></script>
+    <script type="text/javascript" src="/js/dlc/cardTP.js"></script>
+    <script type="text/javascript" src="/js/dlc/aboutCenter.js"></script>
+    <script type="text/javascript" src="/js/dlc/aboutNotice.js"></script>
+    <script type="text/javascript" src="/js/dlc/aboutContent.js"></script>
+    <!--maf import file end-->
+
+    <!-- Snake import js start-->
+    <script type="text/javascript" src="/js/dlc/login.js"></script>
+    <script type="text/javascript" src="/js/dlc/userCenter.js"></script>
+    <script type="text/javascript" src="/js/dlc/userBindBankCard.js"></script>
+    <script type="text/javascript" src="/js/dlc/editLoginPwd.js"></script>
+    <script type="text/javascript" src="/js/dlc/questionCenter.js"></script>
+    <script type="text/javascript" src="/js/dlc/experience.js"></script>
+    <script type="text/javascript" src="/js/dlc/pointCoin.js"></script>
+    <script type="text/javascript" src="/js/dlc/userRefer.js"></script>
+    <script type="text/javascript" src="/js/dlc/redPacket.js"></script>
+    <script type="text/javascript" src="/js/dlc/referBanner.js"></script>
+    <script type="text/javascript" src="/js/dlc/insuranceCenter.js"></script>
+    <script type="text/javascript" src="/js/dlc/activity/investBanner.js"></script>
+    <script type="text/javascript" src="/js/dlc/activity/activity161121.js"></script>
+    <script type="text/javascript" src="/js/dlc/activity/activity161129.js"></script>
+    <script type="text/javascript" src="/js/dlc/activity/activity170316.js"></script>
+    <script type="text/javascript" src="/js/dlc/activity/activity170410.js"></script>
+    <script type="text/javascript" src="/js/dlc/webCount.js"></script>
+    <!-- Snake import js end-->
+
+    <!-- import js file 请保持这几个js在最下方 -->
+    <script type="text/javascript" src="/js/dlc/app.js"></script>
+    <script type="text/javascript" src="/js/dlc/route.js"></script>
+    <script type="text/javascript" src="/js/dlc/start.js"></script>
+</head>
+
+<body>
+    <div id="main_header" class="main_header">
+        <div class="wrap fixed-header">
+            <ul class="site-nav">
+                <li>
+                    <span class="cell-phone-pre">服务热线：</span>
+                    <span class="cell-phone">400-820-2450</span>
+                    <span class="cell-phone-pre">（工作日9:00-18:00）</span>
+                </li>
+                <li style="float:right">
+                    <div id='logout' style="display:none">
+                        <div id="tip1" class="logindiv cursor_pointer">登录</div>|
+                        <div id="tipSignup" class="register cursor_pointer">注册</div>|
+                    </div>
+                    <div id='login' style="display:none">
+                        <div id="tipL1" class="logindiv cursor_pointer"></div>|
+                        <ul id="loginUserPannel" style="display:none" class="login-user-pannel">
+                            <li>
+                                <div id="tipL2" class="tipName cursor_pointer"></div>
+                            </li>
+                            <li>
+                                <div id="logoutR" class="login-user-option cursor_pointer">账户充值</div>
+                            </li>
+                            <li>
+                                <div id="logoutM" class="login-user-option cursor_pointer">我的理财</div>
+                            </li>
+                            <li>
+                                <div id="logoutB" class="login-user-option cursor_pointer">退出</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logindiv cursor_pointer" id="questionUser">帮助中心</div>|
+                    <div class="logindiv cursor_pointer" id="aboutContact">联系我们</div>
+                    <div class="icon icon-weixin cursor_pointer" id="wechat"></div>
+                    <a target="_blank" href="http://weibo.com/p/1006065968545646/home?from=page_100606&mod=TAB&is_all=1#place" alt="新浪微博">
+                        <div class="icon icon-weibo" id="weibo"></div>
+                    </a>
+                </li>
+            </ul>
+
+            <div style="display:none" id="wechatPannel" class="wechat-pannel">
+                <span class="logo-weixin icon"></span>
+                <p class="wx-color">扫一扫</p>
+                <p class="wx-color">关注点理财公众号</p>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-content">
+                <a href="/" class="logo-header"></a>
+                <ul class="nav-bar">
+                    <li><a id="bar_h1" class="unselect link font14B tiptitle_header" href="/">首页</a>
+                    </li>
+                    <li><a id="bar_h2" class="unselect link font14B tiptitle_header" href="/productList">我要投资</a>
+                    </li>
+                    <li><a id="bar_h3" class="unselect link font14B tiptitle_header" href="/insurancePro">安全保障</a>
+                    </li>
+                    <li><a id="bar_h4" class="unselect link font14B tiptitle_header" href="/myCenter_account">我的账户</a>
+                    </li>
+                    <li><a id="bar_h5" class="unselect link font14B tiptitle_header" href="/webCount">信息披露</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script refer>
+        $(document).ready(function() {
+            var ref = '';
+            try {
+                if (document.referrer.length > 0) {
+                    ref = document.referrer;
+                } else if (opener.location.href.length > 0) {
+                    ref = opener.location.href;
+                }
+                if(ref){
+                    if (ref.indexOf("sogou") > -1){
+                        ref = "sogou";
+                        $.cookie('referrerUrl', ref, {
+                            expires: 365
+                        });
+                    } else if (ref.indexOf("baidu") > -1){
+                        ref = "baidu";
+                        $.cookie('referrerUrl', ref, {
+                            expires: 365
+                        });
+                    } else if (ref.indexOf(".so.") > -1) {
+                        ref = "so";
+                    } else if (ref.indexOf("sm-tc") > -1) {
+                        ref = "sm";
+                    }
+                }
+            } catch (e) {
+
+            }
+
+            $.getScript("//bqq.gtimg.com/da/i.js");
+            (function (w, a, m) {
+                m = '__qq_qidian_da';
+                w[m] = a;
+                w[a] = w[a] || function () {
+                    (w[a][m] = w[a][m] || []).push(arguments);
+                };
+            })(window, 'qidianDA');
+            qidianDA('create', '2852103519', 'ddb2d5a2810ce7d68a174879e340d710', {
+                mtaId: '500343297'
+            });
+            qidianDA('set', 't1', new Date());
+        });
+    </script>

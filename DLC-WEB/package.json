@@ -1,0 +1,11 @@
+{
+  "name": "company",
+  "description": "hello world test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "ejs": "*",
+    "express": "4.x",
+    "mongoose": "^4.6.1"
+  }
+}

@@ -1,0 +1,124 @@
+
+.insTop {
+    min-width: 1200px;
+    max-width: 1920px;
+    margin: auto;
+    height: 500px;
+    background-image: url(../images/insurance/top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.h50px {
+    height: 50px;
+}
+
+.inccLeft {
+    width: 500px;
+    float: left;
+    height: 280px;
+}
+
+.inccRight {
+    width: 500px;
+    float: left;
+    height: 280px;
+}
+
+.insContent {
+    height: 280px;
+    width: 1000px;
+    margin: auto;
+    font-family: "微软雅黑";
+}
+
+.h190px {
+    height: 190px;
+    margin-top: 45px;
+}
+
+.h110px {
+    height: 110px;
+    margin-top: 85px;
+}
+
+.nh110px {
+    height: 110px;
+}
+
+
+.h270px {
+    height: 270px;
+    margin-top: 5px;
+}
+
+.inccHead {
+    height: 70px;
+    line-height: 70px;
+    color: #368be1;
+    font-size: 40px;
+}
+
+.inccP {
+    line-height: 40px;
+    font-size: 18px;
+    color: #8d8d8d;
+}
+
+
+
+.h250px {
+    height: 250px;
+    margin-top: 15px;
+    width: 500px;
+}
+
+
+
+.h240px {
+    height: 240px;
+    margin-top: 20px;
+    width: 350px;
+}
+
+.h215px {
+    height: 215px;
+    margin-top: 30px;
+    width: 350px;
+}
+
+.inccImg1 {
+    background-image: url(../images/insurance/1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.inccImg5 {
+    background-image: url(../images/insurance/5.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.inccImg3 {
+    background-image: url(../images/insurance/3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.inccImg2 {
+    background-image: url(../images/insurance/2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.inccImg6 {
+    background-image: url(../images/insurance/6.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.inccImg4 {
+    background-image: url(../images/insurance/4.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}

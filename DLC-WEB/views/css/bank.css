@@ -1,0 +1,55 @@
+.bank_icon_100{ background-image: url("../images/bank/bank_postal_icon.png");
+}
+.bank_icon_102{ background-image: url("../images/bank/bank_icbc_icon.png");
+}
+.bank_icon_103{ background-image: url("../images/bank/bank_abc_icon.png");
+}
+.bank_icon_104{ background-image: url("../images/bank/bank_zg_icon.png");
+}
+.bank_icon_105{
+  background-image: url("../images/bank/bank_cbc_icon.png");
+}
+.bank_icon_301{
+  background-image: url("../images/bank/bank_jt_icon.png");
+}
+.bank_icon_302{
+  background-image: url("../images/bank/bank_zx_icon.png");
+}
+.bank_icon_303{
+  background-image: url("../images/bank/bank_gd_icon.png");
+}
+.bank_icon_304{
+  background-image: url("../images/bank/bank_hx_icon.png");
+}
+.bank_icon_305{
+  background-image: url("../images/bank/bank_ms_icon.png");
+}
+.bank_icon_306{
+  background-image: url("../images/bank/bank_gf_icon.png");
+}
+.bank_icon_307{
+  background-image: url("../images/bank/bank_pa_icon.png");
+}
+.bank_icon_308{
+  background-image: url("../images/bank/bank_zs_icon.png");
+}
+.bank_icon_309{
+  background-image: url("../images/bank/bank_xy_icon.png");
+}
+.bank_icon_310{
+  background-image: url("../images/bank/bank_pf_icon.png");
+}
+.bank_icon_401{
+  background-image: url("../images/bank/bank_sh_icon.png");
+}
+.bank_icon_4031000{
+  background-image:url("../images/bank/bank_bj_icon.png");
+}
+.bank_icon_yl{
+  background-image:url("../images/bank/bank_yl_icon.png");
+  width: 122px;
+  height: 68px;
+  margin: 16px;
+  display: inline-block;
+  float: left;
+}

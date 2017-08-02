@@ -1,0 +1,113 @@
+<div class="pay-bind page">
+	<div class="w">
+		<div class="pay-nav nav">
+			<span>您的当前位置：</span><span class="s">我要投资></span><span class="s">投资详情页></span><span class="s">支付页</span>
+		</div>
+		<div class="pay-context">
+			<div class="pay-prod">
+				<span class="icon"></span>
+				<span class="name"></span>
+				<div class="time">
+					<span>倒计时:</span>
+					<span class="s" id="minuteShow">0</span><span>分</span>
+					<span class="s" id="secondShow">0</span><span>秒</span>
+				</div>
+			</div>
+			<div class="pannel">
+				<div class="p2">
+					<div class="p2-left">
+						<span>订单号：</span><span id="orderNo"></span>
+					</div>
+					<div class="p2-right">
+						<span>订单金额：</span><span id="orderTotal" class="right-span"></span><span>元</span>
+					</div>
+				</div>
+				<div class="pay-list pay-list-disabled" id="pay-redBag">
+					<div class="pay-list-left">
+						<input type="checkbox" class="hide" id="chkRedBag" />
+						<span class="checkboxIcon" id="chkRedBagIcon"></span>
+						<span>红包</span>
+					</div>
+					<div class="pay-list-right" id="pay-redBag-show">
+						<span id="redBagAmount" class="right-span">0.00</span><span>元</span>
+						<span class="arrow-disabled"></span>
+					</div>
+				</div>
+				<div class="pay-list pay-list-disabled" id="pay-coin">
+					<div class="pay-list-left">
+						<input type="checkbox" class="hide" id="chkCoin" />
+						<span class="checkboxIcon" id="chkCoinIcon"></span>
+						<span>点币</span>
+					</div>
+					<div class="pay-list-right" id="pay-coin-show">
+						<span id="experienceAmount" class="right-span">0.00</span><span>元</span>
+						<span class="arrow-disabled"></span>
+					</div>
+				</div>
+				<div class="pay-list pay-list-other pay-list-disabled" id="pay-balance">
+					<div class="pay-list-left">
+						<input type="checkbox" class="hide" id="chkBalance" />
+						<span class="checkboxIcon" id="chkBalanceIcon"></span>
+						<span>账户余额</span>
+					</div>
+					<div class="pay-list-right">
+						<span id="totalAsset" class="right-span">0.00</span><span>元</span>
+						<span class="arrow-disabled"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="bank-pannel">
+				<div class="l2">
+					<div class="w">
+							<div class="bank-list-left">
+							<span class="bank_icon_yl" id="bank-icon"></span>
+							<span id="bankName">银行卡支付</span>
+						</div>
+						<div class="bank-list-right">
+							<span id="needPay">0.00</span><span>元</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pay-pannel">
+			<div class="w">
+				<p class="error" id="errorMsg"></p>
+				<button class="btn pay-timer" id="pay">立即支付</button>
+				<br>
+				<p style="text-align: center;">
+					<input type="checkbox" style="display:none" id="chkContract" checked="checked" />
+					<span class="checkboxIcon checked" id="chkContractIcon"></span>
+					<a style="margin-top: 22px;" class="withholdContract" id="withholdContract">《点理财平台委托代扣授权书》</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="pay-coin-adjust hide" id="pay-coin-adjust">
+	<div class="expRuleHead">我的点币<div class="expRuleClose" id="expRuleClose"></div></div>
+	<ul class="ul1">
+		<li class="li1"><span>当前用户点币余额：</span> <span id="maxCoin">0</span></li>
+		<li class="li2">
+			<input id="useCoinInput" placeholder="请输入您要使用的点币数" class="input" maxlength="9" />
+			<span> 抵扣：</span><span id="useCoinAmount">0</span><span> 元</span>
+		</li>
+		<li class="li3"><span>提示：此订单最多抵扣：</span> <span id="useMaxCoin">0</span> <span> 元</span></li>
+		<li class="li-error-msg" id="li-error-msg">
+		</li>
+		<li class="li4">
+			<button class="confirm btn pay-timer" id="confirmCoinBtn">确认</button>
+		</li>
+		<li class="li5">
+			<ul class="ul2">
+				<li>点币使用规则：</li>
+				<li>1、使用点币的用户在投资平台产品时可直接抵扣现金，具体抵扣规则根据平台活动而定。</li>
+				<li>2、10个点币等值于1元人民币，点币是回馈新老客户的一项优惠计划，不可转让，不可折现。</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="coupon-list-adjust hide" id="coupon-list-adjust">
+</div>

@@ -1,0 +1,1229 @@
+.signupMiddleDiv {
+    width: auto;
+    height: 650px;
+    min-width: 1200px;
+    border-bottom: 4px solid #fff;
+}
+
+.nb1 {
+    background-image: url("../images/signup/new-b1.jpg");
+    border-bottom: 3px solid #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nb2 {
+    background-image: url("../images/signup/new-b2.jpg");
+    border-bottom: 3px solid #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nb3 {
+    background-image: url("../images/signup/new-b3.jpg");
+    border-bottom: 3px solid #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nb4 {
+    background-image: url("../images/signup/new-b4.png");
+    /*border-bottom: 3px solid #fff;*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nb5 {
+    background-image: url("../images/signup/top.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.signupMiddleDiv #signupDiv li {
+    margin-left: 24px;
+}
+
+#fillDiv {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#boderDiv {
+    float: left;
+    position: relative;
+    left: 795px;
+    top: 76px;
+    border: 1px #c9c9c9 solid;
+    border-radius: 3px;
+    width: 325px;
+    height: 498px;
+    padding: 0;
+    margin: 0;
+}
+
+#regBoderDiv {
+    float: left;
+    position: relative;
+    left: 795px;
+    top: 76px;
+    border: 1px #ad9d7d solid;
+    border-radius: 3px;
+    width: 348px;
+    height: 458px;
+    padding: 0;
+    margin: 0;
+}
+
+#bgOpacity {
+    float: left;
+    position: relative;
+    background-color: #e5e5e5;
+    width: 325px;
+    height: 498px;
+    filter: alpha(opacity=15);
+    /*IE滤镜，透明度15%*/
+    -moz-opacity: 0.15;
+    /*Firefox私有，透明度15%*/
+    opacity: 0.15;
+    /*其他，透明度15%*/
+}
+
+#regBgOpacity {
+    float: left;
+    position: relative;
+    background-color: #1e1e1b;
+    width: 348px;
+    height: 458px;
+    filter: alpha(opacity=50);
+    /*IE滤镜，透明度15%*/
+    -moz-opacity: 0.5;
+    /*Firefox私有，透明度15%*/
+    opacity: 0.5;
+    /*其他，透明度15%*/
+}
+
+#signupDiv {
+    position: absolute;
+}
+
+#signupDiv li {
+    list-style: none;
+    /*margin-bottom: 17px;*/
+    width: 325px;
+    height: 42px;
+}
+
+.registerDiv #signupDiv li {
+    list-style: none;
+    /*margin-bottom: 17px;*/
+    width: 274px;
+    height: 40px;
+}
+
+#signupDiv .validateError {
+    width: 274px;
+    height: 22px;
+    text-align: left;
+    font-size: 12px;
+    color: #5d5d5d;
+    padding-left: 25px;
+}
+
+.registerDiv #signupDiv .validateError {
+    width: 274px;
+    height: 22px;
+    padding-left: 38px;
+}
+
+.loginShowError {
+    width: 253px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #5d5d5d;
+    padding-left: 23px;
+    border-radius: 3px;
+    background: url("../images/signup/!-icon.png") 3px 3px no-repeat;
+    background-color: #ffffff;
+}
+
+.strongTitle {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    top: 22px;
+}
+
+#signupDiv .allErrorsSpan {
+    display: inline-block;
+    background: url("../images/signup/!-icon.png") 2px 3px no-repeat;
+    height: 20px;
+    padding: 1px 18px;
+}
+
+.allLoginErrorsSpan {
+    display: inline-block;
+    background: url("../images/signup/!-icon.png") no-repeat;
+    height: 20px;
+    padding: 1px 18px;
+    margin: 3px 3px;
+}
+
+
+/*.invite .wrap-placeholder {
+    text-align: left!important;
+    text-indent: 40px!important;
+}*/
+
+
+/*.phone .wrap-placeholder, .password .wrap-placeholder {
+    text-align: left!important;
+    text-indent: 65px!important;
+}
+
+.picVerify .wrap-placeholder, .smsVerify .wrap-placeholder {
+    text-align: left!important;
+    text-indent: 38px!important;
+}*/
+
+#signupDiv .firstError {
+    margin: 10px 0px 10px 0px;
+}
+
+#signupDiv .allErrors {
+    position: relative;
+    width: 274px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.registerDiv #signupDiv .allErrors {
+    position: relative;
+    width: 274px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.registerDiv #signupDiv .allErrorsSpan {
+    display: inline-block;
+    background: url("../images/signup/!-icon.png") 2px 3px no-repeat;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px 18px;
+}
+
+.allLoginErrors {
+    position: relative;
+    width: 274px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.phone {
+    position: relative;
+    margin-top: 10px;
+}
+
+#phone {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    width: 232px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background: url("../images/signup/ia.png") 16px no-repeat;
+    padding-left: 40px;
+}
+
+.password {
+    position: relative;
+}
+
+.txtPwd {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    width: 232px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background: url("../images/signup/ib.png") 16px no-repeat;
+    padding-left: 40px;
+}
+
+.password .pwdEyes {
+    position: absolute;
+    top: 16px;
+    right: 55px;
+    cursor: pointer;
+    width: 30px;
+    height: 18px;
+}
+
+.password .eyePic1 {
+    background: url('../images/signup/eye65.png');
+}
+
+.password .eyePic2 {
+    background: url('../images/signup/f16c.png');
+}
+
+.picVerify {
+    position: relative;
+}
+
+#picVerifyCode {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    width: 129px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: transparent;
+    padding-left: 15px;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+.registerDiv #picVerifyCode {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    width: 124px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 15px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: transparent;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+.signupCodeImg {
+    display: inline-block;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.smsVerify {
+    position: relative;
+}
+
+#verifyCode {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    width: 129px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: transparent;
+    padding-left: 15px;
+    margin-right: 8px;
+}
+
+.registerDiv #verifyCode {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    width: 124px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 15px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-right: 8px;
+}
+
+.signupMiddleDiv .invite {
+    text-align: left;
+}
+
+.signupMiddleDiv .invite-icon {
+    /*background: url("../images/signup/yaoqin-icon.png") no-repeat;*/
+    background-color: transparent;
+    width: 20px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.signupMiddleDiv .invite-span {
+    font-size: 14px;
+    color: #008dec;
+    vertical-align: middle;
+}
+
+#inviteBefore {
+    width: 272px;
+    height: 38px;
+    line-height: 38px;
+}
+
+#inviteAfter {
+    color: #ffffff;
+    font-size: 14px;
+    width: 232px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background: url("../images/signup/yaoqin-icon3.png") 16px no-repeat;
+    padding-left: 40px;
+}
+
+#verifyCodeBtn {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.registerDiv #verifyCodeBtn {
+    display: inline-block;
+    color: #f9e500;
+    font-size: 14px;
+    width: 120px;
+    height: 40px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.signup {
+    position: relative;
+}
+
+#signupBtn {
+    color: #ffffff;
+    font-size: 18px;
+    width: 274px;
+    height: 40px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.registerDiv #signupBtn {
+    color: #230086;
+    font-size: 18px;
+    font-weight: bold;
+    width: 274px;
+    height: 40px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background-color: #f9e500;
+    cursor: pointer;
+}
+
+.checkLi {
+    position: relative;
+}
+
+#chkAgree {
+    border-radius: 3px;
+    background-color: transparent;
+    margin-bottom: 5px;
+    margin-right: 12px;
+}
+
+.strongChk {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.checkLi>a {
+    color: #034489;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.signupSuccessMain {
+    width: auto;
+    height: 765px;
+    background-image: url("../images/signup/light.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 1200px;
+    text-align: center;
+}
+
+.signupSuccessMain .top {
+    width: 800px;
+    height: 111px;
+}
+
+.signupSuccessMain .top .left {
+    background: url("../images/signup/bao.png") no-repeat;
+    margin: 0px 30px 0px 0px;
+    width: 84px;
+    height: 111px;
+    vertical-align: top;
+}
+
+.signupSuccessMain .top .right {
+    margin: 30px 0px 33px 0px;
+    font-size: 42px;
+    color: #e94935;
+    vertical-align: top;
+}
+
+.signupSuccessMain .down {
+    width: 800px;
+    height: 544px;
+    margin: 0 auto;
+}
+
+.signupSuccessMain .down .right {
+    vertical-align: bottom;
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.signupSuccessMain .down .right a {
+    font-size: 18px;
+    color: #008dec;
+}
+
+.signupSuccessMain .down .right a:hover {
+    font-size: 22px;
+}
+
+.signupSuccessMain .down .amount {
+    font-size: 42px;
+    color: #e94935;
+    height: 42px;
+}
+
+.signupSuccessMain .down .experiencesBtn {
+    font-size: 36px;
+    color: #e94935;
+    width: 467px;
+    height: 88px;
+    background: url("../images/signup/normal.png") no-repeat;
+    cursor: pointer;
+}
+
+.signupSuccessMain .down .experiencesBtn:hover {
+    background: url("../images/signup/hover.png") no-repeat;
+}
+
+.invite-adjust {
+    width: 605px;
+    height: 264px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+}
+
+.invite-adjust .adjust-title {
+    margin: 46px 0px 59px 115px;
+    height: 18px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.invite-adjust .adjust-title .title-black {
+    color: #353535;
+}
+
+.invite-adjust .adjust-title .title-oringe {
+    color: #ff9900;
+}
+
+.invite-adjust .adjust-tips {
+    margin: 0px 0px 12px 45px;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+.invite-adjust .adjust-tips2 {
+    margin-left: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5d5d5d;
+}
+
+.invite-adjust .confirmBtn {
+    width: 134px;
+    height: 44px;
+    border-radius: 3px;
+    color: #FFF;
+    background-color: #398de1;
+    font-size: 18px;
+}
+
+.invite-adjust .cancelBtn {
+    width: 134px;
+    height: 44px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    color: #9d9d9d;
+    background-color: #eee;
+    font-size: 18px;
+    margin: 39px 75px 17px 129px;
+}
+
+.referMiddleDiv {
+    width: auto;
+    height: 650px;
+    min-width: 1200px;
+}
+
+.referMiddleDiv .signReferDiv li {
+    margin-left: 24px;
+}
+
+.referMiddleDiv .fillDiv {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.referMiddleDiv .fillLeftDiv {
+    float: left;
+    display: inline-block;
+    width: 325px;
+    height: 398px;
+    padding: 0;
+    margin: 130px 0px 130px 330px;
+    color: #fff;
+}
+
+.referMiddleDiv .fillLeftDiv .top {
+    font-size: 25px;
+}
+
+.referMiddleDiv .fillLeftDiv .middle {
+    font-size: 45px;
+    margin-top: 12px;
+}
+
+.referMiddleDiv .fillLeftDiv .bottom {
+    font-size: 14px;
+    margin-top: 264px;
+}
+
+.referMiddleDiv .fillLeftDiv .down {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.boderDiv {
+    float: right;
+    display: inline-block;
+    border: 1px #c9c9c9 solid;
+    border-radius: 3px;
+    width: 325px;
+    height: 396px;
+    padding: 0;
+    margin: 75px 75px 0px;
+}
+
+.bgOpacity {
+    float: left;
+    position: relative;
+    background-color: #e5e5e5;
+    width: 325px;
+    height: 396px;
+    filter: alpha(opacity=15);
+    /*IE滤镜，透明度15%*/
+    -moz-opacity: 0.15;
+    /*Firefox私有，透明度15%*/
+    opacity: 0.15;
+    /*其他，透明度15%*/
+}
+
+.signReferDiv {
+    position: absolute;
+}
+
+.signReferDiv li {
+    list-style: none;
+    /*margin-bottom: 17px;*/
+    width: 325px;
+    height: 42px;
+}
+
+.signReferDiv .validateError {
+    width: 274px;
+    height: 22px;
+    text-align: left;
+    font-size: 12px;
+    color: #5d5d5d;
+    padding-left: 25px;
+}
+
+.signReferDiv .firstError {
+    margin: 10px 0px 10px 0px;
+}
+
+.signReferDiv .allErrors {
+    position: relative;
+    width: 274px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.signReferDiv .allErrorsSpan {
+    display: inline-block;
+    background: url("../images/signup/!-icon.png") 2px 3px no-repeat;
+    height: 20px;
+    padding: 1px 18px;
+}
+
+.signReferDiv .title {
+    margin: 16px 0px 16px;
+    height: 14px;
+}
+
+.signReferDiv .referTitle {
+    color: #fff;
+    font-size: 14px;
+}
+
+.signReferDiv .firstError {
+    margin: 0px;
+}
+
+.signReferDiv .password .pwdEyes {
+    position: absolute;
+    top: 16px;
+    right: 55px;
+    cursor: pointer;
+    width: 30px;
+    height: 18px;
+}
+
+.footer .footerLeft .frQQ:hover {
+    color: #298be1;
+    background: url(../images/footer/qq_highlight.png) no-repeat;
+}
+
+.footer .footerLeft .frQQ {
+    font-size: 26px;
+    background: url(../images/footer/qq_normal.png) no-repeat;
+}
+
+.footer .footerLeft .frTEL:hover {
+    color: #298be1;
+    background: url(../images/footer/phone_highlight.png) no-repeat;
+}
+
+.footer .footerLeft .frTEL {
+    font-size: 26px;
+    background: url(../images/footer/phone_normal.png) no-repeat;
+}
+
+.footer .footerLeft .frTIME:hover {
+    color: #298be1;
+    background: url(../images/footer/time_highlight.png) no-repeat;
+}
+
+.footer .footerLeft .frTIME {
+    font-size: 26px;
+    background: url(../images/footer/time_normal.png) no-repeat;
+}
+
+.footer .footerLeft .fRdiv {
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 42px;
+    color: #cbcbc9;
+    padding-left: 50px;
+    line-height: 28px;
+}
+
+.registerDiv {
+    min-width: 1200px;
+    width: auto;
+    height: 650px;
+    margin: 0 auto;
+    /*background-image: url("../images/signup/register.png");
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+.registerDiv :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ffffff !important;
+}
+
+.registerDiv ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ffffff !important;
+}
+
+.registerDiv input:-ms-input-placeholder {
+    color: #ffffff !important;
+}
+
+.registerDiv input::-webkit-input-placeholder {
+    color: #ffffff !important;
+}
+
+.registerDiv #signupDiv li {
+    margin-left: 38px;
+}
+
+.registerDiv #fillDiv {
+    height: 650px;
+}
+
+.registerDiv #bgOpacity {
+    float: left;
+    position: relative;
+    width: 350px;
+    height: 460px;
+    filter: alpha(opacity=0.15);
+    /*IE滤镜，透明度15%*/
+    -moz-opacity: 0.15;
+    /*Firefox私有，透明度15%*/
+    opacity: 0.15;
+    /*其他，透明度15%*/
+}
+
+.registerOuter {
+    background: url(../images/signup/register-outer.png) no-repeat;
+    min-width: 1200px;
+    max-width: 1920px;
+    height: 4070px;
+    margin: 0 auto;
+}
+
+.registerDiv .register_title {
+    width: 274px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f9e500;
+    font-size: 20px;
+    font-weight: bold;
+    color: #230086;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.registerDiv #inviteAfter {
+    color: #ffffff;
+    font-size: 14px;
+    width: 232px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px #ffffff solid;
+    border-radius: 3px;
+    background: url(../images/signup/yaoqing_icon2.png) 16px no-repeat;
+    padding-left: 40px;
+}
+
+.reg-close {
+    background: url(../images/signup/X.png) no-repeat;
+    width: 44px;
+    height: 44px;
+    float: right;
+    margin-right: 15px;
+    top: 15px;
+    position: relative;
+}
+
+.reg-banner {
+    min-width: 1200px;
+    max-width: 1920px;
+    height: 650px;
+    margin: auto;
+    /*background: url(../images/signup/index-b3.jpg) no-repeat center;*/
+}
+
+.reg-background {
+    min-width: 1200px;
+    height: 4086px;
+    background: url(../images/signup/reg-background.png) no-repeat;
+    background-position: top;
+}
+
+.reg-background .four-words {
+    color: #fff;
+    font-size: 36px;
+    height: 36px;
+}
+
+.reg-background .four-words ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+}
+
+.reg-background .four-words ul li {
+    float: left;
+    text-align: center;
+}
+
+.reg-background .invest-pro-span1 {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.reg-background .invest-pro-span2 {
+    padding-left: 100px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.reg-background .invest-pro-span3 {
+    padding-left: 100px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.reg-background .reg-rule {
+    font-size: 16px;
+    padding-left: 100px;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.reg-background .reg-rule p {
+    margin-bottom: 10px;
+}
+
+.reg-background .register-invest-btn {
+    background: url(../images/signup/register-invest-btn.png) no-repeat;
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    color: #6a4502;
+    border-radius: 5px;
+    border: 0px;
+    margin-left: 180px;
+}
+
+.reg-background .mszq {
+    background: url(../images/signup/mszq.png) no-repeat;
+    width: 250px;
+    height: 64px;
+    border: 0px;
+    float: left;
+}
+
+.reg-background .mszq:hover {
+    background: url(../images/signup/mszq_hover.png) no-repeat;
+    width: 250px;
+    height: 64px;
+}
+
+.reg-background .reg-btn {
+    background: url(../images/signup/lxfl.png) no-repeat;
+    width: 400px;
+    height: 104px;
+    border: 0px;
+    margin: 0 auto;
+}
+
+.reg-background .reg-btn:hover {
+    background: url(../images/signup/lxfl_hover.png) no-repeat;
+    width: 400px;
+    height: 104px;
+}
+
+.reg-background .receive-btn {
+    background: url(../images/signup/receive-btn.png) no-repeat;
+    width: 304px;
+    height: 77px;
+    font-size: 30px;
+    color: #6a4502;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.reg-background .comment-list {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.reg-background .comment-list li {
+    float: left;
+    width: 328px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #6a4502;
+}
+
+#signupForm :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ffffff !important;
+}
+
+#signupForm ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ffffff !important;
+}
+
+#signupForm input:-ms-input-placeholder {
+    color: #ffffff !important;
+}
+
+#signupForm input::-webkit-input-placeholder {
+    color: #ffffff !important;
+}
+
+.red-img {
+    background: url(../images/signup/red_img.png) no-repeat;
+    width: 650px;
+    height: 449px;
+    border: 0px;
+    margin: 0 auto;
+}
+
+.signupSuccessMain .red-bag {
+    background: url("../images/signup/red-bag.png") no-repeat;
+    width: 546px;
+    height: 544px;
+    margin: 0 auto;
+}
+
+.signup-success {
+    width: auto;
+    height: 765px;
+    min-width: 1200px;
+    text-align: center;
+}
+
+.signup-success .top-left {
+    width: 586px;
+    display: inline-block;
+    height: 455px;
+    line-height: 455px;
+}
+
+.signup-success .top-right {
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    height: 455px;
+    text-align: left;
+}
+
+.signup-success .top-right .p1 {
+    margin-top: 160px;
+    font-size: 28px;
+    color: #666;
+}
+
+.signup-success .top-right .p2 {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0px 20px 0px;
+}
+
+.signup-success .top-right .s2 {
+    color: #ff7800;
+}
+
+.signup-success .top-right .to-auth {
+    color: #fff;
+    background-color: #39a6ff;
+    border: 0;
+    border-radius: 3px;
+    width: 190px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.signup-success .top-right .to-draw {
+    color: #fff;
+    background-color: #ff7800;
+    border: 0;
+    border-radius: 3px;
+    width: 190px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.signup-success .down {
+    height: 230px;
+}
+
+.signup-success .down .icon {
+    display: inline-block;
+    background-color: #40A8FC;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 7px;
+    width: 28px;
+    height: 26px;
+    line-height: 26px;
+    margin: 10px 5px 0px -420px;
+}
+
+.signup-success .down .label {
+    color: #666;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.signup-success .down .progressNo {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    left: 20px;
+    top: -9px;
+    color: #ff9800;
+    position: relative;
+    font-size: 14px;
+}
+
+.signup-success .down .progress-bar-bg {
+    display: inline-block;
+    width: 550px;
+    height: 2px;
+    position: relative;
+    background: #ddd;
+    float: left;
+    margin-left: 12px;
+}
+
+.signup-success .prod-info {
+    display: inline-block;
+    margin-top: 40px;
+    white-space: nowrap;
+}
+
+.signup-success .prod-info .to-invest {
+    color: #fff;
+    background-color: #39a6ff;
+    border: 0;
+    border-radius: 3px;
+    width: 115px;
+    height: 40px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.signup-success .prod-info div {
+    display: inline-block;
+}
+
+.signup-success .prod-info .label2 {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    white-space: nowrap;
+}
+
+.signup-success .down .progress-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: -16px;
+    z-index: 1;
+    position: relative;
+}
+
+.signup-success .down .progress-bar {
+    display: inline-block;
+    height: 2px;
+    width: 0;
+    background: #398be1;
+    border-radius: 3px;
+    position: absolute;
+}
+
+.signup-success .down-left {
+    width: 574px;
+    display: inline-block;
+    height: 184px;
+    border: 1px solid #DBDBDB;
+    border-left: 2px solid #ff7800;
+    background-color: #fafafa;
+    vertical-align: top;
+}
+
+.signup-success .down-right {
+    width: 574px;
+    display: inline-block;
+    height: 184px;
+    border: 1px solid #DBDBDB;
+    border-left: 2px solid #87B4EB;
+    background-color: #fafafa;
+    vertical-align: top;
+}
+.ssCRA1 {
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #39a6ff;
+}
+
+.ssCRA2 {
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff7800;
+    margin-left: 20px;
+}
+
+.bgIcon {
+    background-image: url(../images/product/progress-icon.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-size:cover;
+    margin-top: -4px;
+    margin-right: -4px;
+}
+
+.bgcddd {
+    background-color: #ddd;
+}
+
+.bgcd2 {
+    background-color: #d2d2d2;
+}
